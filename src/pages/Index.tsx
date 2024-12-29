@@ -10,9 +10,17 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       
-      {/* Hero Section with Philippine-inspired gradient */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary via-primary/90 to-[#FEC6A1]">
-        <div className="container mx-auto text-center">
+      {/* Hero Section with Philippine Skyline Background */}
+      <section 
+        className="pt-32 pb-20 px-4 relative"
+        style={{
+          backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('https://images.unsplash.com/photo-1493397212122-2b85dda8106b')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
+        <div className="container mx-auto text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Empowering Filipino Businesses Through Finance and Technology
@@ -32,33 +40,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Trust Indicators Section */}
-      <section className="py-12 bg-[#FDE1D3]/20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="animate-fade-up">
-              <h3 className="text-3xl font-bold text-primary mb-2">₱500M+</h3>
-              <p className="text-gray-600">Loans Disbursed</p>
-            </div>
-            <div className="animate-fade-up delay-100">
-              <h3 className="text-3xl font-bold text-primary mb-2">10,000+</h3>
-              <p className="text-gray-600">Filipino MSMEs Served</p>
-            </div>
-            <div className="animate-fade-up delay-200">
-              <h3 className="text-3xl font-bold text-primary mb-2">82</h3>
-              <p className="text-gray-600">Provinces Reached</p>
-            </div>
-            <div className="animate-fade-up delay-300">
-              <h3 className="text-3xl font-bold text-primary mb-2">98%</h3>
-              <p className="text-gray-600">Customer Satisfaction</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      {/* Services Section with Subtle Background */}
+      <section className="py-20 bg-white relative">
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1460574283810-2aab119d8511')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center mb-4">Our Solutions</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             Empowering Filipino entrepreneurs and professionals with innovative financial solutions
@@ -89,9 +81,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Products Section */}
-      <section className="py-20 bg-[#FEF7CD]/10">
-        <div className="container mx-auto px-4">
+      {/* Products Section with Modern Gradient */}
+      <section className="py-20 relative overflow-hidden">
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "linear-gradient(to right, rgba(254, 198, 161, 0.1), rgba(249, 115, 22, 0.1))",
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
           <Tabs defaultValue="lending" className="max-w-4xl mx-auto">
             <TabsList className="grid w-full grid-cols-2">
@@ -141,10 +139,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section with Philippine-inspired gradient */}
-      <section className="py-20 bg-gradient-to-r from-primary to-[#F97316] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+      {/* CTA Section with Manila Skyline Background */}
+      <section 
+        className="py-20 relative"
+        style={{
+          backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.9), rgba(249, 115, 22, 0.8)), url('https://images.unsplash.com/photo-1527576539890-dfa815648363')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-3xl font-bold mb-6 text-white">Ready to Transform Your Business?</h2>
           <p className="text-xl mb-8 text-white/90">
             Join thousands of Filipino businesses leveraging our financial technology solutions.
           </p>
