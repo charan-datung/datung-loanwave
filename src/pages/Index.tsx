@@ -1,7 +1,9 @@
-import { Building2, Users, LineChart } from "lucide-react";
+import { Building2, Users, Computer, ChartBar, Shield, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
 import { ServiceCard } from "@/components/ServiceCard";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -9,97 +11,119 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary via-primary/90 to-secondary">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
-            Empowering Financial Growth in the Philippines
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+            Empowering Businesses Through Finance and Technology
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Providing innovative financial solutions for businesses and individuals through microfinancing, salary loans, and advanced lending software.
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Innovative financial solutions powered by AI technology for businesses and individuals across the Philippines
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="text-lg">Apply for a Loan</Button>
-            <Button size="lg" variant="outline" className="text-lg">Explore Solutions</Button>
+            <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
+              Get Started
+            </Button>
+            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+              Learn More
+            </Button>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Solutions</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard
-              title="Microfinancing"
-              description="Empower your small business with flexible microfinancing solutions tailored to your growth needs."
-              icon={Building2}
-            />
-            <ServiceCard
-              title="Salary Loans"
-              description="Quick and accessible salary loans for employees, teachers, and workforce members."
-              icon={Users}
-            />
-            <ServiceCard
-              title="Lending Software"
-              description="Advanced loan underwriting and credit assessment software for modern lending operations."
-              icon={LineChart}
-            />
+            <Link to="/business-loans">
+              <ServiceCard
+                title="Business Loans"
+                description="Tech-enabled MSME financing with our innovative JAG model and AI-powered assessment."
+                icon={Building2}
+              />
+            </Link>
+            <Link to="/salary-loans">
+              <ServiceCard
+                title="Salary Loans"
+                description="Employee loan management and HR technology solutions for modern workplaces."
+                icon={Users}
+              />
+            </Link>
+            <Link to="/technology">
+              <ServiceCard
+                title="Technology Solutions"
+                description="Advanced loan underwriting and credit assessment powered by AI."
+                icon={Computer}
+              />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20">
+      {/* Products Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8">Ready to Get Started?</h2>
-            <p className="text-gray-600 mb-8">
-              Contact us today to learn more about our financial solutions and how we can help you achieve your goals.
-            </p>
-            <Button size="lg" className="text-lg">Contact Us</Button>
-          </div>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
+          <Tabs defaultValue="lending" className="max-w-4xl mx-auto">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="lending">Lending Products</TabsTrigger>
+              <TabsTrigger value="technology">Technology Solutions</TabsTrigger>
+            </TabsList>
+            <TabsContent value="lending" className="mt-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="p-6 bg-white rounded-lg shadow-sm">
+                  <Building2 className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">MSME Loans</h3>
+                  <p className="text-gray-600 mb-4">Fast and flexible financing for small and medium enterprises.</p>
+                  <Link to="/business-loans">
+                    <Button>Learn More</Button>
+                  </Link>
+                </div>
+                <div className="p-6 bg-white rounded-lg shadow-sm">
+                  <Users className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">Salary Loans</h3>
+                  <p className="text-gray-600 mb-4">Convenient financing solutions for employed individuals.</p>
+                  <Link to="/salary-loans">
+                    <Button>Learn More</Button>
+                  </Link>
+                </div>
+              </div>
+            </TabsContent>
+            <TabsContent value="technology" className="mt-8">
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="p-6 bg-white rounded-lg shadow-sm">
+                  <ChartBar className="w-10 h-10 text-primary mb-4" />
+                  <h3 className="text-lg font-semibold mb-2">Credit Scoring</h3>
+                  <p className="text-gray-600">AI-powered credit assessment system.</p>
+                </div>
+                <div className="p-6 bg-white rounded-lg shadow-sm">
+                  <Shield className="w-10 h-10 text-primary mb-4" />
+                  <h3 className="text-lg font-semibold mb-2">Risk Management</h3>
+                  <p className="text-gray-600">Advanced risk analysis and monitoring.</p>
+                </div>
+                <div className="p-6 bg-white rounded-lg shadow-sm">
+                  <Database className="w-10 h-10 text-primary mb-4" />
+                  <h3 className="text-lg font-semibold mb-2">Loan Management</h3>
+                  <p className="text-gray-600">End-to-end loan processing platform.</p>
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Datung</h3>
-              <p className="text-gray-300">
-                Innovative financial solutions for a better future.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>Microfinancing</li>
-                <li>Salary Loans</li>
-                <li>Lending Software</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>About Us</li>
-                <li>Careers</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>info@datung.com</li>
-                <li>+63 XXX XXX XXXX</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-300">
-            <p>&copy; 2024 Datung. All rights reserved.</p>
-          </div>
+      {/* CTA Section */}
+      <section className="py-20 bg-primary text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+          <p className="text-xl mb-8 text-white/90">
+            Join thousands of businesses leveraging our financial technology solutions.
+          </p>
+          <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
+            Get Started Today
+          </Button>
         </div>
-      </footer>
+      </section>
     </div>
   );
 };
