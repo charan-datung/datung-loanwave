@@ -5,6 +5,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/Navbar";
+import { SuccessStories } from "@/components/SuccessStories";
 
 const BusinessLoans = () => {
   return (
@@ -13,11 +14,9 @@ const BusinessLoans = () => {
       
       {/* Hero Section */}
       <section 
-        className="pt-32 pb-20 px-4 relative"
+        className="pt-32 pb-20 px-4 relative bg-cover bg-center"
         style={{
-          backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('https://images.unsplash.com/photo-1628506891563-73d3fdf8b195')",
-          backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')",
         }}
       >
         <div className="container mx-auto text-center relative z-10">
@@ -173,55 +172,14 @@ const BusinessLoans = () => {
         </div>
       </section>
 
-      {/* Success Stories */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Success Stories</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gray-200" />
-                  <div>
-                    <h3 className="font-semibold">Maria Santos</h3>
-                    <p className="text-gray-600">Sari-sari Store Owner</p>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  "The process was very simple. I only needed my ID and some pictures of my store. 
-                  Within 3 days, I received ₱20,000 which I used to expand my inventory. 
-                  My sales have increased by 40% since then!"
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gray-200" />
-                  <div>
-                    <h3 className="font-semibold">Juan dela Cruz</h3>
-                    <p className="text-gray-600">Carinderia Owner</p>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  "I was worried about the requirements, but it was so easy. 
-                  I formed a group with my fellow market vendors, and we all got approved. 
-                  The loan helped me buy new equipment for my carinderia."
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      {/* Success Stories - Now using the new component */}
+      <SuccessStories />
 
       {/* CTA Section */}
       <section 
-        className="py-20 relative"
+        className="py-20 relative bg-cover bg-center"
         style={{
-          backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.9), rgba(10, 36, 99, 0.85)), url('https://images.unsplash.com/photo-1464082354059-27db6ce50048')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.9), rgba(10, 36, 99, 0.85)), url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7')",
         }}
       >
         <div className="container mx-auto px-4 text-center">
