@@ -20,15 +20,15 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#0A2463",
+          DEFAULT: "#004D4D", // Deep teal from logo
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#247BA0",
+          DEFAULT: "#00B37A", // Bright green from logo
           foreground: "#FFFFFF",
         },
         accent: {
-          DEFAULT: "#FF9F1C",
+          DEFAULT: "#00D68F", // Lighter green accent
           foreground: "#000000",
         },
       },
