@@ -40,11 +40,11 @@ const BusinessLoans = () => {
       </section>
 
       {/* Loan Features */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Loan Features</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-primary">Loan Features</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow border-t-4 border-t-primary">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <CreditCard className="w-6 h-6 text-primary" />
@@ -58,10 +58,10 @@ const BusinessLoans = () => {
               </CardContent>
             </Card>
             
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow border-t-4 border-t-secondary">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Clock className="w-6 h-6 text-primary" />
+                  <Clock className="w-6 h-6 text-secondary" />
                   Quick Release
                 </CardTitle>
               </CardHeader>
@@ -72,10 +72,10 @@ const BusinessLoans = () => {
               </CardContent>
             </Card>
             
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow border-t-4 border-t-accent">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <ShieldCheck className="w-6 h-6 text-primary" />
+                  <ShieldCheck className="w-6 h-6 text-accent" />
                   No Collateral
                 </CardTitle>
               </CardHeader>
@@ -90,9 +90,14 @@ const BusinessLoans = () => {
       </section>
 
       {/* Who Can Apply */}
-      <section className="py-20 bg-white">
+      <section 
+        className="py-20 bg-cover bg-center relative"
+        style={{
+          backgroundImage: "linear-gradient(rgba(36, 123, 160, 0.95), rgba(36, 123, 160, 0.9)), url('https://images.unsplash.com/photo-1577962917302-cd874c4e31d2')",
+        }}
+      >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Who Can Apply</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Who Can Apply</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { title: "Sari-sari Store Owners", icon: Store },
@@ -101,9 +106,9 @@ const BusinessLoans = () => {
               { title: "Small Retail Businesses", icon: Building2 },
               { title: "Service Providers", icon: Users },
             ].map((item, index) => (
-              <div key={index} className="flex items-center gap-4 p-6 rounded-lg border border-gray-200 hover:border-primary/20 transition-all">
-                <item.icon className="w-8 h-8 text-primary" />
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+              <div key={index} className="flex items-center gap-4 p-6 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all">
+                <item.icon className="w-8 h-8 text-white" />
+                <h3 className="text-xl font-semibold text-white">{item.title}</h3>
               </div>
             ))}
           </div>
@@ -111,12 +116,12 @@ const BusinessLoans = () => {
       </section>
 
       {/* Requirements */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Simple Requirements</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-primary">Simple Requirements</h2>
           <div className="max-w-3xl mx-auto">
             <div className="space-y-6">
-              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-primary">
                 <CheckCircle2 className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Valid ID Only</h3>
@@ -124,16 +129,16 @@ const BusinessLoans = () => {
                 </div>
               </div>
               
-              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-sm">
-                <Store className="w-6 h-6 text-primary mt-1" />
+              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-secondary">
+                <Store className="w-6 h-6 text-secondary mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Proof of Business</h3>
                   <p className="text-gray-600">Simple pictures of your business location</p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-sm">
-                <Users className="w-6 h-6 text-primary mt-1" />
+              <div className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-accent">
+                <Users className="w-6 h-6 text-accent mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Group Formation</h3>
                   <p className="text-gray-600">Form a group of 3-5 business owners from your area</p>
@@ -145,9 +150,14 @@ const BusinessLoans = () => {
       </section>
 
       {/* Process Timeline */}
-      <section className="py-20 bg-white">
+      <section 
+        className="py-20 bg-cover bg-center relative"
+        style={{
+          backgroundImage: "linear-gradient(rgba(255, 159, 28, 0.95), rgba(255, 159, 28, 0.9)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85')",
+        }}
+      >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Simple Process</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Simple Process</h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-5 gap-4">
               {[
@@ -158,12 +168,12 @@ const BusinessLoans = () => {
                 { title: "Cash Release", icon: CreditCard },
               ].map((step, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                    <step.icon className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <step.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-semibold">{step.title}</h3>
+                  <h3 className="font-semibold text-white">{step.title}</h3>
                   {index < 4 && (
-                    <div className="hidden md:block w-full h-0.5 bg-primary/20 absolute mt-8" />
+                    <div className="hidden md:block w-full h-0.5 bg-white/30 absolute mt-8" />
                   )}
                 </div>
               ))}
@@ -172,7 +182,7 @@ const BusinessLoans = () => {
         </div>
       </section>
 
-      {/* Success Stories - Now using the new component */}
+      {/* Success Stories */}
       <SuccessStories />
 
       {/* CTA Section */}
