@@ -1,7 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { TechnologyHero } from "@/components/technology/TechnologyHero";
 import { AIFeatures } from "@/components/technology/AIFeatures";
-import { CaseStudies } from "@/components/technology/CaseStudies";
 import { Integration } from "@/components/technology/Integration";
 import { EnterpriseForm } from "@/components/technology/EnterpriseForm";
 
@@ -11,7 +10,6 @@ const Technology = () => {
       <Navbar />
       <TechnologyHero />
       <AIFeatures />
-      <CaseStudies />
       <Integration />
       <EnterpriseForm />
     </div>
