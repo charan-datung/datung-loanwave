@@ -4,13 +4,13 @@ const successStories = [
   {
     name: "Maria de los Reyes",
     role: "Sari-sari Store Owner",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    image: "https://images.pexels.com/photos/7706493/pexels-photo-7706493.jpeg",
     story: "\"The process was very simple. I only needed my ID and some pictures of my store. Within 3 days, I received ₱20,000 which I used to expand my inventory. My sales have increased by 40% since then!\""
   },
   {
     name: "Jason Castro",
     role: "Carinderia Owner",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "https://images.pexels.com/photos/8963961/pexels-photo-8963961.jpeg",
     story: "\"I was worried about the requirements, but it was so easy. I formed a group with my fellow market vendors, and we all got approved. The loan helped me buy new equipment for my carinderia.\""
   }
 ];
