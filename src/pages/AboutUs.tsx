@@ -1,9 +1,11 @@
 import { Building2, Users, Rocket, LineChart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Navbar } from "@/components/Navbar";
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div 
