@@ -12,7 +12,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/datung-logo.svg" alt="Datung" className="h-8 w-auto" />
+              <img src="datung-logo.svg" alt="Datung" className="h-8 w-auto" />
             </Link>
           </div>
           
