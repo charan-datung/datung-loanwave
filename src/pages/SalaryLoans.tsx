@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { Building2, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/Navbar";
 
 const SalaryLoans = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-secondary/95 to-secondary text-white">
+      <Navbar />
       <div className="container mx-auto px-4 pt-32">
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-12">
           Salary Loan Solutions
