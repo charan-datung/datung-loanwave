@@ -17,6 +17,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import emailjs from '@emailjs/browser';
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
@@ -25,6 +26,7 @@ interface ContactFormProps {
 
 export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,26 +39,39 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     
     try {
-      // Send email using mailto link
-      const subject = `New ${formData.type} inquiry from ${formData.name}`;
-      const body = `
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Company: ${formData.company}
-Type: ${formData.type}
+      // Send email to admin
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID for admin notification
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          type: formData.type,
+          message: formData.message,
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
 
-Message:
-${formData.message}
-      `;
-      
-      window.location.href = `mailto:inquiries@datung.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      // Send confirmation email to user
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID_CONFIRMATION', // Replace with your EmailJS template ID for user confirmation
+        {
+          to_name: formData.name,
+          to_email: formData.email,
+          inquiry_type: formData.type,
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
       
       toast({
-        title: "Email client opened!",
-        description: "Please send the pre-filled email to complete your inquiry.",
+        title: "Message sent successfully!",
+        description: "We'll get back to you as soon as possible.",
         duration: 5000,
       });
       
@@ -71,11 +86,13 @@ ${formData.message}
       });
     } catch (error) {
       toast({
-        title: "Error opening email client",
-        description: "Please try again or contact us directly at inquiries@datung.com",
+        title: "Error sending message",
+        description: "Please try again later or contact us directly.",
         variant: "destructive",
         duration: 5000,
       });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -158,7 +175,9 @@ ${formData.message}
             />
           </div>
           
-          <Button type="submit" className="w-full">Submit</Button>
+          <Button type="submit" className="w-full" disabled={isLoading}>
+            {isLoading ? "Sending..." : "Submit"}
+          </Button>
         </form>
       </DialogContent>
     </Dialog>
