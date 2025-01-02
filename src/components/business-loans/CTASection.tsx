@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 
 export const CTASection = () => {
@@ -13,9 +14,14 @@ export const CTASection = () => {
         <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
           Join thousands of Filipino entrepreneurs who have grown their businesses with our support
         </p>
-        <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
-          Start Your Application
-        </Button>
+        <ContactForm 
+          defaultType="loan"
+          triggerComponent={
+            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
+              Start Your Application
+            </Button>
+          }
+        />
       </div>
     </section>
   );

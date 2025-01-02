@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ContactForm } from "@/components/ContactForm";
 
 export const EmployeeHero = () => {
   return (
@@ -11,13 +12,18 @@ export const EmployeeHero = () => {
           <p className="text-xl mb-8 text-white/90">
             Get the financial support you need with our fast and flexible loan options
           </p>
-          <Button 
-            size="lg" 
-            variant="default"
-            className="bg-accent text-black hover:bg-accent/90"
-          >
-            Apply Now
-          </Button>
+          <ContactForm 
+            defaultType="loan"
+            triggerComponent={
+              <Button 
+                size="lg" 
+                variant="default"
+                className="bg-accent text-black hover:bg-accent/90"
+              >
+                Apply Now
+              </Button>
+            }
+          />
         </div>
       </div>
     </section>

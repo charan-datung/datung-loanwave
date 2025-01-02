@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { ContactForm } from "@/components/ContactForm";
 
 export const HeroSection = () => {
   return (
@@ -22,9 +22,14 @@ export const HeroSection = () => {
         <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
           Get ₱5,000 to ₱50,000 in just 3 days with minimal requirements
         </p>
-        <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
-          Apply Now
-        </Button>
+        <ContactForm 
+          defaultType="loan"
+          triggerComponent={
+            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
+              Apply Now
+            </Button>
+          }
+        />
       </div>
     </section>
   );
