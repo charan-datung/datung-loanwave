@@ -4,7 +4,13 @@ import { Navbar } from "@/components/Navbar";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen relative">
+      <div 
+        className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1521791136064-7986c2920216')", // Professional team collaboration
+        }}
+      />
       <Navbar />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 to-secondary/10">

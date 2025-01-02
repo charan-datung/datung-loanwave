@@ -1,28 +1,26 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/business-loans/HeroSection";
 import { LoanFeatures } from "@/components/business-loans/LoanFeatures";
-import { WhoCanApply } from "@/components/business-loans/WhoCanApply";
-import { Requirements } from "@/components/business-loans/Requirements";
 import { ProcessTimeline } from "@/components/business-loans/ProcessTimeline";
-import { SuccessStories } from "@/components/SuccessStories";
+import { Requirements } from "@/components/business-loans/Requirements";
+import { WhoCanApply } from "@/components/business-loans/WhoCanApply";
 import { CTASection } from "@/components/business-loans/CTASection";
 
 const BusinessLoans = () => {
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="min-h-screen relative">
       <div 
         className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1559136555-9303baea8ebd')", // Local business scene
+          backgroundImage: "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3')", // Small business owner
         }}
       />
       <Navbar />
       <HeroSection />
       <LoanFeatures />
-      <WhoCanApply />
-      <Requirements />
       <ProcessTimeline />
-      <SuccessStories />
+      <Requirements />
+      <WhoCanApply />
       <CTASection />
     </div>
   );

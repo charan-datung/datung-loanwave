@@ -11,7 +11,7 @@ const CompanySalaryLoans = () => {
       <div 
         className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c')", // Corporate office
+          backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c')", // Modern corporate office
         }}
       />
       <Navbar />

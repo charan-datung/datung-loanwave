@@ -9,7 +9,7 @@ const EmployeeSalaryLoans = () => {
       <div 
         className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1521791136064-7986c2920216')", // Professional workers
+          backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6')", // Professional employee at desk
         }}
       />
       <Navbar />

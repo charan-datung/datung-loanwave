@@ -9,7 +9,7 @@ const SalaryLoans = () => {
       <div 
         className="fixed inset-0 opacity-10 bg-cover bg-center -z-10"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c')", // Office workers
+          backgroundImage: "url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40')", // Professional office workers in meeting
         }}
       />
       <div className="bg-gradient-to-b from-secondary/95 to-secondary text-white relative z-10">
