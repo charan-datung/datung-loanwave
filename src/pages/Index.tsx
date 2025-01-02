@@ -12,6 +12,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       
+      {/* Hero Section */}
       {/* Hero Section with Philippine Skyline Background */}
       <section 
         className="pt-32 pb-20 px-4 relative"
@@ -47,6 +48,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Solutions Section */}
       <section className="py-20 bg-white relative">
         <div 
           className="absolute inset-0 opacity-5"
@@ -87,6 +89,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Products Section */}
       {/* Products Section with Modern Gradient */}
       <section className="py-20 relative overflow-hidden">
         <div 
@@ -145,6 +148,38 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-semibold text-center mb-2">Powered By</h2>
+          <p className="text-gray-600 text-center mb-12">Backed by world-class technology partners</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center max-w-4xl mx-auto">
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/6909bac0-95d5-43f2-8284-ed8bfa9b9dee.png" 
+                alt="NVIDIA" 
+                className="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/211b85f9-fb99-43a4-a7cc-06a3e20a9a76.png" 
+                alt="Google Cloud" 
+                className="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/dd96d75d-501e-498b-b362-6a931f88b332.png" 
+                alt="Antler" 
+                className="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
       {/* CTA Section with Manila Skyline Background */}
       <section 
         className="py-20 relative"
