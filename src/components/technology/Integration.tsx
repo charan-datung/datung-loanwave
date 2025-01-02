@@ -1,5 +1,6 @@
 import { Code2, Workflow, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ContactForm } from "@/components/ContactForm";
 
 export const Integration = () => {
   return (
@@ -17,9 +18,14 @@ export const Integration = () => {
             Seamlessly integrate our AI technology into your existing systems
           </p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" variant="default">
-              Schedule Demo
-            </Button>
+            <ContactForm 
+              defaultType="demo"
+              triggerComponent={
+                <Button size="lg" variant="default">
+                  Schedule Demo
+                </Button>
+              }
+            />
           </div>
         </div>
 
@@ -30,7 +36,12 @@ export const Integration = () => {
             <p className="text-gray-600 mb-4">
               RESTful APIs with comprehensive documentation for easy integration with your systems.
             </p>
-            <Button variant="link" className="text-primary">Learn More →</Button>
+            <ContactForm 
+              defaultType="partnership"
+              triggerComponent={
+                <Button variant="link" className="text-primary">Learn More →</Button>
+              }
+            />
           </div>
 
           <div className="p-6 bg-white rounded-xl shadow-lg">
@@ -39,7 +50,12 @@ export const Integration = () => {
             <p className="text-gray-600 mb-4">
               Automated workflows that seamlessly connect with your existing business processes.
             </p>
-            <Button variant="link" className="text-primary">Learn More →</Button>
+            <ContactForm 
+              defaultType="partnership"
+              triggerComponent={
+                <Button variant="link" className="text-primary">Learn More →</Button>
+              }
+            />
           </div>
 
           <div className="p-6 bg-white rounded-xl shadow-lg">
@@ -48,7 +64,12 @@ export const Integration = () => {
             <p className="text-gray-600 mb-4">
               Process data and get results in real-time with our high-performance infrastructure.
             </p>
-            <Button variant="link" className="text-primary">Learn More →</Button>
+            <ContactForm 
+              defaultType="partnership"
+              triggerComponent={
+                <Button variant="link" className="text-primary">Learn More →</Button>
+              }
+            />
           </div>
         </div>
       </div>
