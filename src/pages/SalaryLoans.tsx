@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Building2, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const SalaryLoans = () => {
   return (
@@ -55,6 +56,7 @@ const SalaryLoans = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

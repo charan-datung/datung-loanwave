@@ -5,6 +5,7 @@ import { ProcessTimeline } from "@/components/business-loans/ProcessTimeline";
 import { Requirements } from "@/components/business-loans/Requirements";
 import { WhoCanApply } from "@/components/business-loans/WhoCanApply";
 import { CTASection } from "@/components/business-loans/CTASection";
+import { Footer } from "@/components/Footer";
 
 const BusinessLoans = () => {
   return (
@@ -22,6 +23,7 @@ const BusinessLoans = () => {
       <Requirements />
       <WhoCanApply />
       <CTASection />
+      <Footer />
     </div>
   );
 };
