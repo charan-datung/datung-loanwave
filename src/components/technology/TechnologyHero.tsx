@@ -30,9 +30,6 @@ export const TechnologyHero = () => {
                 </Button>
               }
             />
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
-              Documentation
-            </Button>
           </div>
         </div>
         

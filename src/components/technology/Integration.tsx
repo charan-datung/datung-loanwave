@@ -18,9 +18,6 @@ export const Integration = () => {
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" variant="default">
-              View Documentation
-            </Button>
-            <Button size="lg" variant="outline">
               Schedule Demo
             </Button>
           </div>
