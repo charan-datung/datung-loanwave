@@ -5,6 +5,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
 import { ContactForm } from "@/components/ContactForm";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -168,6 +169,8 @@ const Index = () => {
           />
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
