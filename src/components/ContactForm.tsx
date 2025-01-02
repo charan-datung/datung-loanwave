@@ -19,6 +19,12 @@ import {
 } from "@/components/ui/dialog";
 import emailjs from '@emailjs/browser';
 
+// Replace these values with your actual EmailJS credentials
+const EMAILJS_SERVICE_ID = 'service_xxxxxxx';  // Your EmailJS service ID
+const EMAILJS_ADMIN_TEMPLATE_ID = 'template_xxxxxxx';  // Template ID for admin notification
+const EMAILJS_USER_TEMPLATE_ID = 'template_xxxxxxx';  // Template ID for user confirmation
+const EMAILJS_PUBLIC_KEY = 'public_xxxxxxx';  // Your EmailJS public key
+
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
   triggerComponent?: React.ReactNode;
@@ -44,8 +50,8 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     try {
       // Send email to admin
       await emailjs.send(
-        'service_xxxxxxx', // Replace with your actual EmailJS service ID
-        'template_xxxxxxx', // Replace with your actual EmailJS template ID for admin notification
+        EMAILJS_SERVICE_ID,
+        EMAILJS_ADMIN_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -54,19 +60,19 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
           type: formData.type,
           message: formData.message,
         },
-        'public_xxxxxxx' // Replace with your actual EmailJS public key
+        EMAILJS_PUBLIC_KEY
       );
 
       // Send confirmation email to user
       await emailjs.send(
-        'service_xxxxxxx', // Replace with your actual EmailJS service ID
-        'template_xxxxxxx', // Replace with your actual EmailJS template ID for user confirmation
+        EMAILJS_SERVICE_ID,
+        EMAILJS_USER_TEMPLATE_ID,
         {
           to_name: formData.name,
           to_email: formData.email,
           inquiry_type: formData.type,
         },
-        'public_xxxxxxx' // Replace with your actual EmailJS public key
+        EMAILJS_PUBLIC_KEY
       );
       
       toast({
