@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const EmployerHero = () => {
   return (
-    <section className="relative bg-gradient-to-b from-primary/95 to-primary py-32 text-white">
+    <section className="relative bg-gradient-to-b from-primary/95 to-primary pt-32 pb-32 text-white mt-16">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
