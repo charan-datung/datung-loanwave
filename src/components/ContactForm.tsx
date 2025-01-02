@@ -39,13 +39,24 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     e.preventDefault();
     
     try {
-      // Here we'll send the form data to your email
-      // For now, we'll just log it and show a success message
-      console.log("Form submitted:", formData);
+      // Send email using mailto link
+      const subject = `New ${formData.type} inquiry from ${formData.name}`;
+      const body = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Company: ${formData.company}
+Type: ${formData.type}
+
+Message:
+${formData.message}
+      `;
+      
+      window.location.href = `mailto:inquiries@datung.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       
       toast({
-        title: "Form submitted successfully!",
-        description: "We'll get back to you soon.",
+        title: "Email client opened!",
+        description: "Please send the pre-filled email to complete your inquiry.",
         duration: 5000,
       });
       
@@ -60,8 +71,8 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
       });
     } catch (error) {
       toast({
-        title: "Error submitting form",
-        description: "Please try again later.",
+        title: "Error opening email client",
+        description: "Please try again or contact us directly at inquiries@datung.com",
         variant: "destructive",
         duration: 5000,
       });
