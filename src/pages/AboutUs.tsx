@@ -6,6 +6,12 @@ const AboutUs = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div 
+          className="absolute inset-0 opacity-10 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae')", // Manila skyline
+          }}
+        />
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
@@ -19,7 +25,13 @@ const AboutUs = () => {
       </section>
 
       {/* Origin Story */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white relative">
+        <div 
+          className="absolute inset-0 opacity-5 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1582280577339-c39771df3546')", // Filipino marketplace
+          }}
+        />
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Our Story</h2>
@@ -34,7 +46,13 @@ const AboutUs = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 relative">
+        <div 
+          className="absolute inset-0 opacity-5 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1517048676732-d65bc937f952')", // Business meeting
+          }}
+        />
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold mb-6">Our Mission & Vision</h2>
@@ -66,7 +84,13 @@ const AboutUs = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white relative">
+        <div 
+          className="absolute inset-0 opacity-5 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf')", // Technology and community
+          }}
+        />
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Our Approach</h2>
           <div className="max-w-4xl mx-auto">
@@ -89,7 +113,13 @@ const AboutUs = () => {
       </section>
 
       {/* Future Vision */}
-      <section className="py-16 bg-gradient-to-br from-primary/10 to-secondary/10">
+      <section className="py-16 relative">
+        <div 
+          className="absolute inset-0 opacity-5 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab')", // Modern city development
+          }}
+        />
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Our Future Vision</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">

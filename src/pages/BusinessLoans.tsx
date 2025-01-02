@@ -9,7 +9,13 @@ import { CTASection } from "@/components/business-loans/CTASection";
 
 const BusinessLoans = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      <div 
+        className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1559136555-9303baea8ebd')", // Local business scene
+        }}
+      />
       <Navbar />
       <HeroSection />
       <LoanFeatures />

@@ -6,7 +6,13 @@ import { EnterpriseForm } from "@/components/technology/EnterpriseForm";
 
 const Technology = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      <div 
+        className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0')", // Technology and data visualization
+        }}
+      />
       <Navbar />
       <TechnologyHero />
       <AIFeatures />

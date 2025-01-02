@@ -5,9 +5,14 @@ import { Navbar } from "@/components/Navbar";
 
 const SalaryLoans = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-secondary/95 to-secondary text-white">
-      <Navbar />
-      <div className="container mx-auto px-4 pt-32">
+    <div className="min-h-screen relative">
+      <div 
+        className="fixed inset-0 opacity-10 bg-cover bg-center -z-10"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c')", // Office workers
+        }}
+      />
+      <div className="bg-gradient-to-b from-secondary/95 to-secondary text-white relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-12">
           Salary Loan Solutions
         </h1>
