@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { ServiceCard } from "@/components/ServiceCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
+import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -29,9 +30,14 @@ const Index = () => {
               Innovative financial solutions powered by AI technology for MSMEs and professionals across the Philippines
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
-                Get Started
-              </Button>
+              <ContactForm 
+                defaultType="loan"
+                triggerComponent={
+                  <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
+                    Get Started
+                  </Button>
+                }
+              />
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
                 Learn More
               </Button>
@@ -40,7 +46,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section with Subtle Background */}
       <section className="py-20 bg-white relative">
         <div 
           className="absolute inset-0 opacity-5"
@@ -153,9 +158,14 @@ const Index = () => {
           <p className="text-xl mb-8 text-white/90">
             Join thousands of Filipino businesses leveraging our financial technology solutions.
           </p>
-          <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
-            Get Started Today
-          </Button>
+          <ContactForm 
+            defaultType="loan"
+            triggerComponent={
+              <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
+                Get Started Today
+              </Button>
+            }
+          />
         </div>
       </section>
     </div>

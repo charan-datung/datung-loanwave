@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Brain, Shield, Database } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 
 export const TechnologyHero = () => {
   return (
@@ -21,9 +22,14 @@ export const TechnologyHero = () => {
             Advanced credit assessment and risk management systems powered by artificial intelligence and computer vision technology.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
-              Schedule Demo
-            </Button>
+            <ContactForm 
+              defaultType="demo"
+              triggerComponent={
+                <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
+                  Schedule Demo
+                </Button>
+              }
+            />
             <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
               Documentation
             </Button>

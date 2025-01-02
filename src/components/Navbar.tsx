@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ContactForm } from "@/components/ContactForm";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/public/datung-logo.svg" alt="Datung" className="h-8 w-auto" />
+              <img src="/datung-logo.svg" alt="Datung" className="h-8 w-auto" />
             </Link>
           </div>
           
@@ -24,7 +25,12 @@ export const Navbar = () => {
             <Link to="/salary-loans" className="text-gray-900 hover:text-primary font-semibold">Salary Loans</Link>
             <Link to="/technology" className="text-gray-900 hover:text-primary font-semibold">Technology</Link>
             <Link to="/about" className="text-gray-900 hover:text-primary font-semibold">About</Link>
-            <Button variant="default">Get Started</Button>
+            <ContactForm 
+              defaultType="loan"
+              triggerComponent={
+                <Button variant="default">Get Started</Button>
+              }
+            />
           </div>
 
           <div className="md:hidden">
@@ -44,7 +50,12 @@ export const Navbar = () => {
               <Link to="/salary-loans" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Salary Loans</Link>
               <Link to="/technology" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Technology</Link>
               <Link to="/about" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">About</Link>
-              <Button className="w-full mt-4" variant="default">Get Started</Button>
+              <ContactForm 
+                defaultType="loan"
+                triggerComponent={
+                  <Button className="w-full mt-4" variant="default">Get Started</Button>
+                }
+              />
             </div>
           </div>
         )}
