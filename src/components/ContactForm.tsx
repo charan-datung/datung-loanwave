@@ -25,7 +25,7 @@ const EMAILJS_SERVICE_ID = 'service_r2c7x0q';
 const EMAILJS_ADMIN_TEMPLATE_ID = 'template_gta9a9w';
 const EMAILJS_USER_TEMPLATE_ID = 'template_9pco2f6';
 const EMAILJS_PUBLIC_KEY = '6-O6iLE9u3xidqqaa';
-const ADMIN_EMAIL = 'charan@datung.io'; // Replace this with your actual email address
+const ADMIN_EMAIL = 'charan@datung.io';
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
@@ -50,12 +50,23 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     setIsLoading(true);
     
     try {
+      console.log('Sending admin email with params:', {
+        to_name: 'Admin',
+        to_email: ADMIN_EMAIL,
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        type: formData.type,
+        message: formData.message,
+      });
+
       // Send email to admin
-      await emailjs.send(
+      const adminResponse = await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_ADMIN_TEMPLATE_ID,
         {
-          to_name: 'Admin', // Add recipient name
+          to_name: 'Admin',
           to_email: ADMIN_EMAIL,
           from_name: formData.name,
           from_email: formData.email,
@@ -67,19 +78,31 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         EMAILJS_PUBLIC_KEY
       );
 
+      console.log('Admin email sent successfully:', adminResponse);
+
+      console.log('Sending user confirmation email with params:', {
+        to_name: formData.name,
+        to_email: formData.email,
+        from_name: 'Datung Finance',
+        from_email: ADMIN_EMAIL,
+        inquiry_type: formData.type,
+      });
+
       // Send confirmation email to user
-      await emailjs.send(
+      const userResponse = await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_USER_TEMPLATE_ID,
         {
           to_name: formData.name,
           to_email: formData.email,
-          from_name: 'Your Company Name', // Add sender name
-          from_email: ADMIN_EMAIL, // Add sender email
+          from_name: 'Datung Finance',
+          from_email: ADMIN_EMAIL,
           inquiry_type: formData.type,
         },
         EMAILJS_PUBLIC_KEY
       );
+
+      console.log('User confirmation email sent successfully:', userResponse);
       
       toast({
         title: "Message sent successfully!",
