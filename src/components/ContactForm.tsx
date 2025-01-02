@@ -25,7 +25,7 @@ const EMAILJS_SERVICE_ID = 'service_r2c7x0q';
 const EMAILJS_ADMIN_TEMPLATE_ID = 'template_gta9a9w';
 const EMAILJS_USER_TEMPLATE_ID = 'template_9pco2f6';
 const EMAILJS_PUBLIC_KEY = '6-O6iLE9u3xidqqaa';
-const ADMIN_EMAIL = 'admin@example.com'; // Replace with your admin email
+const ADMIN_EMAIL = 'your.actual.email@yourdomain.com'; // Replace this with your actual email address
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
