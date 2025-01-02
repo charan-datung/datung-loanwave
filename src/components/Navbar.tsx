@@ -24,7 +24,6 @@ export const Navbar = () => {
             <Link to="/salary-loans" className="text-gray-900 hover:text-primary font-semibold">Salary Loans</Link>
             <Link to="/technology" className="text-gray-900 hover:text-primary font-semibold">Technology</Link>
             <Link to="/about" className="text-gray-900 hover:text-primary font-semibold">About</Link>
-            <Link to="/developers" className="text-gray-900 hover:text-primary font-semibold">Developers</Link>
             <Button variant="default">Get Started</Button>
           </div>
 
@@ -45,7 +44,6 @@ export const Navbar = () => {
               <Link to="/salary-loans" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Salary Loans</Link>
               <Link to="/technology" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Technology</Link>
               <Link to="/about" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">About</Link>
-              <Link to="/developers" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Developers</Link>
               <Button className="w-full mt-4" variant="default">Get Started</Button>
             </div>
           </div>
