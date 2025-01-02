@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -17,6 +17,10 @@ export const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
+            <Link to="/" className="text-gray-900 hover:text-primary font-semibold flex items-center gap-2">
+              <Home className="w-4 h-4" />
+              Home
+            </Link>
             <Link to="/business-loans" className="text-gray-900 hover:text-primary font-semibold">Business Loans</Link>
             <Link to="/salary-loans" className="text-gray-900 hover:text-primary font-semibold">Salary Loans</Link>
             <Link to="/technology" className="text-gray-900 hover:text-primary font-semibold">Technology</Link>
@@ -35,6 +39,10 @@ export const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+              <Link to="/" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold flex items-center gap-2">
+                <Home className="w-4 h-4" />
+                Home
+              </Link>
               <Link to="/business-loans" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Business Loans</Link>
               <Link to="/salary-loans" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Salary Loans</Link>
               <Link to="/technology" className="block px-3 py-2 text-gray-900 hover:text-primary font-semibold">Technology</Link>
