@@ -15,15 +15,17 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogDescription,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import emailjs from '@emailjs/browser';
 
 // Replace these values with your actual EmailJS credentials
-const EMAILJS_SERVICE_ID = 'service_r2c7x0q';  // Your EmailJS service ID
-const EMAILJS_ADMIN_TEMPLATE_ID = 'template_gta9a9w';  // Template ID for admin notification
-const EMAILJS_USER_TEMPLATE_ID = 'template_9pco2f6';  // Template ID for user confirmation
-const EMAILJS_PUBLIC_KEY = '6-O6iLE9u3xidqqaa';  // Your EmailJS public key
+const EMAILJS_SERVICE_ID = 'service_r2c7x0q';
+const EMAILJS_ADMIN_TEMPLATE_ID = 'template_gta9a9w';
+const EMAILJS_USER_TEMPLATE_ID = 'template_9pco2f6';
+const EMAILJS_PUBLIC_KEY = '6-O6iLE9u3xidqqaa';
+const ADMIN_EMAIL = 'admin@example.com'; // Replace with your admin email
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
@@ -55,6 +57,7 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         {
           from_name: formData.name,
           from_email: formData.email,
+          to_email: ADMIN_EMAIL, // Add the admin's email address
           phone: formData.phone,
           company: formData.company,
           type: formData.type,
@@ -91,6 +94,7 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         message: "",
       });
     } catch (error) {
+      console.error('EmailJS Error:', error);
       toast({
         title: "Error sending message",
         description: "Please try again later or contact us directly.",
@@ -110,6 +114,9 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle>Contact Us</DialogTitle>
+          <DialogDescription>
+            Fill out the form below and we'll get back to you as soon as possible.
+          </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div>
