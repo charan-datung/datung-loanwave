@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import {
   Dialog,
   DialogContent,
@@ -44,9 +44,9 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
       console.log('User confirmation email sent successfully:', userResponse);
       
       toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
-        duration: 5000,
+        title: "Thank you for reaching out!",
+        description: "We appreciate your interest. Our team will review your message and get back to you within 24-48 hours. In the meantime, feel free to explore our services.",
+        duration: 6000,
       });
       
       setIsOpen(false);
