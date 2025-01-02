@@ -20,10 +20,10 @@ import {
 import emailjs from '@emailjs/browser';
 
 // Replace these values with your actual EmailJS credentials
-const EMAILJS_SERVICE_ID = 'service_xxxxxxx';  // Your EmailJS service ID
-const EMAILJS_ADMIN_TEMPLATE_ID = 'template_xxxxxxx';  // Template ID for admin notification
-const EMAILJS_USER_TEMPLATE_ID = 'template_xxxxxxx';  // Template ID for user confirmation
-const EMAILJS_PUBLIC_KEY = 'public_xxxxxxx';  // Your EmailJS public key
+const EMAILJS_SERVICE_ID = 'service_r2c7x0q';  // Your EmailJS service ID
+const EMAILJS_ADMIN_TEMPLATE_ID = 'template_gta9a9w';  // Template ID for admin notification
+const EMAILJS_USER_TEMPLATE_ID = 'template_9pco2f6';  // Template ID for user confirmation
+const EMAILJS_PUBLIC_KEY = '6-O6iLE9u3xidqqaa';  // Your EmailJS public key
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
