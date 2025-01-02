@@ -1,14 +1,5 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
 import {
   Dialog,
@@ -18,14 +9,8 @@ import {
   DialogDescription,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import emailjs from '@emailjs/browser';
-
-// Replace these values with your actual EmailJS credentials
-const EMAILJS_SERVICE_ID = 'service_r2c7x0q';
-const EMAILJS_ADMIN_TEMPLATE_ID = 'template_gta9a9w';
-const EMAILJS_USER_TEMPLATE_ID = 'template_9pco2f6';
-const EMAILJS_PUBLIC_KEY = '6-O6iLE9u3xidqqaa';
-const ADMIN_EMAIL = 'charan@datung.io';
+import { ContactFormFields } from "./contact/ContactFormFields";
+import { sendAdminEmail, sendUserEmail } from "@/utils/emailService";
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
@@ -50,58 +35,12 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     setIsLoading(true);
     
     try {
-      console.log('Sending admin email with params:', {
-        to_name: 'Admin',
-        to_email: ADMIN_EMAIL,
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: formData.phone,
-        company: formData.company,
-        type: formData.type,
-        message: formData.message,
-      });
-
       // Send email to admin
-      const adminResponse = await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_ADMIN_TEMPLATE_ID,
-        {
-          to_name: 'Admin',
-          to_email: ADMIN_EMAIL,
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          type: formData.type,
-          message: formData.message,
-        },
-        EMAILJS_PUBLIC_KEY
-      );
-
+      const adminResponse = await sendAdminEmail(formData);
       console.log('Admin email sent successfully:', adminResponse);
 
-      console.log('Sending user confirmation email with params:', {
-        to_name: formData.name,
-        to_email: formData.email,
-        from_name: 'Datung Finance',
-        from_email: ADMIN_EMAIL,
-        inquiry_type: formData.type,
-      });
-
       // Send confirmation email to user
-      const userResponse = await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_USER_TEMPLATE_ID,
-        {
-          to_name: formData.name,
-          to_email: formData.email,
-          from_name: 'Datung Finance',
-          from_email: ADMIN_EMAIL,
-          inquiry_type: formData.type,
-        },
-        EMAILJS_PUBLIC_KEY
-      );
-
+      const userResponse = await sendUserEmail(formData);
       console.log('User confirmation email sent successfully:', userResponse);
       
       toast({
@@ -145,75 +84,11 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-          <div>
-            <label className="block text-sm font-medium mb-1">Name</label>
-            <Input
-              required
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="Your name"
-            />
-          </div>
-          
-          <div>
-            <label className="block text-sm font-medium mb-1">Email</label>
-            <Input
-              required
-              type="email"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="your@email.com"
-            />
-          </div>
-          
-          <div>
-            <label className="block text-sm font-medium mb-1">Phone</label>
-            <Input
-              value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="Your phone number"
-            />
-          </div>
-          
-          <div>
-            <label className="block text-sm font-medium mb-1">Company (Optional)</label>
-            <Input
-              value={formData.company}
-              onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-              placeholder="Your company name"
-            />
-          </div>
-          
-          <div>
-            <label className="block text-sm font-medium mb-1">Inquiry Type</label>
-            <Select
-              value={formData.type}
-              onValueChange={(value: "loan" | "partnership" | "demo") => 
-                setFormData({ ...formData, type: value })
-              }
-            >
-              <SelectTrigger className="bg-white">
-                <SelectValue placeholder="Select inquiry type" />
-              </SelectTrigger>
-              <SelectContent className="bg-white">
-                <SelectItem value="loan">Apply for a Loan</SelectItem>
-                <SelectItem value="partnership">Partnership Opportunity</SelectItem>
-                <SelectItem value="demo">Book a Demo</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          
-          <div>
-            <label className="block text-sm font-medium mb-1">Message</label>
-            <Textarea
-              required
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              placeholder="Tell us more about your inquiry"
-              className="min-h-[100px]"
-            />
-          </div>
-          
+          <ContactFormFields 
+            formData={formData}
+            setFormData={setFormData}
+            defaultType={defaultType}
+          />
           <Button type="submit" className="w-full" disabled={isLoading}>
             {isLoading ? "Sending..." : "Submit"}
           </Button>
