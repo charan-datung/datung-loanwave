@@ -125,10 +125,10 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
                 setFormData({ ...formData, type: value })
               }
             >
-              <SelectTrigger>
+              <SelectTrigger className="bg-white">
                 <SelectValue placeholder="Select inquiry type" />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent className="bg-white">
                 <SelectItem value="loan">Apply for a Loan</SelectItem>
                 <SelectItem value="partnership">Partnership Opportunity</SelectItem>
                 <SelectItem value="demo">Book a Demo</SelectItem>
