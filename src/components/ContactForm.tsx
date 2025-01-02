@@ -44,8 +44,8 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     try {
       // Send email to admin
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID for admin notification
+        'service_xxxxxxx', // Replace with your actual EmailJS service ID
+        'template_xxxxxxx', // Replace with your actual EmailJS template ID for admin notification
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -54,19 +54,19 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
           type: formData.type,
           message: formData.message,
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'public_xxxxxxx' // Replace with your actual EmailJS public key
       );
 
       // Send confirmation email to user
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID_CONFIRMATION', // Replace with your EmailJS template ID for user confirmation
+        'service_xxxxxxx', // Replace with your actual EmailJS service ID
+        'template_xxxxxxx', // Replace with your actual EmailJS template ID for user confirmation
         {
           to_name: formData.name,
           to_email: formData.email,
           inquiry_type: formData.type,
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'public_xxxxxxx' // Replace with your actual EmailJS public key
       );
       
       toast({
