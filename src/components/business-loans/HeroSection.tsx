@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/ContactForm";
+import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
