@@ -10,13 +10,13 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-white shadow-lg z-[100]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <img 
                 src="/lovable-uploads/95638834-302e-47fc-b697-9e1da393e9d9.png" 
                 alt="Datung" 
-                className="h-12 w-auto" 
+                className="h-16 w-auto" 
               />
             </Link>
           </div>
