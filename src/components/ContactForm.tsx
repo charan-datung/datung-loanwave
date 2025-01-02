@@ -55,9 +55,10 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         EMAILJS_SERVICE_ID,
         EMAILJS_ADMIN_TEMPLATE_ID,
         {
+          to_name: 'Admin', // Add recipient name
+          to_email: ADMIN_EMAIL,
           from_name: formData.name,
           from_email: formData.email,
-          to_email: ADMIN_EMAIL, // Add the admin's email address
           phone: formData.phone,
           company: formData.company,
           type: formData.type,
@@ -73,6 +74,8 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         {
           to_name: formData.name,
           to_email: formData.email,
+          from_name: 'Your Company Name', // Add sender name
+          from_email: ADMIN_EMAIL, // Add sender email
           inquiry_type: formData.type,
         },
         EMAILJS_PUBLIC_KEY
