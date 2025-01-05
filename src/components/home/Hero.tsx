@@ -6,7 +6,7 @@ export const Hero = () => {
     <section 
       className="pt-32 pb-20 px-4 relative"
       style={{
-        backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('https://images.unsplash.com/photo-1493397212122-2b85dda8106b')",
+        backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('https://images.unsplash.com/photo-1573697610008-4c72b4e9508f')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed"
