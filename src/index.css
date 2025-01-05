@@ -15,5 +15,5 @@
 }
 
 .service-card {
-  @apply p-6 rounded-xl border border-gray-200 hover:border-primary/20 transition-all duration-300 hover:shadow-lg;
+  @apply p-4 md:p-6 rounded-xl border border-gray-200 transition-all duration-300;
 }
