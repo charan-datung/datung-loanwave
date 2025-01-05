@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { ContactFormFields } from "./contact/ContactFormFields";
 import { sendAdminEmail, sendUserEmail } from "@/utils/emailService";
+import { Loader2 } from "lucide-react";
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
@@ -35,12 +36,15 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     setIsLoading(true);
     
     try {
-      await sendAdminEmail(formData);
-      await sendUserEmail(formData);
+      // Send emails in parallel for better performance
+      await Promise.all([
+        sendAdminEmail(formData),
+        sendUserEmail(formData)
+      ]);
       
       toast({
-        title: "Thank you for reaching out!",
-        description: "We'll get back to you within 24-48 hours.",
+        title: "Success!",
+        description: "Thank you for reaching out. We'll get back to you within 24-48 hours.",
         duration: 6000,
       });
       
@@ -54,10 +58,10 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         message: "",
       });
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('Email Service Error:', error);
       toast({
-        title: "Error sending message",
-        description: "Please try again later or contact us directly.",
+        title: "Something went wrong",
+        description: "Please try again later or contact us directly at support@datung.com",
         variant: "destructive",
         duration: 5000,
       });
@@ -90,13 +94,21 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
             formData={formData}
             setFormData={setFormData}
             defaultType={defaultType}
+            disabled={isLoading}
           />
           <Button 
             type="submit" 
             className="w-full bg-white hover:bg-white/90 text-primary font-medium py-2.5"
             disabled={isLoading}
           >
-            {isLoading ? "Sending..." : "Submit"}
+            {isLoading ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Sending...
+              </>
+            ) : (
+              "Submit"
+            )}
           </Button>
         </form>
       </DialogContent>
