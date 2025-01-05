@@ -1,16 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
+import { PageWrapper } from "@/components/PageWrapper";
 
 export const Hero = () => {
   return (
-    <section 
-      className="pt-32 pb-20 px-4 relative"
-      style={{
-        backgroundImage: "linear-gradient(rgba(0, 77, 77, 0.65), rgba(0, 179, 122, 0.7)), url('/lovable-uploads/5e26ea34-8dbc-4edb-a080-174866d2a27d.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}
+    <PageWrapper
+      backgroundImage="/lovable-uploads/5e26ea34-8dbc-4edb-a080-174866d2a27d.png"
+      className="pt-32 pb-20 px-4"
     >
       <div className="container mx-auto text-center relative z-10">
         <div className="max-w-4xl mx-auto">
@@ -35,6 +31,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </PageWrapper>
   );
 };
