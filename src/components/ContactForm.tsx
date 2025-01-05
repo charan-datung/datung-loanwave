@@ -71,7 +71,7 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
       <DialogTrigger asChild>
         {triggerComponent || <Button variant="default">Contact Us</Button>}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[500px] p-6 bg-primary">
+      <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto bg-primary">
         <DialogHeader className="space-y-6">
           <img 
             src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
