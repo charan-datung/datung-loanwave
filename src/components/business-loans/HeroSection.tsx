@@ -6,7 +6,7 @@ export const HeroSection = () => {
     <section 
       className="pt-32 pb-20 px-4 relative bg-cover bg-center"
       style={{
-        backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')",
+        backgroundImage: `linear-gradient(to bottom right, rgba(0, 77, 77, 0.95), rgba(0, 179, 122, 0.9)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')`,
       }}
     >
       <div className="container mx-auto text-center relative z-10">
@@ -26,7 +26,7 @@ export const HeroSection = () => {
         <ContactForm 
           defaultType="loan"
           triggerComponent={
-            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
+            <Button size="lg" variant="default" className="bg-accent text-primary hover:bg-accent/90">
               Apply Now
             </Button>
           }

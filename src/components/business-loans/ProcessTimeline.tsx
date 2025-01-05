@@ -5,7 +5,7 @@ export const ProcessTimeline = () => {
     <section 
       className="py-20 bg-cover bg-center relative"
       style={{
-        backgroundImage: "linear-gradient(rgba(255, 159, 28, 0.95), rgba(255, 159, 28, 0.9)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85')",
+        backgroundImage: `linear-gradient(to bottom right, rgba(0, 179, 122, 0.95), rgba(0, 214, 143, 0.9)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85')`,
       }}
     >
       <div className="container mx-auto px-4">
@@ -21,7 +21,7 @@ export const ProcessTimeline = () => {
             ].map((step, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                  <step.icon className="w-8 h-8 text-white" />
+                  <step.icon className="w-8 h-8 text-accent" />
                 </div>
                 <h3 className="font-semibold text-white">{step.title}</h3>
                 {index < 4 && (

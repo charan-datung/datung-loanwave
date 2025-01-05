@@ -6,7 +6,7 @@ export const CTASection = () => {
     <section 
       className="py-20 relative bg-cover bg-center"
       style={{
-        backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.9), rgba(10, 36, 99, 0.85)), url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7')",
+        backgroundImage: `linear-gradient(to bottom right, rgba(0, 77, 77, 0.95), rgba(0, 179, 122, 0.9)), url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7')`,
       }}
     >
       <div className="container mx-auto px-4 text-center">
@@ -17,7 +17,7 @@ export const CTASection = () => {
         <ContactForm 
           defaultType="loan"
           triggerComponent={
-            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
+            <Button size="lg" variant="default" className="bg-accent text-primary hover:bg-accent/90">
               Start Your Application
             </Button>
           }
