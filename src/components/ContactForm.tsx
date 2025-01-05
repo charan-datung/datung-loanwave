@@ -72,18 +72,20 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         {triggerComponent || <Button variant="default">Contact Us</Button>}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px] p-6 bg-primary">
-        <DialogHeader className="space-y-3">
+        <DialogHeader className="space-y-6">
           <img 
             src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
             alt="Datung Logo" 
-            className="h-16 mx-auto mb-4"
+            className="h-16 mx-auto"
           />
-          <DialogTitle className="text-2xl font-semibold text-white">Get in Touch</DialogTitle>
-          <DialogDescription className="text-white">
-            We're here to help! Fill out the form below and we'll get back to you promptly.
-          </DialogDescription>
+          <div className="space-y-4 mt-4">
+            <DialogTitle className="text-2xl font-semibold text-white">Get in Touch</DialogTitle>
+            <DialogDescription className="text-white/90">
+              We're here to help! Fill out the form below and we'll get back to you promptly.
+            </DialogDescription>
+          </div>
         </DialogHeader>
-        <form onSubmit={handleSubmit} className="space-y-6 mt-6">
+        <form onSubmit={handleSubmit} className="space-y-6 mt-8">
           <ContactFormFields 
             formData={formData}
             setFormData={setFormData}
