@@ -35,17 +35,12 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     setIsLoading(true);
     
     try {
-      // Send email to admin
-      const adminResponse = await sendAdminEmail(formData);
-      console.log('Admin email sent successfully:', adminResponse);
-
-      // Send confirmation email to user
-      const userResponse = await sendUserEmail(formData);
-      console.log('User confirmation email sent successfully:', userResponse);
+      await sendAdminEmail(formData);
+      await sendUserEmail(formData);
       
       toast({
         title: "Thank you for reaching out!",
-        description: "We appreciate your interest. Our team will review your message and get back to you within 24-48 hours. In the meantime, feel free to explore our services.",
+        description: "We'll get back to you within 24-48 hours.",
         duration: 6000,
       });
       
@@ -76,20 +71,24 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
       <DialogTrigger asChild>
         {triggerComponent || <Button variant="default">Contact Us</Button>}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[500px]">
-        <DialogHeader>
-          <DialogTitle>Contact Us</DialogTitle>
-          <DialogDescription>
-            Fill out the form below and we'll get back to you as soon as possible.
+      <DialogContent className="sm:max-w-[500px] p-6">
+        <DialogHeader className="space-y-3">
+          <DialogTitle className="text-2xl font-semibold text-primary">Get in Touch</DialogTitle>
+          <DialogDescription className="text-gray-600">
+            We're here to help! Fill out the form below and we'll get back to you promptly.
           </DialogDescription>
         </DialogHeader>
-        <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+        <form onSubmit={handleSubmit} className="space-y-6 mt-6">
           <ContactFormFields 
             formData={formData}
             setFormData={setFormData}
             defaultType={defaultType}
           />
-          <Button type="submit" className="w-full" disabled={isLoading}>
+          <Button 
+            type="submit" 
+            className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-2.5"
+            disabled={isLoading}
+          >
             {isLoading ? "Sending..." : "Submit"}
           </Button>
         </form>
