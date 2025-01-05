@@ -1,17 +1,17 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { ContactFormFields } from "./contact/ContactFormFields";
+import { Button } from "@/components/ui/button";
 import { sendAdminEmail, sendUserEmail } from "@/utils/emailService";
-import { Loader2 } from "lucide-react";
+import { ContactFormHeader } from "./contact/ContactFormHeader";
+import { ContactFormPersonalFields } from "./contact/ContactFormPersonalFields";
+import { ContactFormCompanyFields } from "./contact/ContactFormCompanyFields";
+import { ContactFormInquiryFields } from "./contact/ContactFormInquiryFields";
+import { ContactFormSubmit } from "./contact/ContactFormSubmit";
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo";
@@ -36,7 +36,6 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     setIsLoading(true);
     
     try {
-      // Send emails in parallel for better performance
       await Promise.all([
         sendAdminEmail(formData),
         sendUserEmail(formData)
@@ -76,40 +75,24 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         {triggerComponent || <Button variant="default">Contact Us</Button>}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto bg-primary">
-        <DialogHeader className="space-y-6">
-          <img 
-            src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
-            alt="Datung Logo" 
-            className="h-16 mx-auto"
-          />
-          <div className="space-y-4 mt-4">
-            <DialogTitle className="text-2xl font-semibold text-white">Get in Touch</DialogTitle>
-            <DialogDescription className="text-white/90">
-              We're here to help! Fill out the form below and we'll get back to you promptly.
-            </DialogDescription>
-          </div>
-        </DialogHeader>
+        <ContactFormHeader />
         <form onSubmit={handleSubmit} className="space-y-6 mt-8">
-          <ContactFormFields 
+          <ContactFormPersonalFields 
             formData={formData}
             setFormData={setFormData}
-            defaultType={defaultType}
             disabled={isLoading}
           />
-          <Button 
-            type="submit" 
-            className="w-full bg-white hover:bg-white/90 text-primary font-medium py-2.5"
+          <ContactFormCompanyFields 
+            formData={formData}
+            setFormData={setFormData}
             disabled={isLoading}
-          >
-            {isLoading ? (
-              <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Sending...
-              </>
-            ) : (
-              "Submit"
-            )}
-          </Button>
+          />
+          <ContactFormInquiryFields 
+            formData={formData}
+            setFormData={setFormData}
+            disabled={isLoading}
+          />
+          <ContactFormSubmit isLoading={isLoading} />
         </form>
       </DialogContent>
     </Dialog>
