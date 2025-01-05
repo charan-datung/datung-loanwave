@@ -6,6 +6,7 @@ export const Hero = () => {
   return (
     <PageWrapper
       backgroundImage="/lovable-uploads/5e26ea34-8dbc-4edb-a080-174866d2a27d.png"
+      gradientColors="rgba(0, 77, 77, 0.85), rgba(0, 179, 122, 0.9)"
       className="pt-32 pb-20 px-4"
     >
       <div className="container mx-auto text-center relative z-10">
@@ -20,12 +21,16 @@ export const Hero = () => {
             <ContactForm 
               defaultType="loan"
               triggerComponent={
-                <Button size="lg" variant="default" className="bg-white text-primary hover:bg-white/90">
+                <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
                   Get Started
                 </Button>
               }
             />
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-white border-white hover:bg-white/10"
+            >
               Learn More
             </Button>
           </div>
