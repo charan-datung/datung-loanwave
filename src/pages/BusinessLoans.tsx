@@ -11,9 +11,9 @@ const BusinessLoans = () => {
   return (
     <div className="min-h-screen relative">
       <div 
-        className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
+        className="fixed inset-0 opacity-10 bg-cover bg-center -z-10"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3')", // Small business owner
+          backgroundImage: "url('/lovable-uploads/b061ac51-71b8-4cc3-8b04-a89dfdb95df5.png')", // Sari-sari store image
         }}
       />
       <Navbar />
