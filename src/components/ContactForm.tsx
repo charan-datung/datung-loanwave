@@ -71,10 +71,15 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
       <DialogTrigger asChild>
         {triggerComponent || <Button variant="default">Contact Us</Button>}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[500px] p-6">
+      <DialogContent className="sm:max-w-[500px] p-6 bg-primary">
         <DialogHeader className="space-y-3">
-          <DialogTitle className="text-2xl font-semibold text-primary">Get in Touch</DialogTitle>
-          <DialogDescription className="text-gray-600">
+          <img 
+            src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
+            alt="Datung Logo" 
+            className="h-16 mx-auto mb-4"
+          />
+          <DialogTitle className="text-2xl font-semibold text-white">Get in Touch</DialogTitle>
+          <DialogDescription className="text-white">
             We're here to help! Fill out the form below and we'll get back to you promptly.
           </DialogDescription>
         </DialogHeader>
@@ -86,7 +91,7 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
           />
           <Button 
             type="submit" 
-            className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-2.5"
+            className="w-full bg-white hover:bg-white/90 text-primary font-medium py-2.5"
             disabled={isLoading}
           >
             {isLoading ? "Sending..." : "Submit"}
