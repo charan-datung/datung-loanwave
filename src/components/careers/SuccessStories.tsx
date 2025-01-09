@@ -2,10 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const stories = [
   {
-    name: "Anna Reyes",
-    role: "Senior Developer",
+    name: "Carlos Mendoza",
+    role: "Ambassador",
     image: "https://images.pexels.com/photos/7706493/pexels-photo-7706493.jpeg",
-    story: "\"Starting as a junior developer, I've grown tremendously in my career at Datung. The supportive environment and challenging projects have helped me become a technical leader.\"",
+    story: "\"As a Datung Ambassador, I've been able to earn while helping small businesses in my community. In just 6 months, I've helped over 30 entrepreneurs access the funding they need to grow their businesses.\"",
   },
   {
     name: "Miguel Santos",
