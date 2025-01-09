@@ -12,7 +12,7 @@ interface EmailData {
   email: string;
   phone: string;
   company: string;
-  type: "loan" | "partnership" | "demo";
+  type: "loan" | "partnership" | "demo" | "ambassador";
   message: string;
 }
 

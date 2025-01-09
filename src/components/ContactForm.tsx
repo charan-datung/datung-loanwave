@@ -14,7 +14,7 @@ import { ContactFormInquiryFields } from "./contact/ContactFormInquiryFields";
 import { ContactFormSubmit } from "./contact/ContactFormSubmit";
 
 interface ContactFormProps {
-  defaultType?: "loan" | "partnership" | "demo";
+  defaultType?: "loan" | "partnership" | "demo" | "ambassador";
   triggerComponent?: React.ReactNode;
 }
 
