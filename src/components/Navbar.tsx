@@ -40,9 +40,6 @@ export const Navbar = () => {
             <Link to="/careers" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Careers
             </Link>
-            <Link to="/about" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
-              About
-            </Link>
             <ContactForm 
               defaultType="loan"
               triggerComponent={
@@ -111,13 +108,6 @@ export const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Careers
-              </Link>
-              <Link 
-                to="/about" 
-                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                About
               </Link>
               <div className="px-3 py-2">
                 <ContactForm 
