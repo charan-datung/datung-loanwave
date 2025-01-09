@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     quote: "Through Datung's financial solutions, I was able to expand my small business and provide better opportunities for my family.",
-    author: "Maria Santos",
+    author: "Eden Dajac",
     role: "Small Business Owner",
     image: "https://images.pexels.com/photos/7706493/pexels-photo-7706493.jpeg",
   },
   {
     quote: "The process was simple and transparent. Now I can focus on growing my business without worrying about financial constraints.",
-    author: "Juan dela Cruz",
+    author: "Jocelyn Bawit",
     role: "Restaurant Owner",
     image: "https://images.pexels.com/photos/8963961/pexels-photo-8963961.jpeg",
   },
