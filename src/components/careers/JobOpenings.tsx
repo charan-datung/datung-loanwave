@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Briefcase } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 
 const openings = [
   {
@@ -8,22 +9,36 @@ const openings = [
     department: "Technology",
     location: "Manila",
     type: "Full-time",
+    applicationUrl: "https://careers.datung.com/senior-software-engineer",
   },
   {
     title: "Business Development Manager",
     department: "Sales",
     location: "Cebu",
     type: "Full-time",
+    applicationUrl: "https://careers.datung.com/business-development-manager",
   },
   {
     title: "Customer Success Specialist",
     department: "Operations",
     location: "Remote",
     type: "Full-time",
+    applicationUrl: "https://careers.datung.com/customer-success-specialist",
   },
 ];
 
 export const JobOpenings = () => {
+  const { toast } = useToast();
+
+  const handleApply = (job: typeof openings[0]) => {
+    // For now, we'll just open in a new tab. In a real app, this could be a form or API call
+    window.open(job.applicationUrl, '_blank');
+    toast({
+      title: "Application Started",
+      description: `You're applying for ${job.title}. Good luck!`,
+    });
+  };
+
   return (
     <section id="openings" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -48,7 +63,12 @@ export const JobOpenings = () => {
                       {job.department} · {job.location} · {job.type}
                     </div>
                   </div>
-                  <Button className="md:self-center">Apply Now</Button>
+                  <Button 
+                    onClick={() => handleApply(job)}
+                    className="md:self-center"
+                  >
+                    Apply Now
+                  </Button>
                 </div>
               </CardContent>
             </Card>
