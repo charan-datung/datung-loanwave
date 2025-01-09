@@ -9,7 +9,7 @@ import {
 
 interface ContactFormInquiryFieldsProps {
   formData: {
-    type: "loan" | "partnership" | "demo";
+    type: "loan" | "partnership" | "demo" | "ambassador";
     message: string;
   };
   setFormData: (data: any) => void;
@@ -28,7 +28,7 @@ export const ContactFormInquiryFields = ({
         <Select
           disabled={disabled}
           value={formData.type}
-          onValueChange={(value: "loan" | "partnership" | "demo") => 
+          onValueChange={(value: "loan" | "partnership" | "demo" | "ambassador") => 
             setFormData({ ...formData, type: value })
           }
         >
@@ -39,6 +39,7 @@ export const ContactFormInquiryFields = ({
             <SelectItem value="loan">Apply for a Loan</SelectItem>
             <SelectItem value="partnership">Partnership Opportunity</SelectItem>
             <SelectItem value="demo">Book a Demo</SelectItem>
+            <SelectItem value="ambassador">Datung Ambassador</SelectItem>
           </SelectContent>
         </Select>
       </div>
