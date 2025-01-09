@@ -34,6 +34,12 @@ export const Navbar = () => {
             <Link to="/technology" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Technology
             </Link>
+            <Link to="/mission" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
+              Mission
+            </Link>
+            <Link to="/careers" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
+              Careers
+            </Link>
             <Link to="/about" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               About
             </Link>
@@ -91,6 +97,20 @@ export const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Technology
+              </Link>
+              <Link 
+                to="/mission" 
+                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Mission
+              </Link>
+              <Link 
+                to="/careers" 
+                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Careers
               </Link>
               <Link 
                 to="/about" 
