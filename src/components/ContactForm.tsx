@@ -26,6 +26,7 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
     email: "",
     phone: "",
     company: "",
+    companyContactDetails: "",
     type: defaultType || "loan",
     message: "",
   });
@@ -33,6 +34,18 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate required fields
+    if (!formData.phone || !formData.company || !formData.companyContactDetails) {
+      toast({
+        title: "Missing Required Fields",
+        description: "Please fill in all required fields including phone, company name, and company contact details.",
+        variant: "destructive",
+        duration: 5000,
+      });
+      return;
+    }
+    
     setIsLoading(true);
     
     try {
@@ -53,6 +66,7 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         email: "",
         phone: "",
         company: "",
+        companyContactDetails: "",
         type: defaultType || "loan",
         message: "",
       });
