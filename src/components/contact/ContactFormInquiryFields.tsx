@@ -35,11 +35,11 @@ export const ContactFormInquiryFields = ({
           <SelectTrigger className="bg-white/10 border-white/20 text-white focus:border-white/50 focus:ring-white/50 disabled:opacity-50">
             <SelectValue placeholder="Select inquiry type" />
           </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="loan">Apply for a Loan</SelectItem>
-            <SelectItem value="partnership">Partnership Opportunity</SelectItem>
-            <SelectItem value="demo">Book a Demo</SelectItem>
-            <SelectItem value="ambassador">Datung Ambassador</SelectItem>
+          <SelectContent className="bg-primary border-white/20">
+            <SelectItem value="loan" className="text-white focus:bg-white/20 focus:text-white">Apply for a Loan</SelectItem>
+            <SelectItem value="partnership" className="text-white focus:bg-white/20 focus:text-white">Partnership Opportunity</SelectItem>
+            <SelectItem value="demo" className="text-white focus:bg-white/20 focus:text-white">Book a Demo</SelectItem>
+            <SelectItem value="ambassador" className="text-white focus:bg-white/20 focus:text-white">Datung Ambassador</SelectItem>
           </SelectContent>
         </Select>
       </div>
