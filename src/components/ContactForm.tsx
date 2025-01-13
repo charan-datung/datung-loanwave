@@ -35,11 +35,24 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validate required fields
-    if (!formData.phone || !formData.company || !formData.companyContactDetails) {
+    // Validate all required fields
+    if (!formData.name || !formData.email || !formData.phone || !formData.company || 
+        !formData.companyContactDetails || !formData.message) {
       toast({
         title: "Missing Required Fields",
-        description: "Please fill in all required fields including phone, company name, and company contact details.",
+        description: "Please fill in all required fields including name, email, phone, company name, company contact details, and message.",
+        variant: "destructive",
+        duration: 5000,
+      });
+      return;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
         variant: "destructive",
         duration: 5000,
       });
