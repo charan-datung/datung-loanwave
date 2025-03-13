@@ -1,3 +1,4 @@
+
 import { Check, Percent, Clock, TrendingUp, Heart, LineChart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -5,8 +6,8 @@ export const EmployerBenefits = () => {
   const benefits = [
     {
       icon: Percent,
-      title: "0% Interest Loans",
-      description: "Provide interest-free loans to all your employees"
+      title: "Low Interest Loans",
+      description: "Provide affordable loans with competitive rates to your employees"
     },
     {
       icon: Clock,
