@@ -21,16 +21,20 @@ const Toaster = ({ ...props }: ToasterProps) => {
           cancelButton:
             "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
         },
-        icon: (
+      }}
+      {...props}
+    >
+      {(toast) => (
+        <div className="flex gap-3">
           <img 
             src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
             alt="Datung" 
-            className="h-5 w-5" 
+            className="h-5 w-5 mt-0.5" 
           />
-        ),
-      }}
-      {...props}
-    />
+          <div>{toast.message}</div>
+        </div>
+      )}
+    </Sonner>
   )
 }
 
