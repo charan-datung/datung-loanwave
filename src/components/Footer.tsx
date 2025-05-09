@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -57,7 +58,7 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/mission" className="text-gray-400 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
