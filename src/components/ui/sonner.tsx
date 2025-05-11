@@ -21,20 +21,20 @@ const Toaster = ({ ...props }: ToasterProps) => {
           cancelButton:
             "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
         },
+        // Use the custom render option in toastOptions instead of children prop
+        render: (data) => (
+          <div className="flex gap-3">
+            <img 
+              src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
+              alt="Datung" 
+              className="h-5 w-5 mt-0.5" 
+            />
+            <div>{data.message}</div>
+          </div>
+        )
       }}
       {...props}
-    >
-      {(toast) => (
-        <div className="flex gap-3">
-          <img 
-            src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
-            alt="Datung" 
-            className="h-5 w-5 mt-0.5" 
-          />
-          <div>{toast.message}</div>
-        </div>
-      )}
-    </Sonner>
+    />
   )
 }
 
