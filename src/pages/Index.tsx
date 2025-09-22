@@ -5,37 +5,16 @@ import { Solutions } from "@/components/home/Solutions";
 import { Products } from "@/components/home/Products";
 import { Partners } from "@/components/home/Partners";
 import { CallToAction } from "@/components/home/CallToAction";
-import { ElegantCounters } from "@/components/home/ElegantCounters";
-import { useEffect } from "react";
 
 const Index = () => {
-  useEffect(() => {
-    // Enable smooth scrolling
-    document.documentElement.style.scrollBehavior = 'smooth';
-    return () => {
-      document.documentElement.style.scrollBehavior = 'auto';
-    };
-  }, []);
-
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Navbar />
-      <section id="hero">
-        <Hero />
-      </section>
-      <section id="solutions" className="relative">
-        <Solutions />
-      </section>
-      <section id="products">
-        <Products />
-      </section>
-      <ElegantCounters />
-      <section id="partners">
-        <Partners />
-      </section>
-      <section id="contact">
-        <CallToAction />
-      </section>
+      <Hero />
+      <Solutions />
+      <Products />
+      <Partners />
+      <CallToAction />
       <Footer />
     </div>
   );
