@@ -70,16 +70,37 @@ export const MissionValues = () => {
                 </div>
                 
                 <CardContent className="relative p-10">
-                  {/* 3D elevated icon */}
-                  <div className="mb-8">
-                    <div className={`w-16 h-16 ${approach.iconBg} rounded-2xl flex items-center justify-center transform group-hover:scale-115 group-hover:-translate-y-4 group-hover:rotate-6 transition-all duration-500 shadow-lg`}
-                         style={{ 
-                           boxShadow: '0 12px 35px rgba(0,0,0,0.15), 0 4px 15px rgba(0,0,0,0.1)' 
-                         }}>
-                      <approach.icon className={`w-8 h-8 bg-gradient-to-br ${approach.gradient} bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300`} 
-                                    style={{ filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.1))' }} />
-                    </div>
-                  </div>
+                   {/* Ultra 3D elevated icon */}
+                   <div className="mb-8">
+                     <div className="relative">
+                       {/* 3D base shadow */}
+                       <div className="absolute inset-0 w-16 h-16 rounded-2xl bg-black/10 transform translate-y-3 translate-x-1 blur-sm"></div>
+                       
+                       {/* Main 3D icon container */}
+                       <div className={`relative w-16 h-16 ${approach.iconBg} rounded-2xl flex items-center justify-center transform group-hover:scale-125 group-hover:-translate-y-6 group-hover:rotate-12 transition-all duration-700 shadow-2xl`}
+                            style={{ 
+                              boxShadow: '0 20px 50px rgba(0,0,0,0.25), 0 8px 25px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3), inset 0 -1px 0 rgba(0,0,0,0.1)',
+                              background: `linear-gradient(145deg, ${approach.iconBg.replace('bg-', 'hsl(var(--')}, ${approach.iconBg.replace('bg-', 'hsl(var(--').replace('-100', '-200')})`,
+                            }}>
+                         
+                         {/* 3D icon with multiple effects */}
+                         <div className="relative">
+                           {/* Icon glow background */}
+                           <div className={`absolute inset-0 w-8 h-8 bg-gradient-to-br ${approach.gradient} opacity-20 rounded-lg blur-md group-hover:opacity-40 transition-opacity duration-500`}></div>
+                           
+                           {/* Main icon */}
+                           <approach.icon className={`relative w-8 h-8 bg-gradient-to-br ${approach.gradient} bg-clip-text text-transparent group-hover:scale-125 transition-all duration-500`} 
+                                         style={{ 
+                                           filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3)) drop-shadow(0 1px 3px rgba(0,0,0,0.2))',
+                                           textShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                                         }} />
+                         </div>
+                         
+                         {/* 3D highlight */}
+                         <div className="absolute top-2 left-2 w-3 h-3 bg-white/40 rounded-full blur-sm group-hover:bg-white/60 transition-colors duration-500"></div>
+                       </div>
+                     </div>
+                   </div>
                   
                   {/* Enhanced title with 3D effect */}
                   <h3 className="font-manrope text-xl font-medium mb-4 text-gray-900 transform group-hover:translate-y-1 transition-all duration-500"
