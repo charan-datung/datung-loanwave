@@ -45,56 +45,11 @@ const FloatingParticles = () => {
   );
 };
 
-// Animated geometric shapes
-const GeometricShapes = () => {
-  return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {Array.from({ length: 10 }, (_, i) => (
-        <motion.div
-          key={i}
-          className="absolute"
-          initial={{ 
-            x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-            y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-            rotate: 0
-          }}
-          animate={{ 
-            x: [
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000)
-            ],
-            y: [
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000)
-            ],
-            rotate: [0, 180, 360]
-          }}
-          transition={{ 
-            duration: 22 + Math.random() * 18, 
-            repeat: Infinity,
-            repeatType: "loop",
-            delay: Math.random() * 8,
-            ease: "linear"
-          }}
-        >
-          <div className={`opacity-6 ${
-            i % 3 === 0 ? 'w-6 h-6 border-2 border-secondary/25 rotate-45' : 
-            i % 3 === 1 ? 'w-5 h-5 bg-primary/10 rounded-full' : 
-            'w-8 h-2 bg-accent/10 rounded-full'
-          }`} />
-        </motion.div>
-      ))}
-    </div>
-  );
-};
 
 const SalaryLoans = () => {
   return (
     <div className="min-h-screen relative">
       <FloatingParticles />
-      <GeometricShapes />
       <Navbar />
       <section className="pt-32 pb-20 px-4 min-h-screen flex items-center bg-primary">
         <div className="container mx-auto text-center">

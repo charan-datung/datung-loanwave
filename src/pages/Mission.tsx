@@ -49,57 +49,11 @@ const FloatingParticles = () => {
   );
 };
 
-// Animated geometric shapes
-const GeometricShapes = () => {
-  return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {Array.from({ length: 15 }, (_, i) => (
-        <motion.div
-          key={i}
-          className="absolute"
-          initial={{ 
-            x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-            y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-            rotate: 0
-          }}
-          animate={{ 
-            x: [
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000)
-            ],
-            y: [
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000)
-            ],
-            rotate: [0, 180, 360]
-          }}
-          transition={{ 
-            duration: 30 + Math.random() * 25, 
-            repeat: Infinity,
-            repeatType: "loop",
-            delay: Math.random() * 12,
-            ease: "linear"
-          }}
-        >
-          <div className={`opacity-8 ${
-            i % 4 === 0 ? 'w-10 h-10 border-2 border-primary/30 rotate-45' : 
-            i % 4 === 1 ? 'w-8 h-8 bg-secondary/20 rounded-full' : 
-            i % 4 === 2 ? 'w-12 h-3 bg-accent/20 rounded-full' :
-            'w-6 h-6 border border-primary/30 rounded-full'
-          }`} />
-        </motion.div>
-      ))}
-    </div>
-  );
-};
 
 const Mission = () => {
   return (
     <div className="min-h-screen relative">
       <FloatingParticles />
-      <GeometricShapes />
       <Navbar />
       <MissionHero />
       <MissionManifesto />

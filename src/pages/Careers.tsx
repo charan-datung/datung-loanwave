@@ -49,57 +49,11 @@ const FloatingParticles = () => {
   );
 };
 
-// Animated geometric shapes
-const GeometricShapes = () => {
-  return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {Array.from({ length: 15 }, (_, i) => (
-        <motion.div
-          key={i}
-          className="absolute"
-          initial={{ 
-            x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-            y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-            rotate: 0
-          }}
-          animate={{ 
-            x: [
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000)
-            ],
-            y: [
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-              Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000)
-            ],
-            rotate: [0, 180, 360]
-          }}
-          transition={{ 
-            duration: 28 + Math.random() * 22, 
-            repeat: Infinity,
-            repeatType: "loop",
-            delay: Math.random() * 12,
-            ease: "linear"
-          }}
-        >
-          <div className={`opacity-8 ${
-            i % 4 === 0 ? 'w-9 h-9 border-2 border-primary/20 rotate-45' : 
-            i % 4 === 1 ? 'w-7 h-7 bg-secondary/15 rounded-full' : 
-            i % 4 === 2 ? 'w-11 h-3 bg-accent/15 rounded-full' :
-            'w-5 h-5 border border-primary/20 rounded-full'
-          }`} />
-        </motion.div>
-      ))}
-    </div>
-  );
-};
 
 const Careers = () => {
   return (
     <div className="min-h-screen relative bg-gradient-to-br from-gray-50 via-white to-primary/5">
       <FloatingParticles />
-      <GeometricShapes />
       <Navbar />
       <CareersHero />
       <WhyJoinUs />
