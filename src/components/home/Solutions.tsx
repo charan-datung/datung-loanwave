@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ServiceCard } from "@/components/ServiceCard";
 import businessLoansBg from "@/assets/business-loans-bg.png";
 import salaryLoansBg from "@/assets/salary-loans-bg.jpg";
+import technologyBg from "@/assets/technology-solutions-bg.jpg";
 
 export const Solutions = () => {
   return (
@@ -39,7 +40,7 @@ export const Solutions = () => {
             <ServiceCard
               title="Technology Solutions"
               description="Advanced loan underwriting and credit assessment powered by AI, tailored for the Philippine market."
-              icon={Computer}
+              backgroundImage={technologyBg}
             />
           </Link>
         </div>
