@@ -6,7 +6,7 @@ export const CallToAction = () => {
   return (
     <PageWrapper
       backgroundImage="https://images.unsplash.com/photo-1527576539890-dfa815648363"
-      gradientColors="rgba(0, 77, 77, 0.9), rgba(0, 179, 122, 0.8)"
+      gradientColors="rgba(0, 77, 77, 0.6), rgba(0, 179, 122, 0.5)"
       className="py-20"
     >
       <div className="container mx-auto px-4 text-center relative z-10">
