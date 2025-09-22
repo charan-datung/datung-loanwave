@@ -34,7 +34,7 @@ export const CareersHero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 font-medium"
+              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 font-medium animate-pulse hover:animate-none"
               onClick={() => document.getElementById('job-openings')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Open Roles
