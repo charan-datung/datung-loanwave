@@ -16,7 +16,7 @@ export const Navbar = () => {
               <img 
                 src="/datung-logo-new.png" 
                 alt="Datung" 
-                className="h-16 w-auto object-contain -my-1" 
+                className="h-12 w-auto object-contain -my-1" 
               />
             </Link>
           </div>

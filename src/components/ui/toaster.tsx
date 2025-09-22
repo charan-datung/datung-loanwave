@@ -23,7 +23,7 @@ export function Toaster() {
                   <img 
                     src="/datung-logo-new.png" 
                     alt="Datung" 
-                    className="h-5 w-5"
+                    className="h-4 w-4"
                   />
                   {title}
                 </ToastTitle>
