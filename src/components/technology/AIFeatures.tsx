@@ -164,11 +164,10 @@ export const AIFeatures = () => {
             <p className="text-gray-600">Real-time performance indicators</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { value: 99, label: "Accuracy Rate", suffix: "%" },
               { value: 500, label: "Response Time", suffix: "ms", prefix: "<" },
-              { value: 42, label: "Businesses Served", suffix: "M+" },
               { value: 99, label: "Uptime SLA", suffix: ".9%" }
             ].map((stat, index) => (
               <div key={index} className="text-center">
