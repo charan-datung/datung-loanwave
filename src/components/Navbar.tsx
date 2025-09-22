@@ -25,6 +25,9 @@ export const Navbar = () => {
             <Link to="/" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Home
             </Link>
+            <Link to="/mission" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
+              Mission
+            </Link>
             <Link to="/business-loans" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Business Loans
             </Link>
@@ -33,9 +36,6 @@ export const Navbar = () => {
             </Link>
             <Link to="/technology" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Technology
-            </Link>
-            <Link to="/mission" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
-              Mission
             </Link>
             <Link to="/careers" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Careers
@@ -75,6 +75,13 @@ export const Navbar = () => {
                 Home
               </Link>
               <Link 
+                to="/mission" 
+                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Mission
+              </Link>
+              <Link 
                 to="/business-loans" 
                 className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
                 onClick={() => setIsOpen(false)}
@@ -94,13 +101,6 @@ export const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Technology
-              </Link>
-              <Link 
-                to="/mission" 
-                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Mission
               </Link>
               <Link 
                 to="/careers" 
