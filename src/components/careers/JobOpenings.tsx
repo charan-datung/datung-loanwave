@@ -46,6 +46,8 @@ const openings = [
 export const JobOpenings = () => {
   const { toast } = useToast();
   const [showRiskDialog, setShowRiskDialog] = useState(false);
+  const [showCollectionDialog, setShowCollectionDialog] = useState(false);
+  const [showAccountantDialog, setShowAccountantDialog] = useState(false);
 
   const handleApply = (job: typeof openings[0]) => {
     if (job.title === "Head of Risk & Compliance") {
@@ -53,7 +55,17 @@ export const JobOpenings = () => {
       return;
     }
     
-    // Open the application URL in a new tab
+    if (job.title === "Collection Officer") {
+      setShowCollectionDialog(true);
+      return;
+    }
+    
+    if (job.title === "Accountant") {
+      setShowAccountantDialog(true);
+      return;
+    }
+    
+    // Open the application URL in a new tab for other positions
     window.open(job.applicationUrl, '_blank');
     
     // Show toast notification
@@ -112,7 +124,7 @@ export const JobOpenings = () => {
                   className="w-full group-hover:bg-primary/90"
                   size="lg"
                 >
-                  {job.title === "Head of Risk & Compliance" ? "View Details" : "Apply Now"}
+                  {["Head of Risk & Compliance", "Collection Officer", "Accountant"].includes(job.title) ? "View Details" : "Apply Now"}
                 </Button>
               </CardContent>
             </Card>
@@ -211,6 +223,144 @@ export const JobOpenings = () => {
                   >
                     Send Application
                   </Button>
+                </div>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
+
+        {/* Collection Officer Dialog */}
+        <Dialog open={showCollectionDialog} onOpenChange={setShowCollectionDialog}>
+          <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-white">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold text-foreground">Collection Officer</DialogTitle>
+            </DialogHeader>
+            
+            <div className="space-y-6">
+              <div className="bg-muted/80 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2 text-foreground">Job Description</h3>
+                <div className="space-y-1 text-sm text-foreground">
+                  <p><strong>Location:</strong> Parañaque (On-site)</p>
+                  <p><strong>Type:</strong> Full-Time</p>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-foreground">
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Company Description</h4>
+                  <p className="mb-4">
+                    Datung is at the forefront of microfinance innovation, utilizing AI, psychometrics, and community dynamics to unlock credit for 42 million underserved small businesses in Southeast Asia. Our work transforms unbanked entrepreneurs into creditworthy borrowers. With backing from Antler, Kaya Founders, Google, and NVIDIA, we operate out of our offices in Singapore and Manila, empowering excluded entrepreneurs to become economic drivers.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Role Description</h4>
+                  <p className="mb-4">
+                    This is a full-time on-site role for a Collections Officer based in Parañaque. The Collections Officer is responsible for managing and executing debt collection activities, analyzing financial data, and providing excellent customer service. The role includes communicating with clients regarding overdue payments, negotiating payment plans, and maintaining accurate records of collection activities.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Qualifications</h4>
+                  <ul className="list-disc pl-6 space-y-1 mb-4">
+                    <li>Debt Collection skills and experience</li>
+                    <li>Analytical Skills and proficiency in financial analysis</li>
+                    <li>Customer Service skills and a strong communication ability</li>
+                    <li>Knowledge of Finance principles</li>
+                    <li>Excellent interpersonal skills</li>
+                    <li>Ability to work independently and as part of a team</li>
+                    <li>Experience in the microfinance or banking sector is a plus</li>
+                    <li>Bachelor's degree in Finance, Accounting, Business, or related field</li>
+                  </ul>
+                </div>
+
+                <div className="bg-primary/20 border border-primary/30 p-4 rounded-lg text-center">
+                  <h4 className="text-lg font-semibold mb-2 text-foreground">Apply now</h4>
+                  <p className="mb-4 text-foreground">Apply directly on LinkedIn or send your application to ceo.office@datung.io</p>
+                  <div className="flex gap-4 justify-center">
+                    <Button 
+                      onClick={() => window.open('https://www.linkedin.com/jobs/view/4303399768', '_blank')}
+                      className="bg-primary hover:bg-primary/90"
+                    >
+                      Apply on LinkedIn
+                    </Button>
+                    <Button 
+                      onClick={() => window.open('mailto:ceo.office@datung.io', '_blank')}
+                      variant="outline"
+                      className="border-primary text-primary hover:bg-primary/10"
+                    >
+                      Send Application
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
+
+        {/* Accountant Dialog */}
+        <Dialog open={showAccountantDialog} onOpenChange={setShowAccountantDialog}>
+          <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-white">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold text-foreground">Accountant</DialogTitle>
+            </DialogHeader>
+            
+            <div className="space-y-6">
+              <div className="bg-muted/80 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2 text-foreground">Job Description</h3>
+                <div className="space-y-1 text-sm text-foreground">
+                  <p><strong>Location:</strong> Manila</p>
+                  <p><strong>Type:</strong> Full-Time</p>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-foreground">
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Company Description</h4>
+                  <p className="mb-4">
+                    Datung is at the forefront of microfinance innovation, utilizing AI, psychometrics, and community dynamics to unlock credit for 42 million underserved small businesses in Southeast Asia. Our work transforms unbanked entrepreneurs into creditworthy borrowers. With backing from Antler, Kaya Founders, Google, and NVIDIA, we operate out of our offices in Singapore and Manila, empowering excluded entrepreneurs to become economic drivers.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Role Description</h4>
+                  <p className="mb-4">
+                    This is a full-time on-site role for a Collections Officer based in Parañaque. The Collections Officer is responsible for managing and executing debt collection activities, analyzing financial data, and providing excellent customer service. The role includes communicating with clients regarding overdue payments, negotiating payment plans, and maintaining accurate records of collection activities.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Qualifications</h4>
+                  <ul className="list-disc pl-6 space-y-1 mb-4">
+                    <li>Debt Collection skills and experience</li>
+                    <li>Analytical Skills and proficiency in financial analysis</li>
+                    <li>Customer Service skills and a strong communication ability</li>
+                    <li>Knowledge of Finance principles</li>
+                    <li>Excellent interpersonal skills</li>
+                    <li>Ability to work independently and as part of a team</li>
+                    <li>Experience in the microfinance or banking sector is a plus</li>
+                    <li>Bachelor's degree in Finance, Accounting, Business, or related field</li>
+                  </ul>
+                </div>
+
+                <div className="bg-primary/20 border border-primary/30 p-4 rounded-lg text-center">
+                  <h4 className="text-lg font-semibold mb-2 text-foreground">Apply now</h4>
+                  <p className="mb-4 text-foreground">Apply directly on LinkedIn or send your application to ceo.office@datung.io</p>
+                  <div className="flex gap-4 justify-center">
+                    <Button 
+                      onClick={() => window.open('https://www.linkedin.com/jobs/view/4303633252', '_blank')}
+                      className="bg-primary hover:bg-primary/90"
+                    >
+                      Apply on LinkedIn
+                    </Button>
+                    <Button 
+                      onClick={() => window.open('mailto:ceo.office@datung.io', '_blank')}
+                      variant="outline"
+                      className="border-primary text-primary hover:bg-primary/10"
+                    >
+                      Send Application
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
