@@ -11,8 +11,8 @@ export const ServiceCard = ({ title, description, icon: Icon, backgroundImage }:
   if (backgroundImage) {
     return (
       <div 
-        className="service-card h-full flex flex-col items-center justify-center text-center group-hover:border-primary/20 group-hover:shadow-lg relative overflow-hidden bg-cover bg-center min-h-[200px] rounded-lg"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="service-card h-full flex flex-col items-center justify-center text-center group-hover:border-primary/20 group-hover:shadow-lg relative overflow-hidden bg-contain bg-center bg-no-repeat min-h-[200px] rounded-lg"
+        style={{ backgroundImage: `url(${backgroundImage})`, backgroundColor: '#4fd1c7' }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 p-6">
