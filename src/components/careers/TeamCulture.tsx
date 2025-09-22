@@ -6,23 +6,6 @@ export const TeamCulture = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Team Photos Grid - Inspired by Pintu */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-16">
-            {Array.from({ length: 12 }, (_, i) => (
-              <div 
-                key={i} 
-                className={`
-                  aspect-square rounded-2xl overflow-hidden
-                  ${i % 3 === 0 ? 'bg-primary' : i % 3 === 1 ? 'bg-secondary' : 'bg-accent'}
-                `}
-              >
-                <div className="w-full h-full flex items-center justify-center text-white font-bold text-lg">
-                  {String.fromCharCode(65 + (i % 26))}
-                </div>
-              </div>
-            ))}
-          </div>
-
           {/* Culture Content */}
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
