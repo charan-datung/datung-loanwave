@@ -1,6 +1,7 @@
 import { PageWrapper } from "@/components/PageWrapper";
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
+import { Link } from "react-router-dom";
 
 export const CareersHero = () => {
   return (
@@ -30,13 +31,23 @@ export const CareersHero = () => {
           </div>
           
           {/* Call to action buttons */}
-          <div className="flex justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Button
               size="lg"
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 font-medium"
               onClick={() => document.getElementById('job-openings')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Open Roles
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 font-medium"
+              asChild
+            >
+              <Link to="/mission">
+                Our Mission
+              </Link>
             </Button>
           </div>
         </div>
