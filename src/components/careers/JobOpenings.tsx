@@ -31,45 +31,46 @@ export const JobOpenings = () => {
   const { toast } = useToast();
 
   const handleApply = (job: typeof openings[0]) => {
-    // For now, we'll just open in a new tab. In a real app, this could be a form or API call
+    // Open the application URL in a new tab
     window.open(job.applicationUrl, '_blank');
+    
+    // Show toast notification
     toast({
       title: "Application Started",
-      description: `You're applying for ${job.title}. Good luck!`,
+      description: `You're being redirected to apply for the ${job.title} position.`,
     });
   };
 
   return (
-    <section id="openings" className="py-20 bg-white">
+    <section id="job-openings" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Open Positions</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Join our team and make a difference in the lives of millions
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Open Positions</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            We're looking for exceptional talent to join our mission. 
+            Every role at Datung is an opportunity to create meaningful impact.
           </p>
         </div>
         
-        <div className="grid gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {openings.map((job, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Briefcase className="w-5 h-5 text-primary" />
-                      <h3 className="text-xl font-semibold">{job.title}</h3>
-                    </div>
-                    <div className="text-gray-600">
-                      {job.department} · {job.location} · {job.type}
-                    </div>
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{job.title}</h3>
+                  <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+                    <span className="bg-primary/10 text-primary px-2 py-1 rounded-full">{job.department}</span>
+                    <span className="bg-secondary/10 text-secondary px-2 py-1 rounded-full">{job.location}</span>
+                    <span className="bg-accent/10 text-accent px-2 py-1 rounded-full">{job.type}</span>
                   </div>
-                  <Button 
-                    onClick={() => handleApply(job)}
-                    className="md:self-center"
-                  >
-                    Apply Now
-                  </Button>
                 </div>
+                <Button 
+                  onClick={() => handleApply(job)}
+                  className="w-full group-hover:bg-primary/90"
+                  size="lg"
+                >
+                  Apply Now
+                </Button>
               </CardContent>
             </Card>
           ))}
