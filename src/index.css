@@ -18,6 +18,32 @@
   @apply p-4 md:p-6 rounded-xl border border-gray-200 transition-all duration-300;
 }
 
+/* Glow text effects */
+.glow-text {
+  text-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow-pulse {
+  from { text-shadow: 0 0 20px currentColor, 0 0 40px currentColor; }
+  to { text-shadow: 0 0 30px currentColor, 0 0 60px currentColor; }
+}
+
+/* Glassmorphism effects */
+.glass {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glass-dark {
+  backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
 /* 3D Depth Effects */
 .card-3d {
   @apply transform transition-all duration-300 ease-out;
@@ -68,4 +94,58 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Advanced floating animation */
+@keyframes advanced-float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) translateX(10px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-5px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-10px) translateX(15px) rotate(1.5deg);
+  }
+}
+
+.animate-advanced-float {
+  animation: advanced-float 8s ease-in-out infinite;
+}
+
+/* Gradient borders */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(45deg, transparent, transparent);
+  border-radius: 12px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(45deg, #004d4d, #00b37a, #00d4aa);
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+/* Pulsing elements */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
 }
