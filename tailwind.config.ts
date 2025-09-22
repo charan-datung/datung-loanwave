@@ -20,21 +20,29 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#004D4D", // Deep teal from logo
+          DEFAULT: "hsl(220, 60%, 50%)", // Sophisticated blue
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#00B37A", // Bright green from logo
+          DEFAULT: "hsl(210, 100%, 50%)", // Clean blue
           foreground: "#FFFFFF",
         },
         accent: {
-          DEFAULT: "#00D68F", // Lighter green accent
+          DEFAULT: "hsl(200, 100%, 60%)", // Light blue accent
           foreground: "#000000",
         },
+        background: "hsl(0, 0%, 100%)",
+        foreground: "hsl(224, 71%, 4%)",
+        muted: {
+          DEFAULT: "hsl(220, 14%, 96%)",
+          foreground: "hsl(220, 9%, 46%)",
+        },
+        border: "hsl(220, 13%, 91%)",
       },
       fontFamily: {
-        sans: ["Manrope", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
-        manrope: ["Manrope", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        sans: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        inter: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        display: ["Cal Sans", "Inter", "system-ui", "sans-serif"],
       },
       keyframes: {
         "fade-up": {

@@ -4,25 +4,31 @@ import { PageWrapper } from "@/components/PageWrapper";
 
 export const CallToAction = () => {
   return (
-    <PageWrapper
-      backgroundImage="https://images.unsplash.com/photo-1527576539890-dfa815648363"
-      gradientColors="rgba(0, 77, 77, 0.6), rgba(0, 179, 122, 0.5)"
-      className="py-16 md:py-20"
-    >
+    <section className="py-20 md:py-24 gradient-bg relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/90"></div>
+      
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">Ready to Transform Your Business?</h2>
-        <p className="text-lg md:text-xl mb-6 md:mb-8 text-white/90">
-          Join thousands of Filipino businesses leveraging our financial technology solutions.
-        </p>
-        <ContactForm 
-          defaultType="loan"
-          triggerComponent={
-            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90 text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
-              Get Started Today
-            </Button>
-          }
-        />
+        <div className="max-w-3xl mx-auto animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            Ready to Transform Your Business?
+          </h2>
+          <p className="text-xl mb-12 text-white/90 leading-relaxed">
+            Join thousands of Filipino businesses leveraging our financial technology solutions.
+          </p>
+          
+          <ContactForm 
+            defaultType="loan"
+            triggerComponent={
+              <Button 
+                size="lg" 
+                className="bg-white text-slate-900 hover:bg-slate-100 px-8 py-4 text-lg font-semibold rounded-full hover-lift"
+              >
+                Get Started Today
+              </Button>
+            }
+          />
+        </div>
       </div>
-    </PageWrapper>
+    </section>
   );
 };
