@@ -3,7 +3,7 @@ import { PageWrapper } from "@/components/PageWrapper";
 export const MissionHero = () => {
   return (
     <PageWrapper
-      backgroundImage="/images/mission-hero-elder.jpg"
+      backgroundImage="/images/mission-hero-vendor.jpg"
       className="min-h-[80vh] flex items-center justify-center text-white pt-16 font-manrope"
     >
       <div className="container mx-auto px-4">
