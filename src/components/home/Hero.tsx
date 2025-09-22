@@ -15,7 +15,7 @@ export const Hero = () => {
             We are the future of microfinance — powered by AI, driven by community!
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Next-Gen Lending for the 42 million Unbanked & Underserved Businesses in Southeast Asia
+            empowering entrepreneurs and professionals with next-gen lending for the 42 million unbanked & underserved businesses in southeast asia
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <ContactForm 
