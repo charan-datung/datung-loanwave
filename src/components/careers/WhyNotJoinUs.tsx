@@ -3,12 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export const WhyNotJoinUs = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-br from-white via-gray-50/50 to-primary/5 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text-primary animate-float">
               🙃 Why you should NOT join Datung
             </h2>
             <p className="text-xl text-muted-foreground">
@@ -17,7 +17,7 @@ export const WhyNotJoinUs = () => {
           </div>
 
           {/* Main content card */}
-          <Card className="mb-12 border-0 shadow-lg">
+          <Card className="glass-card mb-12 card-3d">
             <CardContent className="p-8 md:p-12">
               <p className="text-lg leading-relaxed mb-8 text-center text-muted-foreground">
                 We're an early-stage, AI-first fintech startup rewriting the rules of microfinance. 

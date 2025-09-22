@@ -3,12 +3,12 @@ import { ContactForm } from "@/components/ContactForm";
 
 export const TeamCulture = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Culture Content */}
           <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text-glow animate-float">
               Let's Build Something Amazing Together
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">

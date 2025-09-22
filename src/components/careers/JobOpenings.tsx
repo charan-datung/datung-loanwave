@@ -76,17 +76,17 @@ export const JobOpenings = () => {
   };
 
   return (
-    <section id="job-openings" className="py-20 bg-gray-50">
+    <section id="job-openings" className="py-20 bg-gradient-to-br from-gray-50/80 via-white to-primary/5 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Open Positions</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text-primary">Open Positions</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             We're looking for exceptional talent to join our mission. 
             Every role at Datung is an opportunity to create meaningful impact.
           </p>
           
           {/* Call to Action */}
-          <div className="bg-primary/10 rounded-lg p-6 max-w-2xl mx-auto">
+          <div className="glass-card p-6 max-w-2xl mx-auto card-3d glow-secondary">
             <p className="text-lg font-medium mb-4">Ready to join our team?</p>
             <p className="text-muted-foreground mb-4">
               Send your application and CV to:{" "}
@@ -109,7 +109,7 @@ export const JobOpenings = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {openings.map((job, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white hover-scale animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+            <Card key={index} className="glass-card group card-3d animate-fade-in animate-float" style={{animationDelay: `${index * 0.1}s`}}>
               <CardContent className="p-8">
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{job.title}</h3>

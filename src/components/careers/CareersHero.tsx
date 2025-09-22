@@ -18,7 +18,7 @@ export const CareersHero = () => {
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4">
               Join us in Building the World's Largest & Most{' '}
-              <span className="font-light italic">Innovative</span>{' '}
+              <span className="font-light italic gradient-text-glow animate-float">Innovative</span>{' '}
               Microfinance Company
             </h1>
           </div>
