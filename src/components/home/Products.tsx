@@ -5,26 +5,16 @@ import { Building2, Users } from "lucide-react";
 
 export const Products = () => {
   return (
-    <section className="py-12 md:py-20 relative overflow-hidden">
-      {/* Glassmorphism background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-primary/10 backdrop-blur-xl" />
+    <section className="py-12 md:py-20 relative overflow-hidden bg-white">
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">
-          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            Our Products
-          </span>
-        </h2>
-        <p className="text-sm md:text-base text-center text-white/80 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4 text-primary">Our Products</h2>
+        <p className="text-sm md:text-base text-center text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
           Comprehensive financial solutions designed for the Filipino market
         </p>
         
         {/* Lending Products */}
         <div className="mb-12 md:mb-16">
-          <h3 className="text-xl md:text-2xl font-semibold text-center mb-6 md:mb-8">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Lending Products
-            </span>
-          </h3>
+          <h3 className="text-xl md:text-2xl font-semibold text-center mb-6 md:mb-8 text-primary">Lending Products</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto px-4">
             <div className="group">
               <div className="p-6 md:p-8 bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-3 border border-gray-100 hover:border-primary/20 relative overflow-hidden h-full">
@@ -72,11 +62,7 @@ export const Products = () => {
 
         {/* Technology Products */}
         <div>
-          <h3 className="text-xl md:text-2xl font-semibold text-center mb-6 md:mb-8">
-            <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-              Technology Products
-            </span>
-          </h3>
+          <h3 className="text-xl md:text-2xl font-semibold text-center mb-6 md:mb-8 text-primary">Technology Products</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto px-4">
             <div className="group">
               <div className="p-4 md:p-6 bg-white rounded-lg md:rounded-xl shadow-md hover:shadow-lg transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-2 border border-gray-100 hover:border-primary/20 relative overflow-hidden h-full">
