@@ -5,7 +5,7 @@ import { PageWrapper } from "@/components/PageWrapper";
 export const Hero = () => {
   return (
     <PageWrapper
-      backgroundImage="/lovable-uploads/5e26ea34-8dbc-4edb-a080-174866d2a27d.png"
+      backgroundImage="/lovable-uploads/hero-background.jpg"
       gradientColors="rgba(0, 77, 77, 0.85), rgba(0, 179, 122, 0.9)"
       className="pt-32 pb-20 px-4"
     >
