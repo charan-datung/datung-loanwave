@@ -4,7 +4,7 @@ export const ContactFormHeader = () => {
   return (
     <DialogHeader className="space-y-6">
       <img 
-        src="/datung-logo.png" 
+        src="/datung-logo-new.png" 
         alt="Datung Logo" 
         className="h-16 mx-auto"
       />

@@ -14,7 +14,7 @@ export const Navbar = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
-                src="/datung-logo.png" 
+                src="/datung-logo-new.png" 
                 alt="Datung" 
                 className="h-16 w-auto object-contain -my-1" 
               />
