@@ -9,7 +9,7 @@ export const Products = () => {
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-4 text-primary">Our Products</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Comprehensive financial solutions designed for the Philippine market
+          Comprehensive financial solutions designed for the Filipino market
         </p>
         
         {/* Lending Products */}
@@ -67,7 +67,7 @@ export const Products = () => {
                     <ChartBar className="w-6 h-6 text-primary" />
                   </div>
                   <h4 className="text-lg font-semibold mb-3 text-gray-900">Credit Scoring</h4>
-                  <p className="text-gray-600 leading-relaxed">AI-powered credit assessment system tailored for the Philippine market and local business patterns.</p>
+                  <p className="text-gray-600 leading-relaxed">AI-powered credit assessment system tailored for the Filipino market and local business patterns.</p>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ export const Products = () => {
                     <Database className="w-6 h-6 text-primary" />
                   </div>
                   <h4 className="text-lg font-semibold mb-3 text-gray-900">Loan Management</h4>
-                  <p className="text-gray-600 leading-relaxed">End-to-end loan processing platform designed specifically for Philippine lenders and regulations.</p>
+                  <p className="text-gray-600 leading-relaxed">End-to-end loan processing platform designed specifically for Filipino lenders and regulations.</p>
                 </div>
               </div>
             </div>
