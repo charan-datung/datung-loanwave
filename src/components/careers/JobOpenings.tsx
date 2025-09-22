@@ -5,25 +5,39 @@ import { useToast } from "@/components/ui/use-toast";
 
 const openings = [
   {
-    title: "Senior Software Engineer",
-    department: "Technology",
+    title: "Loan Officer",
+    department: "Operations",
     location: "Manila",
     type: "Full-time",
-    applicationUrl: "https://careers.datung.com/senior-software-engineer",
+    applicationUrl: "https://www.linkedin.com/jobs/view/4303619422",
   },
   {
-    title: "Business Development Manager",
-    department: "Sales",
-    location: "Cebu",
-    type: "Full-time",
-    applicationUrl: "https://careers.datung.com/business-development-manager",
-  },
-  {
-    title: "Customer Success Specialist",
+    title: "Collection Officer",
     department: "Operations",
-    location: "Remote",
+    location: "Manila",
     type: "Full-time",
-    applicationUrl: "https://careers.datung.com/customer-success-specialist",
+    applicationUrl: "https://www.linkedin.com/jobs/view/4303399768",
+  },
+  {
+    title: "Accountant",
+    department: "Finance",
+    location: "Manila",
+    type: "Full-time",
+    applicationUrl: "https://www.linkedin.com/jobs/view/4303633252",
+  },
+  {
+    title: "Chief of Staff",
+    department: "Leadership",
+    location: "Manila",
+    type: "Full-time",
+    applicationUrl: "https://careers.datung.com/chief-of-staff",
+  },
+  {
+    title: "Head of Risk & Compliance",
+    department: "Risk & Compliance",
+    location: "Hybrid",
+    type: "Full-time",
+    applicationUrl: "https://careers.datung.com/head-of-risk-compliance",
   },
 ];
 
