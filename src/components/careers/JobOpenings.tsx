@@ -60,10 +60,30 @@ export const JobOpenings = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Open Positions</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             We're looking for exceptional talent to join our mission. 
             Every role at Datung is an opportunity to create meaningful impact.
           </p>
+          
+          {/* Call to Action */}
+          <div className="bg-primary/10 rounded-lg p-6 max-w-2xl mx-auto">
+            <p className="text-lg font-medium mb-4">Ready to join our team?</p>
+            <p className="text-muted-foreground mb-4">
+              Send your application and CV to:{" "}
+              <a 
+                href="mailto:ceo.office@datung.io" 
+                className="text-primary font-medium hover:underline"
+              >
+                ceo.office@datung.io
+              </a>
+            </p>
+            <Button 
+              onClick={() => window.open('mailto:ceo.office@datung.io', '_blank')}
+              className="bg-primary hover:bg-primary/90"
+            >
+              Send Application
+            </Button>
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
