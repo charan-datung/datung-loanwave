@@ -5,7 +5,8 @@ interface PageWrapperProps {
   backgroundImage?: string;
   gradientColors?: string;
   className?: string;
-  id?: string; // Added id prop
+  id?: string;
+  backgroundPosition?: string; // Added backgroundPosition prop
 }
 
 export const PageWrapper = ({
@@ -13,7 +14,8 @@ export const PageWrapper = ({
   backgroundImage,
   gradientColors = "rgba(0, 77, 77, 0.65), rgba(0, 179, 122, 0.7)",
   className = "",
-  id, // Added id to destructuring
+  id,
+  backgroundPosition = "center", // Added backgroundPosition with default
 }: PageWrapperProps) => {
   return (
     <section
@@ -24,7 +26,7 @@ export const PageWrapper = ({
           ? `linear-gradient(${gradientColors}), url('${backgroundImage}')`
           : undefined,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: backgroundPosition,
         backgroundAttachment: "fixed",
       }}
     >
