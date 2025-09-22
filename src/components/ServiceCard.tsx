@@ -13,12 +13,12 @@ export const ServiceCard = ({ title, description, icon: Icon, backgroundImage }:
       <div className="service-card h-full flex flex-col justify-end group-hover:border-primary/20 group-hover:shadow-lg relative overflow-hidden rounded-2xl min-h-[320px] bg-gradient-to-b from-gray-100 to-gray-200">
         {/* Image positioned at the top */}
         <div 
-          className="absolute top-0 left-0 right-0 h-2/3 bg-contain bg-center bg-no-repeat"
+          className="absolute top-0 left-0 right-0 h-3/4 bg-cover bg-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
         
         {/* Text content at bottom */}
-        <div className="relative z-10 p-6 bg-gradient-to-t from-black/80 to-transparent rounded-b-2xl">
+        <div className="relative z-10 p-6 bg-gradient-to-t from-black/90 via-black/70 to-transparent rounded-b-2xl mt-auto">
           <h3 className="text-xl md:text-2xl font-bold mb-3 text-white leading-tight">{title}</h3>
           <p className="text-sm md:text-base text-white/90 leading-relaxed">{description}</p>
         </div>
