@@ -37,15 +37,18 @@ export const MissionTestimonials = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {joinOptions.map((option, index) => (
-            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 group hover:bg-white/20 transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <option.icon className="w-12 h-12 mx-auto mb-4 text-white group-hover:scale-110 transition-transform duration-300" />
+            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 group hover:bg-white/30 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-6 text-center relative z-10">
+                <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 transition-colors duration-300">
+                  <option.icon className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" />
+                </div>
                 <h3 className="text-xl font-semibold mb-3">{option.title}</h3>
                 <p className="text-white/90 mb-4">{option.description}</p>
                 <ContactForm 
                   defaultType="loan"
                   triggerComponent={
-                    <Button variant="secondary" className="w-full">
+                    <Button variant="secondary" className="w-full group-hover:shadow-lg transition-shadow duration-300">
                       {option.action}
                     </Button>
                   }

@@ -33,11 +33,14 @@ export const UnbankedBusinesses = () => {
 
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-8 text-center">The struggles they face:</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {struggles.map((struggle, index) => (
-                <Card key={index} className="group hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6 text-center">
-                    <struggle.icon className="w-12 h-12 mx-auto mb-4 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <Card key={index} className="group card-3d bg-white relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <CardContent className="p-6 text-center relative z-10">
+                    <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors duration-300">
+                      <struggle.icon className="w-8 h-8 text-red-600 group-hover:scale-110 transition-transform duration-300" />
+                    </div>
                     <h4 className="text-xl font-semibold mb-3">{struggle.title}</h4>
                     <p className="text-gray-600">{struggle.description}</p>
                   </CardContent>

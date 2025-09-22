@@ -17,3 +17,38 @@
 .service-card {
   @apply p-4 md:p-6 rounded-xl border border-gray-200 transition-all duration-300;
 }
+
+/* 3D Depth Effects */
+.card-3d {
+  @apply transform transition-all duration-300 ease-out;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.card-3d:hover {
+  @apply -translate-y-2;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.card-3d-primary {
+  @apply transform transition-all duration-300 ease-out;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 77, 77, 0.2),
+    0 2px 4px -1px rgba(0, 77, 77, 0.1),
+    0 0 0 1px rgba(0, 179, 122, 0.1);
+}
+
+.card-3d-primary:hover {
+  @apply -translate-y-2 scale-105;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 77, 77, 0.4),
+    0 20px 25px -5px rgba(0, 179, 122, 0.2),
+    0 10px 10px -5px rgba(0, 77, 77, 0.1),
+    0 0 0 1px rgba(0, 179, 122, 0.2);
+}

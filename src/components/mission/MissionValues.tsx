@@ -37,9 +37,12 @@ export const MissionValues = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {approaches.map((approach, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-8">
-                <approach.icon className="w-12 h-12 mb-4 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <Card key={index} className="group card-3d bg-white relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                  <approach.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                </div>
                 <h3 className="text-xl font-semibold mb-4">{approach.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{approach.description}</p>
               </CardContent>
