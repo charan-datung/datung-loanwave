@@ -107,59 +107,25 @@ export const TechnologyHero = () => {
             Advanced credit assessment and risk management systems powered by artificial intelligence and computer vision technology.
           </motion.p>
           
-          {/* Real-time processing visualization - Enhanced visibility */}
+          {/* Real-time processing visualization */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="bg-black/40 backdrop-blur-xl rounded-3xl p-8 mb-12 border-2 border-secondary/30 shadow-2xl shadow-secondary/20"
+            className="bg-black/20 backdrop-blur-xl rounded-2xl p-6 mb-8 border border-white/20"
           >
-            <div className="text-secondary font-mono text-2xl mb-6 flex items-center justify-center gap-3">
-              <Brain className="w-8 h-8 animate-pulse" />
-              Live AI Processing:
-              <Brain className="w-8 h-8 animate-pulse" />
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-6">
+            <div className="text-secondary font-mono text-lg mb-4">Live AI Processing:</div>
+            <div className="flex items-center justify-center gap-4">
               {processingSteps.map((step, index) => (
-                <motion.div 
-                  key={index} 
-                  className={`px-6 py-4 rounded-2xl transition-all duration-500 text-lg font-medium min-w-[200px] text-center ${
-                    index === processingStep 
-                      ? 'bg-gradient-to-r from-secondary/40 to-accent/40 text-white border-2 border-secondary/60 animate-pulse shadow-lg shadow-secondary/30 scale-110' 
-                      : 'text-gray-400 bg-white/5 border border-white/20'
-                  }`}
-                  whileHover={{ scale: 1.05 }}
-                  animate={index === processingStep ? { scale: [1, 1.05, 1] } : {}}
-                  transition={{ duration: 0.5, repeat: index === processingStep ? Infinity : 0 }}
-                >
-                  {index === processingStep ? (
-                    <div className="flex items-center justify-center gap-2">
-                      <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                      >
-                        <Workflow className="w-5 h-5" />
-                      </motion.div>
-                      {step}
-                    </div>
-                  ) : (
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="w-2 h-2 bg-gray-500 rounded-full" />
-                      {step.replace('...', '').replace(' ✓', '')}
-                    </div>
-                  )}
-                </motion.div>
+                <div key={index} className={`px-4 py-2 rounded-lg transition-all duration-500 ${
+                  index === processingStep 
+                    ? 'bg-gradient-to-r from-secondary/30 to-accent/30 text-secondary animate-pulse' 
+                    : 'text-gray-500'
+                }`}>
+                  {index === processingStep ? step : '•'}
+                </div>
               ))}
             </div>
-            <motion.div 
-              className="mt-6 text-center"
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              <p className="text-accent text-sm font-mono">
-                Processing {((processingStep + 1) / processingSteps.length * 100).toFixed(0)}% Complete
-              </p>
-            </motion.div>
           </motion.div>
           
           <motion.div 
