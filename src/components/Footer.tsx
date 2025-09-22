@@ -23,9 +23,9 @@ export const Footer = () => {
             {/* Office Addresses */}
             <div>
               <h4 className="text-white font-semibold mb-4 text-sm">Our Offices</h4>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 {/* Philippines Offices */}
-                <div className="space-y-4">
+                <div className="space-y-2">
                   <div>
                     <h5 className="text-accent font-medium mb-2 text-xs">Manila Office</h5>
                     <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
@@ -47,7 +47,7 @@ export const Footer = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-4">
+                <div className="space-y-2">
                   <div>
                     <h5 className="text-accent font-medium mb-2 text-xs">Las Piñas Office</h5>
                     <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
