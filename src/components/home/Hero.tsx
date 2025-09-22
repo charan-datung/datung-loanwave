@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <PageWrapper
       backgroundImage="/lovable-uploads/hero-background.jpg"
-      gradientColors="rgba(0, 77, 77, 0.85), rgba(0, 179, 122, 0.9)"
+      gradientColors="rgba(0, 77, 77, 0.4), rgba(0, 179, 122, 0.5)"
       className="pt-32 pb-20 px-4"
     >
       <div className="container mx-auto text-center relative z-10">
