@@ -10,12 +10,17 @@ interface ServiceCardProps {
 export const ServiceCard = ({ title, description, icon: Icon, backgroundImage }: ServiceCardProps) => {
   if (backgroundImage) {
     return (
-      <div className="service-card h-full flex flex-col justify-end group-hover:border-primary/20 group-hover:shadow-lg relative overflow-hidden rounded-2xl min-h-[320px] bg-gradient-to-b from-gray-100 to-gray-200">
+      <div className="service-card h-full flex flex-col justify-end group-hover:border-primary/20 relative overflow-hidden rounded-2xl min-h-[320px] bg-gradient-to-b from-gray-100 to-gray-200 transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 shadow-lg hover:shadow-2xl hover:shadow-primary/20">
+        {/* 3D Border Effect */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         {/* Image positioned at the top */}
         <div 
-          className="absolute top-0 left-0 right-0 h-3/4 bg-cover bg-center"
+          className="absolute top-0 left-0 right-0 h-3/4 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
+        
+        {/* Subtle highlight effect */}
+        <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl"></div>
         
         {/* Text content at bottom */}
         <div className="relative z-10 p-6 bg-gradient-to-t from-black/60 via-black/40 to-transparent rounded-b-2xl mt-auto">
