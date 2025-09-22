@@ -37,11 +37,11 @@ export const Footer = () => {
                   </div>
                   
                   <div>
-                    <h5 className="text-accent font-medium mb-2 text-xs">Parañaque Office</h5>
+                    <h5 className="text-accent font-medium mb-2 text-xs">Las Piñas Office</h5>
                     <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
-                      <p>Datung Building</p>
-                      <p>Wimpex, Parañaque</p>
-                      <p>1700 Metro Manila</p>
+                      <p>South Park Highs Commercial Complex</p>
+                      <p>Alabang–Zapote Rd, Las Piñas</p>
+                      <p>1747 Metro Manila</p>
                       <p>Philippines</p>
                     </address>
                   </div>
@@ -49,11 +49,11 @@ export const Footer = () => {
                 
                 <div className="space-y-2 lg:-ml-8">
                   <div>
-                    <h5 className="text-accent font-medium mb-2 text-xs">Las Piñas Office</h5>
+                    <h5 className="text-accent font-medium mb-2 text-xs">Parañaque Office</h5>
                     <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
-                      <p>South Park Highs Commercial Complex</p>
-                      <p>Alabang–Zapote Rd, Las Piñas</p>
-                      <p>1747 Metro Manila</p>
+                      <p>Datung Building</p>
+                      <p>Wimpex, Parañaque</p>
+                      <p>1700 Metro Manila</p>
                       <p>Philippines</p>
                     </address>
                   </div>
