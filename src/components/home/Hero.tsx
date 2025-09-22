@@ -7,7 +7,7 @@ export const Hero = () => {
     <PageWrapper
       backgroundImage="/lovable-uploads/hero-background.jpg"
       gradientColors="rgba(0, 77, 77, 0.4), rgba(0, 179, 122, 0.5)"
-      className="pt-32 pb-20 px-4"
+      className="pt-32 pb-40 px-4 min-h-screen"
     >
       <div className="container mx-auto text-center relative z-10">
         <div className="max-w-4xl mx-auto">
