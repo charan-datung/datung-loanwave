@@ -93,7 +93,7 @@ export const TechnologyHero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-8 leading-tight bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent"
           >
             AI-Powered Financial Technology Solutions
           </motion.h1>

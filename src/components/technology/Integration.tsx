@@ -77,7 +77,7 @@ export const Integration = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-8 leading-tight bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent">
             Integration Capabilities
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
