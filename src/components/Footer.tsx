@@ -19,12 +19,28 @@ export const Footer = () => {
                 <p className="text-gray-200 text-sm">Empowering Financial Growth</p>
               </div>
             </div>
-            <address className="not-italic text-gray-200 space-y-2 text-sm leading-relaxed max-w-xs">
-              <p>One Global Place</p>
-              <p>Bonifacio Global City</p>
-              <p>Taguig City, Manila</p>
-              <p>Philippines</p>
-            </address>
+            
+            {/* Addresses */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-white font-semibold mb-3 text-sm">Philippines Office</h4>
+                <address className="not-italic text-gray-200 space-y-1 text-sm leading-relaxed">
+                  <p>One Global Place</p>
+                  <p>Bonifacio Global City</p>
+                  <p>Taguig City, Manila</p>
+                  <p>Philippines</p>
+                </address>
+              </div>
+              
+              <div>
+                <h4 className="text-white font-semibold mb-3 text-sm">Singapore Office</h4>
+                <address className="not-italic text-gray-200 space-y-1 text-sm leading-relaxed">
+                  <p>32 Pekin Street</p>
+                  <p>048762</p>
+                  <p>Singapore</p>
+                </address>
+              </div>
+            </div>
           </div>
           
           <div className="space-y-6">
