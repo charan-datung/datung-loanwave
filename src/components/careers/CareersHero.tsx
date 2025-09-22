@@ -18,7 +18,7 @@ export const CareersHero = () => {
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4">
               Join us in Building the World's Largest & Most{' '}
-              <span className="font-bold italic text-secondary drop-shadow-lg animate-float" style={{ textShadow: '0 0 20px rgba(0, 179, 122, 0.8)' }}>Innovative</span>{' '}
+              <span className="font-bold italic text-secondary drop-shadow-lg" style={{ textShadow: '0 0 20px rgba(0, 179, 122, 0.8)' }}>Innovative</span>{' '}
               Microfinance Company
             </h1>
           </div>
@@ -34,7 +34,7 @@ export const CareersHero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 font-medium animate-pulse hover:animate-none"
+              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 font-medium"
               onClick={() => document.getElementById('job-openings')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Open Roles

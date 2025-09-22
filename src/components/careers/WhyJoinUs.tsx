@@ -40,7 +40,7 @@ export const WhyJoinUs = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((reason, index) => (
-            <Card key={index} className="glass-card group card-3d animate-float" style={{ animationDelay: `${index * 0.2}s` }}>
+            <Card key={index} className="glass-card group card-3d">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center group-hover:glow-primary transition-all duration-500">
                   <reason.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />

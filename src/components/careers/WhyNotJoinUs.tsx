@@ -8,7 +8,7 @@ export const WhyNotJoinUs = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 pb-2 gradient-text-primary animate-float">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 pb-2 gradient-text-primary">
               🙃 Why you should NOT join Datung
             </h2>
             <p className="text-xl text-muted-foreground">

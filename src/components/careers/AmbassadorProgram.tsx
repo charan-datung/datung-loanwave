@@ -22,10 +22,10 @@ export const AmbassadorProgram = () => {
           <ContactForm 
             defaultType="ambassador"
             triggerComponent={
-                  <Button
-                    size="lg"
-                    className="bg-white text-primary hover:bg-white/90 animate-pulse hover:animate-none"
-                  >
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90"
+                >
                 Apply Now
               </Button>
             }

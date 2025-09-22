@@ -100,7 +100,7 @@ export const JobOpenings = () => {
             </p>
             <Button 
               onClick={() => window.open('mailto:ceo.office@datung.io', '_blank')}
-              className="bg-primary hover:bg-primary/90 animate-pulse hover:animate-none"
+              className="bg-primary hover:bg-primary/90"
             >
               Send Application
             </Button>
@@ -109,7 +109,7 @@ export const JobOpenings = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {openings.map((job, index) => (
-            <Card key={index} className="glass-card group card-3d animate-fade-in animate-float" style={{animationDelay: `${index * 0.1}s`}}>
+            <Card key={index} className="glass-card group card-3d">
               <CardContent className="p-8">
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{job.title}</h3>
@@ -121,7 +121,7 @@ export const JobOpenings = () => {
                 </div>
                 <Button 
                   onClick={() => handleApply(job)}
-                  className="w-full group-hover:bg-primary/90 hover:animate-pulse"
+                  className="w-full group-hover:bg-primary/90"
                   size="lg"
                 >
                   {["Head of Risk & Compliance", "Collection Officer", "Accountant"].includes(job.title) ? "View Details" : "Apply Now"}
