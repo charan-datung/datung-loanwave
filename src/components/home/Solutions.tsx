@@ -2,6 +2,7 @@ import { Building2, Users, Computer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceCard } from "@/components/ServiceCard";
 import businessLoansBg from "@/assets/business-loans-bg.png";
+import salaryLoansBg from "@/assets/salary-loans-bg.jpg";
 
 export const Solutions = () => {
   return (
@@ -31,7 +32,7 @@ export const Solutions = () => {
             <ServiceCard
               title="Salary Loans"
               description="Employee loan management and HR technology solutions for Filipino workplaces and professionals."
-              icon={Users}
+              backgroundImage={salaryLoansBg}
             />
           </Link>
           <Link to="/technology" className="group">
