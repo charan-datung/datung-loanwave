@@ -9,7 +9,7 @@ export const Hero = () => {
       gradientColors="rgba(0, 77, 77, 0.4), rgba(0, 179, 122, 0.5)"
       className="pt-32 pb-40 px-4 min-h-screen"
     >
-      <div className="container mx-auto text-center relative z-10 flex items-center justify-center min-h-screen">
+      <div className="container mx-auto text-center relative z-10 flex items-center justify-center min-h-screen -mt-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             We are the future of microfinance — powered by AI, driven by community!
