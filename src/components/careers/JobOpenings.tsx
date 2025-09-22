@@ -121,15 +121,15 @@ export const JobOpenings = () => {
 
         {/* Head of Risk & Compliance Dialog */}
         <Dialog open={showRiskDialog} onOpenChange={setShowRiskDialog}>
-          <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+          <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-white">
             <DialogHeader>
-              <DialogTitle className="text-2xl font-bold">Head of Risk & Compliance</DialogTitle>
+              <DialogTitle className="text-2xl font-bold text-foreground">Head of Risk & Compliance</DialogTitle>
             </DialogHeader>
             
             <div className="space-y-6">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">Job Description</h3>
-                <div className="space-y-1 text-sm">
+              <div className="bg-muted/80 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2 text-foreground">Job Description</h3>
+                <div className="space-y-1 text-sm text-foreground">
                   <p><strong>Location:</strong> Metro Manila (Hybrid)</p>
                   <p><strong>Seniority Level:</strong> Director / Senior Management</p>
                   <p><strong>Type:</strong> Full-Time</p>
@@ -137,7 +137,7 @@ export const JobOpenings = () => {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 text-foreground">
                 <div>
                   <p className="text-lg font-medium mb-2">🚀 Are you ready to lead risk and compliance for the future of microfinance?</p>
                   <p className="mb-4">
@@ -201,10 +201,10 @@ export const JobOpenings = () => {
                   </ul>
                 </div>
 
-                <div className="bg-primary/10 p-4 rounded-lg text-center">
-                  <h4 className="text-lg font-semibold mb-2">📩 Apply now</h4>
-                  <p className="mb-4">Send your resume and application to ceo.office@datung.io</p>
-                  <p className="font-medium">Help us build a future where credit works for everyone.</p>
+                <div className="bg-primary/20 border border-primary/30 p-4 rounded-lg text-center">
+                  <h4 className="text-lg font-semibold mb-2 text-foreground">📩 Apply now</h4>
+                  <p className="mb-4 text-foreground">Send your resume and application to ceo.office@datung.io</p>
+                  <p className="font-medium text-foreground">Help us build a future where credit works for everyone.</p>
                   <Button 
                     onClick={() => window.open('mailto:ceo.office@datung.io', '_blank')}
                     className="mt-4 bg-primary hover:bg-primary/90"
