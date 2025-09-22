@@ -3,8 +3,8 @@ import { PageWrapper } from "@/components/PageWrapper";
 export const MissionHero = () => {
   return (
     <PageWrapper
-      backgroundImage="/lovable-uploads/7bbbf132-ca47-4088-b3d1-c933a931a68b.png"
-      className="min-h-[80vh] flex items-center justify-center text-white pt-16"
+      backgroundImage="/images/mission-hero-bg.jpg"
+      className="min-h-[80vh] flex items-center justify-center text-white pt-16 font-manrope"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto text-center animate-fade-up">
