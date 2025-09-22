@@ -55,17 +55,17 @@ export const AIFeatures = () => {
               delay: Math.random() * 5
             }}
           >
-            <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-40" />
+            <div className="w-2 h-2 bg-gradient-to-r from-secondary to-accent rounded-full opacity-40" />
           </motion.div>
         ))}
       </div>
       
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: "linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%)",
-        }}
-      />
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: "linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%)",
+          }}
+        />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -74,7 +74,7 @@ export const AIFeatures = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent">
             Our AI Technology Stack
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -88,28 +88,28 @@ export const AIFeatures = () => {
               icon: Brain,
               title: "Automated Credit Scoring",
               features: ["Machine learning models for credit risk assessment", "Alternative data analysis", "Real-time scoring capabilities"],
-              color: "from-blue-500 to-purple-600",
+              color: "from-secondary to-accent",
               delay: 0
             },
             {
               icon: Camera,
               title: "Visual Assessment Tools",
               features: ["Computer vision for business verification", "Automated document processing", "Visual inventory analysis"],
-              color: "from-green-500 to-teal-600",
+              color: "from-accent to-primary",
               delay: 0.2
             },
             {
               icon: ChartBar,
               title: "Risk Management Systems",
               features: ["Predictive risk modeling", "Portfolio monitoring", "Early warning systems"],
-              color: "from-orange-500 to-red-600",
+              color: "from-primary to-secondary",
               delay: 0.4
             },
             {
               icon: Shield,
               title: "Loan Management Platform",
               features: ["End-to-end loan processing", "Automated underwriting", "Collection management"],
-              color: "from-purple-500 to-pink-600",
+              color: "from-secondary to-accent",
               delay: 0.6
             }
           ].map((feature, index) => (
@@ -126,7 +126,7 @@ export const AIFeatures = () => {
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-blue-600 transition-colors duration-300">{feature.title}</h3>
+                <h3 className="text-2xl font-semibold mb-4 group-hover:text-secondary transition-colors duration-300">{feature.title}</h3>
                 <ul className="space-y-3 text-gray-600">
                   {feature.features.map((item, itemIndex) => (
                     <motion.li
@@ -137,7 +137,7 @@ export const AIFeatures = () => {
                       transition={{ duration: 0.3, delay: feature.delay + itemIndex * 0.1 }}
                       className="flex items-start gap-2"
                     >
-                      <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mt-2 flex-shrink-0" />
+                      <div className="w-2 h-2 bg-gradient-to-r from-secondary to-accent rounded-full mt-2 flex-shrink-0" />
                       <span>{item}</span>
                     </motion.li>
                   ))}
@@ -155,10 +155,10 @@ export const AIFeatures = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 backdrop-blur-xl rounded-2xl p-8 border border-white/20"
+          className="bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-xl rounded-2xl p-8 border border-white/20"
         >
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent mb-4">
+            <h3 className="text-3xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-4">
               Performance Metrics
             </h3>
             <p className="text-gray-600">Real-time performance indicators</p>
@@ -172,7 +172,7 @@ export const AIFeatures = () => {
               { value: 99, label: "Uptime SLA", suffix: ".9%" }
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">
                   <AnimatedCounter end={stat.value} suffix={stat.suffix} prefix={stat.prefix} />
                 </div>
                 <div className="text-gray-600">{stat.label}</div>

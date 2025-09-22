@@ -46,12 +46,12 @@ export const TechnologyHero = () => {
       {/* Enhanced background with floating elements */}
       <div
         className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: "linear-gradient(rgba(10, 36, 99, 0.85), rgba(36, 59, 85, 0.95)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 77, 77, 0.85), rgba(0, 179, 122, 0.95)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
       />
       
       {/* Floating geometric shapes */}
@@ -78,9 +78,9 @@ export const TechnologyHero = () => {
             }}
           >
             <div className={`w-4 h-4 bg-gradient-to-r ${
-              i % 3 === 0 ? 'from-cyan-400 to-blue-500' : 
-              i % 3 === 1 ? 'from-purple-400 to-pink-500' : 
-              'from-green-400 to-teal-500'
+              i % 3 === 0 ? 'from-primary to-secondary' : 
+              i % 3 === 1 ? 'from-secondary to-accent' : 
+              'from-accent to-primary'
             } rounded-lg opacity-30`} />
           </motion.div>
         ))}
@@ -93,7 +93,7 @@ export const TechnologyHero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent"
           >
             AI-Powered Financial Technology Solutions
           </motion.h1>
@@ -114,12 +114,12 @@ export const TechnologyHero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="bg-black/20 backdrop-blur-xl rounded-2xl p-6 mb-8 border border-white/20"
           >
-            <div className="text-cyan-400 font-mono text-lg mb-4">Live AI Processing:</div>
+            <div className="text-secondary font-mono text-lg mb-4">Live AI Processing:</div>
             <div className="flex items-center justify-center gap-4">
               {processingSteps.map((step, index) => (
                 <div key={index} className={`px-4 py-2 rounded-lg transition-all duration-500 ${
                   index === processingStep 
-                    ? 'bg-gradient-to-r from-cyan-500/30 to-blue-500/30 text-cyan-300 animate-pulse' 
+                    ? 'bg-gradient-to-r from-secondary/30 to-accent/30 text-secondary animate-pulse' 
                     : 'text-gray-500'
                 }`}>
                   {index === processingStep ? step : '•'}
@@ -139,7 +139,7 @@ export const TechnologyHero = () => {
               triggerComponent={
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 animate-pulse hover:animate-none"
+                  className="bg-gradient-to-r from-secondary to-accent hover:from-primary hover:to-secondary text-white shadow-lg hover:shadow-secondary/25 transition-all duration-300 animate-pulse hover:animate-none"
                 >
                   Schedule Demo
                 </Button>
@@ -148,7 +148,7 @@ export const TechnologyHero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-2 border-white/50 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/70 hover:text-cyan-400"
+              className="border-2 border-white/50 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300 hover:border-secondary/70 hover:text-secondary"
               onClick={() => document.getElementById('ai-features')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Zap className="w-5 h-5 mr-2" />
@@ -165,9 +165,9 @@ export const TechnologyHero = () => {
           className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
         >
           {[
-            { icon: Brain, title: "AI Credit Scoring", description: "Advanced algorithms for accurate credit assessment and risk prediction.", color: "from-cyan-500 to-blue-600" },
-            { icon: Shield, title: "Risk Management", description: "Comprehensive risk analysis and monitoring systems.", color: "from-purple-500 to-pink-600" },
-            { icon: Database, title: "Loan Platform", description: "End-to-end loan management and processing solution.", color: "from-green-500 to-teal-600" }
+            { icon: Brain, title: "AI Credit Scoring", description: "Advanced algorithms for accurate credit assessment and risk prediction.", color: "from-secondary to-accent" },
+            { icon: Shield, title: "Risk Management", description: "Comprehensive risk analysis and monitoring systems.", color: "from-primary to-secondary" },
+            { icon: Database, title: "Loan Platform", description: "End-to-end loan management and processing solution.", color: "from-accent to-primary" }
           ].map((feature, index) => (
             <motion.div
               key={index}
@@ -181,7 +181,7 @@ export const TechnologyHero = () => {
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-secondary transition-colors duration-300">{feature.title}</h3>
                 <p className="text-white/80">{feature.description}</p>
               </div>
               {/* Glow effect */}

@@ -55,20 +55,20 @@ export const Integration = () => {
             }}
           >
             <div className={`w-6 h-6 rounded-lg bg-gradient-to-r ${
-              i % 3 === 0 ? 'from-purple-400/20 to-pink-500/20' : 
-              i % 3 === 1 ? 'from-blue-400/20 to-cyan-500/20' : 
-              'from-green-400/20 to-teal-500/20'
+              i % 3 === 0 ? 'from-primary/20 to-secondary/20' : 
+              i % 3 === 1 ? 'from-secondary/20 to-accent/20' : 
+              'from-accent/20 to-primary/20'
             } backdrop-blur-sm border border-white/10`} />
           </motion.div>
         ))}
       </div>
       
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: "linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)",
-        }}
-      />
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: "linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%)",
+          }}
+        />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -77,7 +77,7 @@ export const Integration = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent">
             Integration Capabilities
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
@@ -89,7 +89,7 @@ export const Integration = () => {
               triggerComponent={
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 animate-pulse hover:animate-none"
+                  className="bg-gradient-to-r from-secondary to-accent hover:from-primary hover:to-secondary text-white shadow-lg hover:shadow-secondary/25 transition-all duration-300 animate-pulse hover:animate-none"
                 >
                   <Zap className="w-5 h-5 mr-2" />
                   Schedule Demo
@@ -105,21 +105,21 @@ export const Integration = () => {
               icon: Code2,
               title: "API Integration",
               description: "RESTful APIs with comprehensive documentation for easy integration with your systems.",
-              color: "from-blue-500 to-purple-600",
+              color: "from-secondary to-accent",
               delay: 0
             },
             {
               icon: Workflow,
               title: "Workflow Automation",
               description: "Automated workflows that seamlessly connect with your existing business processes.",
-              color: "from-purple-500 to-pink-600",
+              color: "from-primary to-secondary",
               delay: 0.2
             },
             {
               icon: Zap,
               title: "Real-time Processing",
               description: "Process data and get results in real-time with our high-performance infrastructure.",
-              color: "from-pink-500 to-red-600",
+              color: "from-accent to-primary",
               delay: 0.4
             }
           ].map((feature, index) => (
@@ -136,12 +136,12 @@ export const Integration = () => {
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-purple-600 transition-colors duration-300">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">{feature.title}</h3>
                 <p className="text-gray-600 mb-4">{feature.description}</p>
                 <ContactForm 
                   defaultType="partnership"
                   triggerComponent={
-                    <Button variant="link" className="text-purple-600 hover:text-purple-700 p-0">Learn More →</Button>
+                    <Button variant="link" className="text-secondary hover:text-accent p-0">Learn More →</Button>
                   }
                 />
               </div>
@@ -158,10 +158,10 @@ export const Integration = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-gradient-to-r from-purple-900/20 to-pink-900/20 backdrop-blur-xl rounded-2xl p-8 border border-white/20"
+          className="bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-xl rounded-2xl p-8 border border-white/20"
         >
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent mb-4">
+            <h3 className="text-3xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-4">
               Live System Performance
             </h3>
             <p className="text-gray-600">Real-time integration health metrics</p>
@@ -169,9 +169,9 @@ export const Integration = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { label: "API Response Rate", progress: apiProgress, color: "from-blue-500 to-purple-600" },
-              { label: "Workflow Efficiency", progress: workflowProgress, color: "from-purple-500 to-pink-600" },
-              { label: "Processing Speed", progress: processingProgress, color: "from-pink-500 to-red-600" }
+              { label: "API Response Rate", progress: apiProgress, color: "from-secondary to-accent" },
+              { label: "Workflow Efficiency", progress: workflowProgress, color: "from-primary to-secondary" },
+              { label: "Processing Speed", progress: processingProgress, color: "from-accent to-primary" }
             ].map((metric, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl font-bold text-gray-700 mb-2">{metric.label}</div>
