@@ -1,6 +1,7 @@
 import { Building2, Users, Computer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceCard } from "@/components/ServiceCard";
+import businessLoansBg from "@/assets/business-loans-bg.jpg";
 
 export const Solutions = () => {
   return (
@@ -23,7 +24,7 @@ export const Solutions = () => {
             <ServiceCard
               title="Business Loans"
               description="Tech-enabled MSME financing with our innovative JAG model and AI-powered assessment for Filipino entrepreneurs."
-              icon={Building2}
+              backgroundImage={businessLoansBg}
             />
           </Link>
           <Link to="/salary-loans" className="group">
