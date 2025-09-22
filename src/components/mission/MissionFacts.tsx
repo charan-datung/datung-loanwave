@@ -24,10 +24,10 @@ export const MissionFacts = () => {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-manrope text-3xl md:text-4xl font-light mb-4 text-gray-900 tracking-tight">
+          <h2 className="font-manrope text-3xl md:text-4xl font-light mb-4 text-primary tracking-tight">
             Facts we're fighting
           </h2>
-          <div className="w-16 h-0.5 bg-gray-300 mx-auto mb-8"></div>
+          <div className="w-16 h-0.5 bg-primary/30 mx-auto mb-8"></div>
           <p className="font-manrope text-lg text-gray-600 max-w-2xl mx-auto font-light">
             The numbers that drive our mission
           </p>

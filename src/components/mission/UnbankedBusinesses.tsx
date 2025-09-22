@@ -26,10 +26,10 @@ export const UnbankedBusinesses = () => {
         <div className="max-w-4xl mx-auto">
           {/* Clean hero section */}
           <div className="text-center mb-16">
-            <h2 className="font-manrope text-3xl md:text-4xl font-light mb-6 text-gray-900 tracking-tight">
+            <h2 className="font-manrope text-3xl md:text-4xl font-light mb-6 text-primary tracking-tight">
               The unbanked businesses
             </h2>
-            <div className="w-16 h-0.5 bg-gray-300 mx-auto mb-8"></div>
+            <div className="w-16 h-0.5 bg-primary/30 mx-auto mb-8"></div>
             
             <div className="bg-white rounded-xl p-8 md:p-10 shadow-sm border border-gray-100">
               <p className="font-manrope text-lg md:text-xl text-gray-700 leading-relaxed font-light">
@@ -40,7 +40,7 @@ export const UnbankedBusinesses = () => {
 
           {/* Clean struggles section */}
           <div className="mb-12">
-            <h3 className="font-manrope text-2xl md:text-3xl font-light mb-8 text-center text-gray-800">
+            <h3 className="font-manrope text-2xl md:text-3xl font-light mb-8 text-center text-primary">
               The struggles they face
             </h3>
             
