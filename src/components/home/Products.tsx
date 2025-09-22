@@ -14,7 +14,7 @@ export const Products = () => {
         }}
       />
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Our Products</h2>
         <Tabs defaultValue="lending" className="max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="lending">Lending Products</TabsTrigger>

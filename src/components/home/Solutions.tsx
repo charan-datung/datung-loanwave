@@ -14,7 +14,7 @@ export const Solutions = () => {
         }}
       />
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">Our Solutions</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4 text-primary">Our Solutions</h2>
         <p className="text-sm md:text-base text-center text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
           Empowering Filipino entrepreneurs and professionals with innovative financial solutions
         </p>
