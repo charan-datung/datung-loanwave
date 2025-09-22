@@ -34,8 +34,8 @@ export const LoanFeatures = () => {
     {
       icon: Star,
       title: "Trusted by Thousands",
-      description: "Join over 10,000 successful Filipino entrepreneurs",
-      highlight: "10K+ Users",
+      description: "Join thousands of successful Filipino entrepreneurs",
+      highlight: "Trusted Community",
       color: "secondary"
     },
     {
@@ -48,43 +48,29 @@ export const LoanFeatures = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
-            Why Choose Our
-            <span className="block text-transparent bg-gradient-to-r from-secondary to-accent bg-clip-text">
-              Business Loans?
-            </span>
+    <section className="py-32 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-light mb-6 text-primary">
+            Why Choose Our Business Loans?
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Designed specifically for Filipino micro-entrepreneurs and small business owners
+          <p className="text-lg text-gray-500 max-w-xl mx-auto font-light">
+            Designed specifically for Filipino entrepreneurs
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
           {features.map((feature, index) => (
-            <Card 
-              key={index} 
-              className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white/80 backdrop-blur-sm"
-            >
-              <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-${feature.color} to-${feature.color}/60`}></div>
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className={`p-3 rounded-xl bg-${feature.color}/10 group-hover:bg-${feature.color}/20 transition-colors`}>
-                    <feature.icon className={`w-8 h-8 text-${feature.color}`} />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-gray-900">{feature.title}</h3>
-                    <div className={`inline-block px-3 py-1 rounded-full bg-${feature.color}/10 text-${feature.color} text-sm font-semibold mb-3`}>
-                      {feature.highlight}
-                    </div>
-                  </div>
+            <div key={index} className="text-center group">
+              <div className="mb-6">
+                <feature.icon className="w-12 h-12 text-primary mx-auto mb-4" />
+                <h3 className="text-xl font-medium mb-2 text-gray-900">{feature.title}</h3>
+                <div className="text-sm text-primary font-medium mb-4">
+                  {feature.highlight}
                 </div>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-              </CardContent>
-            </Card>
+              </div>
+              <p className="text-gray-600 leading-relaxed font-light">{feature.description}</p>
+            </div>
           ))}
         </div>
       </div>
