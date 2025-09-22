@@ -1,59 +1,75 @@
 export const MissionManifesto = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Dynamic gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-accent opacity-95"></div>
-      <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-primary/20 to-white/10"></div>
+    <section className="py-32 relative overflow-hidden">
+      {/* Sophisticated gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-accent/90"></div>
+      <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-primary/15 to-white/8"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/5"></div>
       
-      {/* 3D geometric elements */}
+      {/* Refined 3D geometric elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 left-1/4 w-32 h-32 bg-white/5 rounded-full transform rotate-45 animate-pulse"></div>
-        <div className="absolute bottom-20 right-1/3 w-24 h-24 bg-accent/10 rounded-lg transform -rotate-12 animate-bounce"></div>
-        <div className="absolute top-1/2 right-10 w-20 h-20 bg-white/10 rounded-full transform rotate-30"></div>
+        <div className="absolute top-16 left-1/4 w-40 h-40 bg-white/6 rounded-full transform rotate-45 animate-pulse blur-xl"></div>
+        <div className="absolute bottom-24 right-1/3 w-32 h-32 bg-accent/12 rounded-2xl transform -rotate-12 animate-bounce blur-lg"></div>
+        <div className="absolute top-1/2 right-16 w-28 h-28 bg-white/8 rounded-full transform rotate-30 blur-md"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
-          {/* 3D title */}
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white transform hover:scale-110 transition-all duration-500"
+        <div className="max-w-6xl mx-auto text-center">
+          {/* Elegant 3D title */}
+          <div className="mb-20">
+            <h2 className="font-manrope text-5xl md:text-6xl lg:text-7xl font-extralight text-white transform hover:scale-110 transition-all duration-700 tracking-tight leading-tight mb-6"
                 style={{
-                  textShadow: '0 4px 20px rgba(0,0,0,0.4), 0 8px 40px rgba(0,0,0,0.3)',
-                  filter: 'drop-shadow(0 4px 15px rgba(255,255,255,0.1))'
+                  textShadow: '0 8px 32px rgba(0,0,0,0.5), 0 16px 64px rgba(0,0,0,0.4)',
+                  filter: 'drop-shadow(0 6px 25px rgba(255,255,255,0.15))',
+                  letterSpacing: '-0.02em'
                 }}>
               Manifesto
             </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto rounded-full"></div>
           </div>
           
-          {/* Elevated content blocks */}
-          <div className="space-y-10">
-            <div className="backdrop-blur-lg bg-white/15 rounded-3xl p-10 border border-white/25 shadow-2xl transform hover:scale-105 hover:-translate-y-3 transition-all duration-700 hover:shadow-3xl">
-              <p className="text-xl md:text-2xl leading-relaxed text-white font-medium">
-                For the businesses that have been overlooked, underestimated, and left behind. For the entrepreneurs who've been told they can't, or that the system isn't for them. For the dreamers who have dared to imagine something greater.
+          {/* Sophisticated content blocks */}
+          <div className="space-y-16">
+            <div className="group backdrop-blur-xl bg-white/12 rounded-[2rem] p-12 md:p-16 border border-white/20 shadow-2xl transform hover:scale-105 hover:-translate-y-6 transition-all duration-1000 hover:shadow-3xl hover:bg-white/18">
+              <p className="font-manrope text-2xl md:text-3xl lg:text-4xl leading-relaxed text-white font-light tracking-wide">
+                For the businesses that have been{' '}
+                <span className="font-medium text-accent">overlooked, underestimated</span>, and left behind. For the entrepreneurs who've been told they can't, or that the system isn't for them. For the{' '}
+                <span className="font-medium text-secondary">dreamers who have dared</span>{' '}
+                to imagine something greater.
               </p>
             </div>
             
-            <div className="backdrop-blur-lg bg-white/10 rounded-3xl p-10 border border-white/20 shadow-2xl transform hover:scale-105 hover:-translate-y-3 transition-all duration-700 delay-100 hover:shadow-3xl">
-              <p className="text-xl md:text-2xl leading-relaxed text-white font-medium">
-                We're the financial force that's rewriting the rules, shifting the power back to where it belongs — into the hands of those who need it most. We're not just asking for change; we're demanding it. We're creating a new financial landscape where opportunity isn't a privilege, but a right.
+            <div className="group backdrop-blur-xl bg-white/8 rounded-[2rem] p-12 md:p-16 border border-white/15 shadow-2xl transform hover:scale-105 hover:-translate-y-6 transition-all duration-1000 delay-200 hover:shadow-3xl hover:bg-white/15">
+              <p className="font-manrope text-2xl md:text-3xl lg:text-4xl leading-relaxed text-white font-light tracking-wide">
+                We're the{' '}
+                <span className="font-medium text-accent">financial force</span>{' '}
+                that's rewriting the rules, shifting the power back to where it belongs — into the hands of those who need it most. We're not just asking for change; we're{' '}
+                <span className="font-medium text-secondary">demanding it</span>.
               </p>
             </div>
             
-            <div className="backdrop-blur-lg bg-white/10 rounded-3xl p-10 border border-white/20 shadow-2xl transform hover:scale-105 hover:-translate-y-3 transition-all duration-700 delay-200 hover:shadow-3xl">
-              <p className="text-xl md:text-2xl leading-relaxed text-white font-medium">
-                We're the movement that opens doors for every small business, turning barriers into bridges and dreams into realities. We're here to ensure that every entrepreneur has the chance to thrive, to be seen, and to be heard.
+            <div className="group backdrop-blur-xl bg-white/8 rounded-[2rem] p-12 md:p-16 border border-white/15 shadow-2xl transform hover:scale-105 hover:-translate-y-6 transition-all duration-1000 delay-400 hover:shadow-3xl hover:bg-white/15">
+              <p className="font-manrope text-2xl md:text-3xl lg:text-4xl leading-relaxed text-white font-light tracking-wide">
+                We're the movement that{' '}
+                <span className="font-medium text-accent">opens doors</span>{' '}
+                for every small business, turning barriers into bridges and dreams into realities. We're here to ensure that every entrepreneur has the chance to{' '}
+                <span className="font-medium text-secondary">thrive, to be seen, and to be heard</span>.
               </p>
             </div>
             
-            {/* Call to action with 3D effect */}
-            <div className="mt-16 transform hover:scale-110 transition-all duration-500">
-              <div className="backdrop-blur-xl bg-accent/20 rounded-3xl p-12 border-2 border-accent/40 shadow-2xl hover:shadow-3xl transition-all duration-500">
-                <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white"
+            {/* Refined call to action */}
+            <div className="mt-20 transform hover:scale-110 transition-all duration-700">
+              <div className="backdrop-blur-xl bg-gradient-to-br from-accent/25 to-secondary/20 rounded-[2rem] p-16 border-2 border-accent/30 shadow-2xl hover:shadow-3xl transition-all duration-700">
+                <p className="font-manrope text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-tight"
                    style={{
-                     textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 8px 40px rgba(0,0,0,0.4)',
-                     filter: 'drop-shadow(0 4px 15px rgba(255,255,255,0.2))'
+                     textShadow: '0 8px 32px rgba(0,0,0,0.6), 0 16px 64px rgba(0,0,0,0.5)',
+                     filter: 'drop-shadow(0 6px 25px rgba(255,255,255,0.25))',
+                     letterSpacing: '-0.01em'
                    }}>
-                  Datung. Join the movement.
+                  <span className="block font-light">Datung.</span>
+                  <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent font-semibold">
+                    Join the movement.
+                  </span>
                 </p>
               </div>
             </div>
