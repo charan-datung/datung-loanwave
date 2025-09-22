@@ -7,7 +7,7 @@ export const AmbassadorProgram = () => {
     <PageWrapper
       id="ambassador"
       backgroundImage="/images/ambassador-bg.jpg"
-      className="py-20 text-white"
+      className="py-32 min-h-[600px] text-white"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
