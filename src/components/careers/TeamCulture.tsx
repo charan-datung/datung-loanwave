@@ -8,7 +8,7 @@ export const TeamCulture = () => {
         <div className="max-w-6xl mx-auto">
           {/* Culture Content */}
           <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text-glow animate-float">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 pb-2 gradient-text-glow animate-float">
               Let's Build Something Amazing Together
             </h2>
             <p className="text-xl text-muted-foreground mb-16 max-w-3xl mx-auto">
