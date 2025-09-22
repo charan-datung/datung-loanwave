@@ -6,8 +6,6 @@ import { WhyJoinUs } from "@/components/careers/WhyJoinUs";
 import { WhyNotJoinUs } from "@/components/careers/WhyNotJoinUs";
 import { JobOpenings } from "@/components/careers/JobOpenings";
 import { TeamCulture } from "@/components/careers/TeamCulture";
-import { AnimatedCounters } from "@/components/careers/AnimatedCounters";
-import { ProcessingVisualization } from "@/components/careers/ProcessingVisualization";
 import { AnimatedParticles } from "@/components/careers/AnimatedParticles";
 
 const Careers = () => {
@@ -17,9 +15,7 @@ const Careers = () => {
       <Navbar />
       <CareersHero />
       <WhyJoinUs />
-      <AnimatedCounters />
       <WhyNotJoinUs />
-      <ProcessingVisualization />
       <TeamCulture />
       <JobOpenings />
       <AmbassadorProgram />
