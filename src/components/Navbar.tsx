@@ -1,11 +1,21 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ContactForm } from "@/components/ContactForm";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setIsOpen(false);
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-white/95 backdrop-blur-sm border-b z-[100]">
@@ -22,20 +32,51 @@ export const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
-              Home
-            </Link>
+            {isHomePage ? (
+              <>
+                <button 
+                  onClick={() => scrollToSection('hero')}
+                  className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                >
+                  Home
+                </button>
+                <button 
+                  onClick={() => scrollToSection('solutions')}
+                  className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                >
+                  Solutions
+                </button>
+                <button 
+                  onClick={() => scrollToSection('products')}
+                  className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                >
+                  Products
+                </button>
+                <button 
+                  onClick={() => scrollToSection('partners')}
+                  className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                >
+                  Partners
+                </button>
+              </>
+            ) : (
+              <>
+                <Link to="/" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
+                  Home
+                </Link>
+                <Link to="/business-loans" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
+                  Business Loans
+                </Link>
+                <Link to="/salary-loans" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
+                  Salary Loans
+                </Link>
+                <Link to="/technology" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
+                  Technology
+                </Link>
+              </>
+            )}
             <Link to="/mission" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Mission
-            </Link>
-            <Link to="/business-loans" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
-              Business Loans
-            </Link>
-            <Link to="/salary-loans" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
-              Salary Loans
-            </Link>
-            <Link to="/technology" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
-              Technology
             </Link>
             <Link to="/careers" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Careers
@@ -67,40 +108,71 @@ export const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
-              <Link 
-                to="/" 
-                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
+              {isHomePage ? (
+                <>
+                  <button 
+                    onClick={() => scrollToSection('hero')}
+                    className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                  >
+                    Home
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('solutions')}
+                    className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                  >
+                    Solutions
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('products')}
+                    className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                  >
+                    Products
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('partners')}
+                    className="block w-full text-left px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                  >
+                    Partners
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link 
+                    to="/" 
+                    className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Home
+                  </Link>
+                  <Link 
+                    to="/business-loans" 
+                    className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Business Loans
+                  </Link>
+                  <Link 
+                    to="/salary-loans" 
+                    className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Salary Loans
+                  </Link>
+                  <Link 
+                    to="/technology" 
+                    className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Technology
+                  </Link>
+                </>
+              )}
               <Link 
                 to="/mission" 
                 className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Mission
-              </Link>
-              <Link 
-                to="/business-loans" 
-                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Business Loans
-              </Link>
-              <Link 
-                to="/salary-loans" 
-                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Salary Loans
-              </Link>
-              <Link 
-                to="/technology" 
-                className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Technology
               </Link>
               <Link 
                 to="/careers" 
