@@ -11,7 +11,7 @@ export const CareersHero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center animate-fade-up">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-            Build the Future of Finance
+            Join us in Building the World's Largest & Most Innovative Microfinance Company
           </h1>
           <p className="text-xl md:text-2xl mb-12 opacity-95 max-w-3xl mx-auto leading-relaxed">
             Join a world-class team that's democratizing access to capital 
