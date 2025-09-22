@@ -47,7 +47,7 @@ export const Footer = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-2">
+                <div className="space-y-2 lg:-ml-8">
                   <div>
                     <h5 className="text-accent font-medium mb-2 text-xs">Las Piñas Office</h5>
                     <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
