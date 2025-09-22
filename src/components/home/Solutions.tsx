@@ -19,7 +19,7 @@ export const Solutions = () => {
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4 text-primary">Our Solutions</h2>
         <p className="text-sm md:text-base text-center text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
-          We have empowered <span className="font-bold text-primary">thousands</span> of Filipino entrepreneurs and professionals with innovative financial solutions.
+          We have <span className="font-bold text-primary">empowered</span> <span className="font-bold text-primary">thousands</span> of Filipino entrepreneurs and professionals with innovative financial solutions.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-sm md:max-w-none mx-auto">
           <Link to="/business-loans" className="group">
