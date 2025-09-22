@@ -7,19 +7,16 @@ export const MissionHero = () => {
       className="min-h-[80vh] flex items-center justify-center text-white pt-16 font-manrope"
     >
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto text-center animate-fade-up">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
-            On a mission to close the MSME finance gap.
+        <div className="max-w-4xl text-left animate-fade-up">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light mb-8 leading-tight">
+            On a mission to close the <em className="italic font-serif">MSME finance gap</em>
           </h1>
-          <div className="text-lg md:text-xl opacity-90 space-y-6 max-w-4xl mx-auto">
+          <div className="text-xl md:text-2xl opacity-90 max-w-2xl">
             <p>
-              Datung was founded to address the urgent issue of financial exclusion that leaves millions of small businesses in emerging markets without the capital they need to survive and grow. These businesses are the lifeblood of their communities, yet traditional financial systems have failed them, perpetuating cycles of poverty and stifling economic potential.
+              Financial inclusion powers economic growth.
             </p>
-            <p>
-              We recognize that this financial gap is not just a barrier — it's a deep-rooted injustice that limits opportunities and undermines the dreams of entrepreneurs. Our mission has evolved into something greater: we are here to challenge the status quo and build a new financial landscape where every small business, no matter how overlooked or underestimated, has the opportunity to rise, grow, and ignite change in their communities.
-            </p>
-            <p className="font-semibold">
-              This is more than a mission — it's a movement to unleash the untapped power of millions, and we won't rest until every entrepreneur has the chance to build the future they deserve.
+            <p className="mt-2">
+              We're making it accessible to every entrepreneur.
             </p>
           </div>
         </div>
