@@ -12,7 +12,7 @@ export const Footer = () => {
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
               <div>
                 <h3 className="text-2xl font-bold">Datung Pte Ltd</h3>
