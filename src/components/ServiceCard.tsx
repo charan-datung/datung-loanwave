@@ -18,7 +18,7 @@ export const ServiceCard = ({ title, description, icon: Icon, backgroundImage }:
         />
         
         {/* Text content at bottom */}
-        <div className="relative z-10 p-6 bg-gradient-to-t from-black/60 via-black/40 to-transparent rounded-b-2xl mt-auto">
+        <div className="relative z-10 p-6 bg-gradient-to-t from-black/30 via-black/20 to-transparent rounded-b-2xl mt-auto">
           <h3 className="text-xl md:text-2xl font-bold mb-3 text-white leading-tight">{title}</h3>
           <p className="text-sm md:text-base text-white/90 leading-relaxed">{description}</p>
         </div>
