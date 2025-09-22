@@ -6,48 +6,44 @@ import { Footer } from "@/components/Footer";
 
 const SalaryLoans = () => {
   return (
-    <div className="min-h-screen relative">
-      <div 
-        className="fixed inset-0 opacity-10 bg-cover bg-center -z-10"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40')", // Professional office workers in meeting
-        }}
-      />
+    <div className="min-h-screen">
       <Navbar />
-      <div className="bg-gradient-to-b from-secondary/95 to-secondary text-white relative z-10 pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-12">
+      <section className="pt-32 pb-20 px-4 min-h-screen flex items-center bg-primary">
+        <div className="container mx-auto text-center">
+          <h1 className="text-5xl md:text-7xl font-light mb-12 text-white leading-tight">
             Salary Loan Solutions
           </h1>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Link to="/salary-loans/company" className="block">
-              <div className="p-8 rounded-xl border-2 border-white/20 hover:border-white/40 transition-all text-center bg-white/5 backdrop-blur-sm">
-                <Building2 className="w-16 h-16 mx-auto mb-4" />
-                <h2 className="text-2xl font-bold mb-4">For Companies</h2>
-                <p className="mb-6 text-white/80">
+          <p className="text-xl text-white/80 mb-16 max-w-2xl mx-auto font-light">
+            Choose the right loan solution for your needs
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <Link to="/salary-loans/company" className="block group">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+                <Building2 className="w-20 h-20 mx-auto mb-6 text-accent" />
+                <h2 className="text-3xl font-medium mb-4 text-white">For Companies</h2>
+                <p className="mb-8 text-white/80 font-light leading-relaxed">
                   Partner with us to provide financial wellness benefits that drive productivity
                 </p>
                 <Button 
                   size="lg" 
-                  variant="default"
-                  className="bg-accent text-black hover:bg-accent/90"
+                  className="bg-white text-primary hover:bg-white/90 font-medium px-8 py-3 rounded-full transition-all"
                 >
                   Learn More
                 </Button>
               </div>
             </Link>
             
-            <Link to="/salary-loans/employee" className="block">
-              <div className="p-8 rounded-xl border-2 border-white/20 hover:border-white/40 transition-all text-center bg-white/5 backdrop-blur-sm">
-                <User className="w-16 h-16 mx-auto mb-4" />
-                <h2 className="text-2xl font-bold mb-4">For Employees</h2>
-                <p className="mb-6 text-white/80">
+            <Link to="/salary-loans/employee" className="block group">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+                <User className="w-20 h-20 mx-auto mb-6 text-accent" />
+                <h2 className="text-3xl font-medium mb-4 text-white">For Employees</h2>
+                <p className="mb-8 text-white/80 font-light leading-relaxed">
                   Access quick and flexible loan options with competitive rates
                 </p>
                 <Button 
                   size="lg" 
-                  variant="default"
-                  className="bg-accent text-black hover:bg-accent/90"
+                  className="bg-white text-primary hover:bg-white/90 font-medium px-8 py-3 rounded-full transition-all"
                 >
                   Learn More
                 </Button>
@@ -55,7 +51,7 @@ const SalaryLoans = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
       <Footer />
     </div>
   );
