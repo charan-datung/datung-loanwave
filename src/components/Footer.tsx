@@ -21,7 +21,7 @@ export const Footer = () => {
             </div>
             
             {/* Addresses */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div>
                 <h4 className="text-white font-semibold mb-3 text-sm">Philippines Office</h4>
                 <address className="not-italic text-gray-200 space-y-1 text-sm leading-relaxed">
