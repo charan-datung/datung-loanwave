@@ -12,7 +12,7 @@ export const Hero = () => {
       <div className="container mx-auto text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-            Empowering Filipino Businesses Through Finance and Technology
+            We are the future of microfinance — powered by AI, driven by community!
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Innovative financial solutions powered by AI technology for MSMEs and professionals across the Philippines
