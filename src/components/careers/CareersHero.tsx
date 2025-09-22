@@ -25,10 +25,7 @@ export const CareersHero = () => {
           {/* Subtitle with elegant spacing */}
           <div className="mb-12 max-w-3xl">
             <p className="text-xl md:text-2xl font-light leading-relaxed opacity-95">
-              We're democratizing access to capital for millions of underbanked businesses.
-            </p>
-            <p className="text-xl md:text-2xl font-light leading-relaxed opacity-95">
-              Help us create meaningful change across emerging markets.
+              We're democratizing access to capital for millions of underbanked businesses across emerging markets.
             </p>
           </div>
           
