@@ -1,31 +1,29 @@
-
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-16 mt-20">
+    <footer className="bg-primary text-white py-12 md:py-16 mt-16 md:mt-20">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          <div className="md:col-span-2 space-y-6">
-            <div className="flex items-center gap-4 mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-10 mb-8 md:mb-12">
+          <div className="lg:col-span-2 space-y-4 md:space-y-6">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-4 md:mb-6">
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
-                className="h-20 w-auto"
+                className="h-16 md:h-20 w-auto"
               />
               <div>
-                <h3 className="text-2xl font-bold">Datung Pte Ltd</h3>
+                <h3 className="text-xl md:text-2xl font-bold">Datung Pte Ltd</h3>
                 <p className="text-gray-200 text-sm font-medium">Borrow. Belong. Beyond.</p>
               </div>
             </div>
             
             {/* Office Addresses */}
             <div>
-              <h4 className="text-white font-semibold mb-4 text-sm">Our Offices</h4>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                {/* Philippines Offices */}
-                <div className="space-y-2">
+              <h4 className="text-white font-semibold mb-3 md:mb-4 text-sm">Our Offices</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-0">
+                <div className="space-y-3 md:space-y-2">
                   <div>
                     <h5 className="text-accent font-medium mb-2 text-xs">Manila Office</h5>
                     <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
@@ -47,7 +45,7 @@ export const Footer = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-2 lg:-ml-8">
+                <div className="space-y-3 md:space-y-2 mt-4 sm:mt-0 lg:-ml-4">
                   <div>
                     <h5 className="text-accent font-medium mb-2 text-xs">Parañaque Office</h5>
                     <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
@@ -72,9 +70,9 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             <h3 className="text-lg font-semibold text-white">Products</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 md:space-y-3">
               <li>
                 <Link to="/business-loans" className="text-gray-200 hover:text-accent transition-colors text-sm hover:translate-x-1 transform duration-200 inline-block">
                   Business Loans
@@ -87,8 +85,8 @@ export const Footer = () => {
               </li>
             </ul>
             
-            <h3 className="text-lg font-semibold text-white mt-8">Solutions</h3>
-            <ul className="space-y-3">
+            <h3 className="text-lg font-semibold text-white mt-6 md:mt-8">Solutions</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li>
                 <Link to="/technology" className="text-gray-200 hover:text-accent transition-colors text-sm hover:translate-x-1 transform duration-200 inline-block">
                   Technology
@@ -107,9 +105,9 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             <h3 className="text-lg font-semibold text-white">Company</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 md:space-y-3">
               <li>
                 <Link to="/mission" className="text-gray-200 hover:text-accent transition-colors text-sm hover:translate-x-1 transform duration-200 inline-block">
                   About Us
@@ -120,7 +118,7 @@ export const Footer = () => {
         </div>
         
         {/* Divider */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent mb-8"></div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent mb-6 md:mb-8"></div>
         
         {/* Bottom Section */}
         <div className="text-center">

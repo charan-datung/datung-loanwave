@@ -7,13 +7,13 @@ import technologyBg from "@/assets/technology-solutions-bg.jpg";
 
 export const Solutions = () => {
   return (
-    <section className="py-12 md:py-20 bg-white relative">
+    <section className="py-8 md:py-12 lg:py-20 bg-white relative">
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4 text-primary">Our Solutions</h2>
-        <p className="text-sm md:text-base text-center text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-2 md:mb-4 text-primary px-4">Our Solutions</h2>
+        <p className="text-sm md:text-base text-center text-gray-600 mb-6 md:mb-12 max-w-2xl mx-auto px-4">
           We have <span className="font-bold text-primary">empowered</span> <span className="font-bold text-primary">thousands</span> of Filipino entrepreneurs and professionals with innovative financial solutions.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-sm md:max-w-none mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-sm md:max-w-none mx-auto px-4">
           <Link to="/business-loans" className="group">
             <ServiceCard
               title="Business Loans"

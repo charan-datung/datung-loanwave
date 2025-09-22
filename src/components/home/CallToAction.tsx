@@ -7,17 +7,17 @@ export const CallToAction = () => {
     <PageWrapper
       backgroundImage="https://images.unsplash.com/photo-1527576539890-dfa815648363"
       gradientColors="rgba(0, 77, 77, 0.6), rgba(0, 179, 122, 0.5)"
-      className="py-20"
+      className="py-16 md:py-20"
     >
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-3xl font-bold mb-6 text-white">Ready to Transform Your Business?</h2>
-        <p className="text-xl mb-8 text-white/90">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">Ready to Transform Your Business?</h2>
+        <p className="text-lg md:text-xl mb-6 md:mb-8 text-white/90">
           Join thousands of Filipino businesses leveraging our financial technology solutions.
         </p>
         <ContactForm 
           defaultType="loan"
           triggerComponent={
-            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90">
+            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90 text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
               Get Started Today
             </Button>
           }
