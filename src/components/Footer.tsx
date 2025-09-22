@@ -37,6 +37,7 @@ export const Footer = () => {
                 <address className="not-italic text-gray-200 space-y-1 text-sm leading-relaxed">
                   <p>32 Pekin Street</p>
                   <p>048762</p>
+                  <p>Central Business District</p>
                   <p>Singapore</p>
                 </address>
               </div>
