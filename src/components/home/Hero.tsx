@@ -11,7 +11,7 @@ export const Hero = () => {
     >
       <div className="container mx-auto text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             We are the future of microfinance — powered by AI, driven by community!
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
