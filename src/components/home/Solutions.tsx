@@ -8,14 +8,6 @@ import technologyBg from "@/assets/technology-solutions-bg.jpg";
 export const Solutions = () => {
   return (
     <section className="py-12 md:py-20 bg-white relative">
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1460574283810-2aab119d8511')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4 text-primary">Our Solutions</h2>
         <p className="text-sm md:text-base text-center text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto px-4">

@@ -6,13 +6,7 @@ import { Building2, Users } from "lucide-react";
 
 export const Products = () => {
   return (
-    <section className="py-20 relative overflow-hidden">
-      <div 
-        className="absolute inset-0"
-        style={{
-          backgroundImage: "linear-gradient(to right, rgba(254, 198, 161, 0.1), rgba(249, 115, 22, 0.1))",
-        }}
-      />
+    <section className="py-20 relative overflow-hidden bg-white">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-12 text-primary">Our Products</h2>
         <Tabs defaultValue="lending" className="max-w-4xl mx-auto">
