@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import { PageWrapper } from "@/components/PageWrapper";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <PageWrapper
       backgroundImage="/lovable-uploads/hero-background.jpg"
@@ -26,18 +29,14 @@ export const Hero = () => {
                 </Button>
               }
             />
-            <ContactForm 
-              defaultType="partnership"
-              triggerComponent={
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="text-white border-white hover:bg-white/10 w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4"
-                >
-                  Partner with Datung
-                </Button>
-              }
-            />
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-white border-white hover:bg-white/10 w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4"
+              onClick={() => navigate("/mission")}
+            >
+              Join our Mission
+            </Button>
           </div>
         </div>
         
