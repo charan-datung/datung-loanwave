@@ -36,7 +36,7 @@ const openings = [
   },
   {
     title: "Head of Risk & Compliance",
-    department: "Risk & Compliance",
+    department: "Leadership",
     location: "Hybrid",
     type: "Full-time",
     applicationUrl: "https://careers.datung.com/head-of-risk-compliance",
