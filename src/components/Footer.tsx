@@ -16,7 +16,6 @@ export const Footer = () => {
               />
               <div>
                 <h3 className="text-2xl font-bold">Datung Pte Ltd</h3>
-                <p className="text-gray-200 text-sm">Datung Pte Ltd</p>
                 <p className="text-gray-200 text-sm font-medium">Borrow. Belong. Beyond.</p>
               </div>
             </div>
