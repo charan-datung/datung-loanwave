@@ -28,7 +28,7 @@ export const WhyJoinUs = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text-primary">
             Why Top Talent Chooses Datung
           </h2>

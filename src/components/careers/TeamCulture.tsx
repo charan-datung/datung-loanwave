@@ -11,7 +11,7 @@ export const TeamCulture = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text-glow animate-float">
               Let's Build Something Amazing Together
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground mb-16 max-w-3xl mx-auto">
               Our culture is built on innovation, collaboration, and the shared mission 
               to make financial services accessible to everyone. We move fast, think big, 
               and celebrate wins together.
