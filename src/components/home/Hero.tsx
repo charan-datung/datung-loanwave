@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import { PageWrapper } from "@/components/PageWrapper";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   const navigate = useNavigate();
@@ -14,13 +15,28 @@ export const Hero = () => {
     >
       <div className="container mx-auto text-center relative z-10 flex items-center justify-center min-h-screen -mt-8 md:-mt-16">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-white leading-tight">
+          <motion.h1 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-white leading-tight"
+          >
             We are the future of microfinance — powered by AI, driven by community!
-          </h1>
-          <p className="text-lg sm:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto px-2">
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-lg sm:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto px-2"
+          >
             Next-Gen Lending for the 42 million unbanked & underserved businesses in Southeast Asia
-          </p>
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 md:gap-4 px-4">
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 md:gap-4 px-4"
+          >
             <ContactForm 
               defaultType="loan"
               triggerComponent={
@@ -37,18 +53,23 @@ export const Hero = () => {
             >
               Join our Mission
             </Button>
-          </div>
+          </motion.div>
         </div>
         
         {/* SEC License Badge */}
-        <div className="absolute bottom-8 md:bottom-16 right-4 md:right-8 flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3">
+        <motion.div 
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+          className="absolute bottom-8 md:bottom-16 right-4 md:right-8 flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3"
+        >
           <span className="text-white/90 text-xs md:text-sm font-medium">Licensed by</span>
           <img 
             src="/sec-logo.png" 
             alt="Securities and Exchange Commission Philippines" 
             className="h-10 md:h-16 w-auto"
           />
-        </div>
+        </motion.div>
       </div>
     </PageWrapper>
   );
