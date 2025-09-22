@@ -76,6 +76,7 @@ export const JobOpenings = () => {
               >
                 ceo.office@datung.io
               </a>
+              {" "}or apply on LinkedIn
             </p>
             <Button 
               onClick={() => window.open('mailto:ceo.office@datung.io', '_blank')}
