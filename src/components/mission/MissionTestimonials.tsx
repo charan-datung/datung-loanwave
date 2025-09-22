@@ -1,78 +1,79 @@
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ContactForm } from "@/components/ContactForm";
+import { Users, DollarSign, HandHeart } from "lucide-react";
 
-const testimonials = [
+const joinOptions = [
   {
-    quote: "Through Datung's financial solutions, I was able to expand my small business and provide better opportunities for my family.",
-    author: "Eden Dajac",
-    role: "Small Business Owner",
-    image: "https://images.pexels.com/photos/7706493/pexels-photo-7706493.jpeg",
+    icon: Users,
+    title: "For Borrowers",
+    description: "Apply for a loan and join a community of driven entrepreneurs.",
+    action: "Apply for a Loan"
   },
   {
-    quote: "The process was simple and transparent. Now I can focus on growing my business without worrying about financial constraints.",
-    author: "Jocelyn Bawit",
-    role: "Restaurant Owner",
-    image: "https://images.pexels.com/photos/8963961/pexels-photo-8963961.jpeg",
+    icon: DollarSign,
+    title: "For Investors", 
+    description: "Explore opportunities to support Southeast Asian MSMEs and drive economic growth.",
+    action: "Learn More"
   },
+  {
+    icon: HandHeart,
+    title: "For Partners",
+    description: "Collaborate with us to expand our reach and impact.",
+    action: "Partner with Datung"
+  }
 ];
 
 export const MissionTestimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const next = () => {
-    setCurrentIndex((current) => (current + 1) % testimonials.length);
-  };
-
-  const previous = () => {
-    setCurrentIndex((current) => (current - 1 + testimonials.length) % testimonials.length);
-  };
-
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-primary text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Success Stories
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Mission</h2>
+          <p className="text-lg opacity-90 max-w-3xl mx-auto">
+            Whether you're an entrepreneur seeking funding, an investor looking to make an impact or a partner who shares our vision, there's a place for you in the Datung community.
+          </p>
+        </div>
         
-        <div className="max-w-4xl mx-auto relative">
-          <Card className="bg-white shadow-lg">
-            <CardContent className="p-8">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <img
-                  src={testimonials[currentIndex].image}
-                  alt={testimonials[currentIndex].author}
-                  className="w-24 h-24 rounded-full object-cover"
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {joinOptions.map((option, index) => (
+            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 group hover:bg-white/20 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <option.icon className="w-12 h-12 mx-auto mb-4 text-white group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="text-xl font-semibold mb-3">{option.title}</h3>
+                <p className="text-white/90 mb-4">{option.description}</p>
+                <ContactForm 
+                  defaultType="loan"
+                  triggerComponent={
+                    <Button variant="secondary" className="w-full">
+                      {option.action}
+                    </Button>
+                  }
                 />
-                <div>
-                  <blockquote className="text-lg md:text-xl mb-4 italic text-gray-700">
-                    "{testimonials[currentIndex].quote}"
-                  </blockquote>
-                  <div className="font-semibold">{testimonials[currentIndex].author}</div>
-                  <div className="text-gray-600">{testimonials[currentIndex].role}</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          
-          <div className="flex justify-center gap-4 mt-6">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={previous}
-              className="rounded-full"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={next}
-              className="rounded-full"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <h3 className="text-2xl font-bold mb-6">Ready to be part of the MSME revolution in Southeast Asia?</h3>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <ContactForm 
+              defaultType="loan"
+              triggerComponent={
+                <Button size="lg" variant="secondary" className="px-8 py-3">
+                  Apply for a Loan
+                </Button>
+              }
+            />
+            <ContactForm 
+              defaultType="partnership"
+              triggerComponent={
+                <Button size="lg" variant="outline" className="px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+                  Partner with Datung
+                </Button>
+              }
+            />
           </div>
         </div>
       </div>
