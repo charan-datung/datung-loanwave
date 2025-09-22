@@ -1,7 +1,7 @@
 import { Building2, Users, Computer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceCard } from "@/components/ServiceCard";
-import businessLoansBg from "@/assets/business-loans-bg.jpg";
+import businessLoansBg from "@/assets/business-loans-bg.png";
 
 export const Solutions = () => {
   return (
