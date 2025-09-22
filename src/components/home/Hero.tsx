@@ -22,17 +22,22 @@ export const Hero = () => {
               defaultType="loan"
               triggerComponent={
                 <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90 w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
-                  Get Started
+                  Apply for a Loan
                 </Button>
               }
             />
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="text-white border-white hover:bg-white/10 w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4"
-            >
-              Learn More
-            </Button>
+            <ContactForm 
+              defaultType="partnership"
+              triggerComponent={
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="text-white border-white hover:bg-white/10 w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4"
+                >
+                  Partner with Datung
+                </Button>
+              }
+            />
           </div>
         </div>
         
