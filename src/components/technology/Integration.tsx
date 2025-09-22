@@ -89,7 +89,7 @@ export const Integration = () => {
               triggerComponent={
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-secondary to-accent hover:from-primary hover:to-secondary text-white shadow-lg hover:shadow-secondary/25 transition-all duration-300 animate-pulse hover:animate-none"
+                  className="bg-gradient-to-r from-secondary to-accent hover:from-primary hover:to-secondary text-white shadow-lg hover:shadow-secondary/25 transition-all duration-300 animate-slow-pulse hover:animate-none"
                 >
                   <Zap className="w-5 h-5 mr-2" />
                   Schedule Demo

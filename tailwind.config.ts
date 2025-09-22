@@ -47,9 +47,18 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "slow-pulse": {
+          "0%, 100%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0.4",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
+        "slow-pulse": "slow-pulse 4s ease-in-out infinite",
       },
     },
   },
