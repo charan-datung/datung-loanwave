@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { CareersHero } from "@/components/careers/CareersHero";
 import { AmbassadorProgram } from "@/components/careers/AmbassadorProgram";
 import { WhyJoinUs } from "@/components/careers/WhyJoinUs";
+import { WhyNotJoinUs } from "@/components/careers/WhyNotJoinUs";
 import { JobOpenings } from "@/components/careers/JobOpenings";
 import { TeamCulture } from "@/components/careers/TeamCulture";
 
@@ -12,6 +13,7 @@ const Careers = () => {
       <Navbar />
       <CareersHero />
       <WhyJoinUs />
+      <WhyNotJoinUs />
       <TeamCulture />
       <JobOpenings />
       <AmbassadorProgram />
