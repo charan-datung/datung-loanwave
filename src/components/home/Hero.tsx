@@ -37,7 +37,7 @@ export const Hero = () => {
         </div>
         
         {/* SEC License Badge */}
-        <div className="absolute bottom-6 right-8 flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3">
+        <div className="absolute bottom-16 right-8 flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3">
           <span className="text-white/90 text-sm font-medium">Licensed by</span>
           <img 
             src="/sec-logo.png" 
