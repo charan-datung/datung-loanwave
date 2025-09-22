@@ -20,26 +20,54 @@ export const Footer = () => {
               </div>
             </div>
             
-            {/* Addresses */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-0">
-              <div>
-                <h4 className="text-white font-semibold mb-3 text-sm">Philippines Office</h4>
-                <address className="not-italic text-gray-200 space-y-1 text-sm leading-relaxed">
-                  <p>One Global Place</p>
-                  <p>Bonifacio Global City</p>
-                  <p>Taguig City, Manila</p>
-                  <p>Philippines</p>
-                </address>
-              </div>
-              
-              <div>
-                <h4 className="text-white font-semibold mb-3 text-sm">Singapore Office</h4>
-                <address className="not-italic text-gray-200 space-y-1 text-sm leading-relaxed">
-                  <p>32 Pekin Street</p>
-                  <p>048762</p>
-                  <p>Central Business District</p>
-                  <p>Singapore</p>
-                </address>
+            {/* Office Addresses */}
+            <div>
+              <h4 className="text-white font-semibold mb-4 text-sm">Our Offices</h4>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {/* Philippines Offices */}
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="text-accent font-medium mb-2 text-xs">Manila Office</h5>
+                    <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
+                      <p>One Global Place</p>
+                      <p>Bonifacio Global City</p>
+                      <p>Taguig City, Manila</p>
+                      <p>Philippines</p>
+                    </address>
+                  </div>
+                  
+                  <div>
+                    <h5 className="text-accent font-medium mb-2 text-xs">Parañaque Office</h5>
+                    <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
+                      <p>Datung Building</p>
+                      <p>Wimpex, Parañaque</p>
+                      <p>1700 Metro Manila</p>
+                      <p>Philippines</p>
+                    </address>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="text-accent font-medium mb-2 text-xs">Las Piñas Office</h5>
+                    <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
+                      <p>South Park Highs Commercial Complex</p>
+                      <p>Alabang–Zapote Rd, Las Piñas</p>
+                      <p>1747 Metro Manila</p>
+                      <p>Philippines</p>
+                    </address>
+                  </div>
+                  
+                  <div>
+                    <h5 className="text-accent font-medium mb-2 text-xs">Singapore Office</h5>
+                    <address className="not-italic text-gray-200 space-y-1 text-xs leading-relaxed">
+                      <p>32 Pekin Street</p>
+                      <p>048762</p>
+                      <p>Central Business District</p>
+                      <p>Singapore</p>
+                    </address>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
