@@ -20,16 +20,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
             "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
           cancelButton:
             "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
-        },
-        // Custom component styling will be applied when displaying toasts
-        icon: ({ id }) => (
-          <img 
-            src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
-            alt="Datung" 
-            className="h-5 w-5" 
-            key={id}
-          />
-        )
+        }
       }}
       {...props}
     />

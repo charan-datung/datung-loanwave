@@ -21,7 +21,7 @@ export function Toaster() {
               {title && (
                 <ToastTitle className="flex items-center gap-2">
                   <img 
-                    src="/lovable-uploads/3a518b84-ac0a-41f0-8ff8-5b27c2fa8160.png" 
+                    src="/datung-logo.png" 
                     alt="Datung" 
                     className="h-5 w-5"
                   />
