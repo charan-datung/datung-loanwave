@@ -30,22 +30,10 @@ export const CareersHero = () => {
           </div>
           
           {/* Call to action buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-start">
-            <ContactForm 
-              defaultType="partnership"
-              triggerComponent={
-                <Button
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 font-medium"
-                >
-                  Join Our Team
-                </Button>
-              }
-            />
+          <div className="flex justify-start">
             <Button
               size="lg"
-              variant="outline"
-              className="text-white border-white/30 hover:bg-white/10 text-lg px-8 py-4 font-medium"
+              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 font-medium"
               onClick={() => document.getElementById('job-openings')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Open Roles
