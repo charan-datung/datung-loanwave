@@ -12,7 +12,7 @@ export const Footer = () => {
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
-                className="h-12 w-auto"
+                className="h-36 w-auto"
               />
               <p className="text-gray-200 text-sm leading-relaxed max-w-xs">
                 Borrow. Belong. Beyond.
@@ -21,7 +21,7 @@ export const Footer = () => {
           </div>
           
           {/* Products */}
-          <div className="space-y-6">
+          <div className="space-y-2">
             <h3 className="text-white font-semibold text-base">Products</h3>
             <ul className="space-y-3">
               <li>
@@ -38,7 +38,7 @@ export const Footer = () => {
           </div>
 
           {/* Solutions */}
-          <div className="space-y-6">
+          <div className="space-y-2">
             <h3 className="text-white font-semibold text-base">Solutions</h3>
             <ul className="space-y-3">
               <li>
@@ -60,7 +60,7 @@ export const Footer = () => {
           </div>
 
           {/* Company */}
-          <div className="space-y-6">
+          <div className="space-y-2">
             <h3 className="text-white font-semibold text-base">Company</h3>
             <ul className="space-y-3">
               <li>
@@ -77,7 +77,7 @@ export const Footer = () => {
           </div>
 
           {/* Contact & Social */}
-          <div className="space-y-6">
+          <div className="space-y-2">
             <h3 className="text-white font-semibold text-base">Follow Us</h3>
             <div className="flex space-x-4">
               <a 
