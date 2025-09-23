@@ -5,34 +5,17 @@ export const Footer = () => {
   return (
     <footer className="bg-primary text-white py-16 mt-20">
       <div className="container mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
-          {/* Logo and Brand - Takes up more space */}
-          <div className="lg:col-span-2 space-y-6">
-            <div className="text-center lg:text-left">
-              <img 
-                src="/datung-logo-footer.png" 
-                alt="Datung Logo" 
-                className="h-28 w-auto mx-auto lg:mx-0 mb-1"
-              />
-              <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0">
-                Borrow. Belong. Beyond.
-              </p>
-            </div>
-            
-            {/* Office Info */}
-            <div className="text-center lg:text-left mt-8">
-              <h4 className="text-white font-semibold text-base mb-4">Our Offices</h4>
-              <div className="space-y-3">
-                <div className="text-gray-200 text-sm">
-                  <span className="text-accent font-medium">Philippines</span>
-                  <p className="mt-1">Manila • Las Piñas • Parañaque</p>
-                </div>
-                <div className="text-gray-200 text-sm">
-                  <span className="text-accent font-medium">International</span>
-                  <p className="mt-1">Singapore</p>
-                </div>
-              </div>
-            </div>
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 lg:gap-12">
+          {/* Logo and Brand */}
+          <div className="lg:col-span-2 text-center lg:text-left">
+            <img 
+              src="/datung-logo-footer.png" 
+              alt="Datung Logo" 
+              className="h-28 w-auto mx-auto lg:mx-0 mb-1"
+            />
+            <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0">
+              Borrow. Belong. Beyond.
+            </p>
           </div>
           
           {/* Products */}
@@ -74,10 +57,10 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Company & Social */}
+          {/* Company */}
           <div className="text-center lg:text-left">
             <h3 className="text-white font-semibold text-base mb-4">Company</h3>
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-3">
               <li>
                 <Link to="/mission" className="text-gray-200 hover:text-accent transition-colors text-sm block">
                   Mission
@@ -89,40 +72,55 @@ export const Footer = () => {
                 </Link>
               </li>
             </ul>
-            
-            {/* Social Media */}
-            <div>
-              <h4 className="text-white font-semibold text-base mb-4">Follow Us</h4>
-              <div className="flex justify-center lg:justify-start space-x-4">
-                <a 
-                  href="https://www.facebook.com/p/Datung-Financial-Services-61558527307292/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                  aria-label="Follow us on Facebook"
-                >
-                  <Facebook size={22} />
-                </a>
-                <a 
-                  href="https://www.instagram.com/datung.io/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                  aria-label="Follow us on Instagram"
-                >
-                  <Instagram size={22} />
-                </a>
-                <a 
-                  href="https://www.linkedin.com/company/datung" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                  aria-label="Follow us on LinkedIn"
-                >
-                  <Linkedin size={22} />
-                </a>
+          </div>
+
+          {/* Our Offices */}
+          <div className="text-center lg:text-left">
+            <h3 className="text-white font-semibold text-base mb-4">Our Offices</h3>
+            <div className="space-y-3">
+              <div className="text-gray-200 text-sm">
+                <span className="text-accent font-medium">Philippines</span>
+                <p className="mt-1">Manila • Las Piñas • Parañaque</p>
+              </div>
+              <div className="text-gray-200 text-sm">
+                <span className="text-accent font-medium">International</span>
+                <p className="mt-1">Singapore</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Social Media - Separate row */}
+        <div className="mt-12 text-center">
+          <h4 className="text-white font-semibold text-base mb-4">Follow Us</h4>
+          <div className="flex justify-center space-x-6">
+            <a 
+              href="https://www.facebook.com/p/Datung-Financial-Services-61558527307292/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
+              aria-label="Follow us on Facebook"
+            >
+              <Facebook size={24} />
+            </a>
+            <a 
+              href="https://www.instagram.com/datung.io/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
+              aria-label="Follow us on Instagram"
+            >
+              <Instagram size={24} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/company/datung" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
+              aria-label="Follow us on LinkedIn"
+            >
+              <Linkedin size={24} />
+            </a>
           </div>
         </div>
         
