@@ -8,13 +8,13 @@ export const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 lg:gap-16">
           {/* Logo and Brand */}
           <div className="lg:col-span-2 space-y-6">
-            <div className="space-y-1">
+            <div>
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
                 className="h-36 w-auto"
               />
-              <p className="text-gray-200 text-sm leading-relaxed max-w-xs">
+              <p className="text-gray-200 text-sm leading-relaxed max-w-xs -mt-2">
                 Borrow. Belong. Beyond.
               </p>
             </div>
