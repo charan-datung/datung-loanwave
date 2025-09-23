@@ -21,10 +21,16 @@ export const Footer = () => {
             
             {/* Office Info */}
             <div className="text-center lg:text-left mt-8">
-              <h4 className="text-white font-semibold text-base mb-3">Our Offices</h4>
-              <div className="text-gray-200 text-sm space-y-1">
-                <p>Manila • Las Piñas • Parañaque</p>
-                <p>Singapore</p>
+              <h4 className="text-white font-semibold text-base mb-4">Our Offices</h4>
+              <div className="space-y-3">
+                <div className="text-gray-200 text-sm">
+                  <span className="text-accent font-medium">Philippines</span>
+                  <p className="mt-1">Manila • Las Piñas • Parañaque</p>
+                </div>
+                <div className="text-gray-200 text-sm">
+                  <span className="text-accent font-medium">International</span>
+                  <p className="mt-1">Singapore</p>
+                </div>
               </div>
             </div>
           </div>
