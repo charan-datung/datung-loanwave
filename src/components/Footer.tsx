@@ -120,40 +120,39 @@ export const Footer = () => {
                 </Link>
               </li>
             </ul>
+            
+            {/* Social Media Links */}
+            <div className="mt-6 md:mt-8">
+              <h3 className="text-lg font-semibold text-white mb-3 md:mb-4">Follow Us</h3>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.facebook.com/p/Datung-Financial-Services-61558527307292/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
+                  aria-label="Follow us on Facebook"
+                >
+                  <Facebook size={24} />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/datung" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <Linkedin size={24} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         
         {/* Divider */}
         <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent mb-6 md:mb-8"></div>
         
-        {/* Social Media & Bottom Section */}
-        <div className="flex flex-col items-center space-y-6">
-          {/* Social Media Links */}
-          <div className="space-y-4">
-            <h4 className="text-white font-semibold text-center text-sm">Follow Us</h4>
-            <div className="flex space-x-6 justify-center">
-              <a 
-                href="https://www.facebook.com/p/Datung-Financial-Services-61558527307292/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                aria-label="Follow us on Facebook"
-              >
-                <Facebook size={24} />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/datung" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                aria-label="Follow us on LinkedIn"
-              >
-                <Linkedin size={24} />
-              </a>
-            </div>
-          </div>
-          
-          {/* Copyright */}
+        {/* Bottom Section */}
+        <div className="text-center">
           <p className="text-gray-200 text-sm">
             © {new Date().getFullYear()} Datung Pte Ltd. All rights reserved.
           </p>
