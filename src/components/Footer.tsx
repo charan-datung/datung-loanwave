@@ -82,11 +82,17 @@ export const Footer = () => {
             <div className="space-y-5">
               <div>
                 <div className="text-accent font-bold text-sm mb-2">Philippines</div>
-                <p className="text-gray-300 text-sm leading-relaxed">Manila • Las Piñas • Parañaque</p>
+                <ul className="text-gray-300 text-sm leading-relaxed space-y-1">
+                  <li>• Manila</li>
+                  <li>• Las Piñas</li>
+                  <li>• Parañaque</li>
+                </ul>
               </div>
               <div>
                 <div className="text-accent font-bold text-sm mb-2">International</div>
-                <p className="text-gray-300 text-sm leading-relaxed">Singapore</p>
+                <ul className="text-gray-300 text-sm leading-relaxed">
+                  <li>• Singapore</li>
+                </ul>
               </div>
             </div>
           </div>
