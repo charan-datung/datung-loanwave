@@ -7,14 +7,14 @@ export const Footer = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Logo and Brand - Takes up more space */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-6">
             <div className="text-center lg:text-left">
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
-                className="h-32 w-auto mx-auto lg:mx-0"
+                className="h-20 w-auto mx-auto lg:mx-0"
               />
-              <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0 -mt-2">
+              <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0 mt-1">
                 Borrow. Belong. Beyond.
               </p>
             </div>
