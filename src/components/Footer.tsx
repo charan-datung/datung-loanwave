@@ -12,9 +12,9 @@ export const Footer = () => {
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
-                className="h-20 w-auto mx-auto lg:mx-0"
+                className="h-28 w-auto mx-auto lg:mx-0"
               />
-              <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0 mt-1">
+              <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0 -mt-1">
                 Borrow. Belong. Beyond.
               </p>
             </div>
