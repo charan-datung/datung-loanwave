@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -133,6 +133,15 @@ export const Footer = () => {
                   aria-label="Follow us on Facebook"
                 >
                   <Facebook size={24} />
+                </a>
+                <a 
+                  href="https://www.instagram.com/datung.io/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
+                  aria-label="Follow us on Instagram"
+                >
+                  <Instagram size={24} />
                 </a>
                 <a 
                   href="https://www.linkedin.com/company/datung" 
