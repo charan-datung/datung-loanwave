@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Facebook, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -131,9 +131,9 @@ export const Footer = () => {
           {/* Social Media Links */}
           <div className="space-y-4">
             <h4 className="text-white font-semibold text-center text-sm">Follow Us</h4>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 justify-center">
               <a 
-                href="https://facebook.com/datung" 
+                href="https://www.facebook.com/p/Datung-Financial-Services-61558527307292/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
@@ -142,40 +142,13 @@ export const Footer = () => {
                 <Facebook size={24} />
               </a>
               <a 
-                href="https://instagram.com/datung" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                aria-label="Follow us on Instagram"
-              >
-                <Instagram size={24} />
-              </a>
-              <a 
-                href="https://linkedin.com/company/datung" 
+                href="https://www.linkedin.com/company/datung" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
                 aria-label="Follow us on LinkedIn"
               >
                 <Linkedin size={24} />
-              </a>
-              <a 
-                href="https://twitter.com/datung" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                aria-label="Follow us on Twitter"
-              >
-                <Twitter size={24} />
-              </a>
-              <a 
-                href="https://youtube.com/@datung" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-accent transition-colors transform hover:scale-110 duration-200"
-                aria-label="Subscribe to our YouTube channel"
-              >
-                <Youtube size={24} />
               </a>
             </div>
           </div>
