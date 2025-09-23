@@ -8,15 +8,15 @@ export const Footer = () => {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-10 mb-8 md:mb-12">
           <div className="lg:col-span-2 space-y-4 md:space-y-6">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-4 md:mb-6">
+            <div className="flex flex-col items-center text-center mb-4 md:mb-6">
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
-                className="h-16 md:h-20 w-auto"
+                className="h-24 md:h-32 w-auto mb-3"
               />
               <div>
-                <h3 className="text-xl md:text-2xl font-bold">Datung Pte Ltd</h3>
-                <p className="text-gray-200 text-sm font-medium">Borrow. Belong. Beyond.</p>
+                <h3 className="text-xl md:text-2xl font-bold">Datung</h3>
+                <p className="text-gray-200 text-sm font-medium mt-2">Borrow. Belong. Beyond.</p>
               </div>
             </div>
             
