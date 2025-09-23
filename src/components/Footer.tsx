@@ -12,15 +12,15 @@ export const Footer = () => {
               <img 
                 src="/datung-logo-footer.png" 
                 alt="Datung Logo" 
-                className="h-28 w-auto mx-auto lg:mx-0"
+                className="h-28 w-auto mx-auto lg:mx-0 mb-1"
               />
-              <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0 -mt-1">
+              <p className="text-gray-200 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0">
                 Borrow. Belong. Beyond.
               </p>
             </div>
             
             {/* Office Info */}
-            <div className="text-center lg:text-left">
+            <div className="text-center lg:text-left mt-8">
               <h4 className="text-white font-semibold text-base mb-3">Our Offices</h4>
               <div className="text-gray-200 text-sm space-y-1">
                 <p>Manila • Las Piñas • Parañaque</p>
