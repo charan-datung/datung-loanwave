@@ -312,34 +312,35 @@ export const JobOpenings = () => {
                   <p><strong>Location:</strong> Manila</p>
                   <p><strong>Type:</strong> Full-Time</p>
                 </div>
+                <h4 className="font-semibold mt-3 mb-2 text-foreground">About the job</h4>
               </div>
 
               <div className="space-y-4 text-foreground">
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Company Description</h4>
                   <p className="mb-4">
-                    Datung is at the forefront of microfinance innovation, utilizing AI, psychometrics, and community dynamics to unlock credit for 42 million underserved small businesses in Southeast Asia. Our work transforms unbanked entrepreneurs into creditworthy borrowers. With backing from Antler, Kaya Founders, Google, and NVIDIA, we operate out of our offices in Singapore and Manila, empowering excluded entrepreneurs to become economic drivers.
+                    Datung is reshaping the future of microfinance through AI and community-driven initiatives. By leveraging deep tech, psychometrics, and group dynamics, we provide credit to 42 million underserved small businesses across Southeast Asia. Supported by Antler, Kaya Founders, Google, and NVIDIA, Datung operates from offices in Singapore and Manila. We are dedicated to turning excluded entrepreneurs into empowered economic drivers.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Role Description</h4>
                   <p className="mb-4">
-                    This is a full-time on-site role for a Collections Officer based in Parañaque. The Collections Officer is responsible for managing and executing debt collection activities, analyzing financial data, and providing excellent customer service. The role includes communicating with clients regarding overdue payments, negotiating payment plans, and maintaining accurate records of collection activities.
+                    This is a full-time, on-site Accountant role based in Parañaque. The Accountant will be responsible for managing financial records, preparing financial statements, ensuring compliance with relevant regulations, and conducting financial analysis. Day-to-day tasks include bookkeeping, budgeting, and conducting audits to maintain financial accuracy and integrity.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Qualifications</h4>
                   <ul className="list-disc pl-6 space-y-1 mb-4">
-                    <li>Debt Collection skills and experience</li>
-                    <li>Analytical Skills and proficiency in financial analysis</li>
-                    <li>Customer Service skills and a strong communication ability</li>
-                    <li>Knowledge of Finance principles</li>
-                    <li>Excellent interpersonal skills</li>
-                    <li>Ability to work independently and as part of a team</li>
-                    <li>Experience in the microfinance or banking sector is a plus</li>
-                    <li>Bachelor's degree in Finance, Accounting, Business, or related field</li>
+                    <li>Proficiency in bookkeeping and managing financial records</li>
+                    <li>Experience in preparing financial statements and reports</li>
+                    <li>Strong understanding of regulatory compliance and financial regulations</li>
+                    <li>Ability to conduct thorough financial analysis and budgeting</li>
+                    <li>Attention to detail and strong organizational skills</li>
+                    <li>Excellent written and verbal communication skills</li>
+                    <li>Bachelor's degree in Accounting, Finance, or a related field</li>
+                    <li>CPA certification is a plus</li>
                   </ul>
                 </div>
 
