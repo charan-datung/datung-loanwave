@@ -99,7 +99,7 @@ export const Footer = () => {
         </div>
 
         {/* Social Media */}
-        <div className="mt-16 pt-8 border-t border-gray-600/30">
+        <div className="mt-8 pt-6 border-t border-gray-600/30">
           <div className="text-center">
             <h4 className="text-white font-bold text-lg mb-6 tracking-wide">Follow Us</h4>
             <div className="flex justify-center space-x-8">
