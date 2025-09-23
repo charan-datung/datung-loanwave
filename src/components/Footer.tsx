@@ -14,7 +14,7 @@ export const Footer = () => {
                 alt="Datung Logo" 
                 className="h-48 w-auto -mt-6"
               />
-              <p className="text-gray-300 text-sm font-medium mt-1 text-center">
+              <p className="text-gray-300 text-base font-cursive mt-1 text-center">
                 Borrow. Belong. Beyond.
               </p>
             </div>

@@ -35,6 +35,7 @@ export default {
       fontFamily: {
         sans: ["Manrope", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
         manrope: ["Manrope", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        cursive: ["Great Vibes", "cursive"],
       },
       keyframes: {
         "fade-up": {
