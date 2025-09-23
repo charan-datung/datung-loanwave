@@ -6,7 +6,7 @@ export const ContactFormHeader = () => {
       <img 
         src="/datung-logo-contact.png" 
         alt="Datung Logo" 
-        className="h-24 mx-auto"
+        className="h-36 mx-auto"
       />
       <div className="space-y-4 mt-4">
         <DialogTitle className="text-2xl font-semibold text-white">Get in Touch</DialogTitle>
