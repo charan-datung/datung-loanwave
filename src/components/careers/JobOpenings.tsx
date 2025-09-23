@@ -25,7 +25,7 @@ const openings = [
     department: "Finance",
     location: "Manila",
     type: "Full-time",
-    applicationUrl: "https://www.linkedin.com/jobs/view/4303633252",
+    applicationUrl: "https://www.linkedin.com/jobs/view/4303863369",
   },
   {
     title: "Chief of Staff",
@@ -349,7 +349,7 @@ export const JobOpenings = () => {
                   <p className="mb-4 text-foreground">Apply directly on LinkedIn or send your application to ceo.office@datung.io</p>
                   <div className="flex gap-4 justify-center">
                     <Button 
-                      onClick={() => window.open('https://www.linkedin.com/jobs/view/4303633252', '_blank')}
+                      onClick={() => window.open('https://www.linkedin.com/jobs/view/4303863369', '_blank')}
                       className="bg-primary hover:bg-primary/90"
                     >
                       Apply on LinkedIn
