@@ -137,7 +137,7 @@ export const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-600/30 text-center">
           <p className="text-gray-400 text-sm font-medium">
-            © {new Date().getFullYear()} Datung. All rights reserved.
+            © {new Date().getFullYear()} Datung Pte Ltd. All rights reserved.
           </p>
         </div>
       </div>
