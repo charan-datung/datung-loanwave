@@ -7,12 +7,12 @@ export const LoanFeatures = () => {
     {
       icon: Zap,
       title: "Fast Approval",
-      description: "Get approved within 24 hours",
-      highlight: "24 Hours"
+      description: "Get approved within 48 hours",
+      highlight: "48 Hours"
     },
     {
       icon: Calendar,
-      title: "6% Monthly Interest",
+      title: "Low Monthly Interest",
       description: "Competitive rates for individual loans",
       highlight: "Low Rate"
     },
