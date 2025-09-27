@@ -23,7 +23,7 @@ export const EmployeeHero = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-8 mb-12 text-white/70">
-            <span className="font-light">Competitive Monthly Interest</span>
+            <span className="font-light">Low Monthly Interest</span>
             <span className="font-light">•</span>
             <span className="font-light">48-Hour Approval</span>
             <span className="font-light">•</span>
