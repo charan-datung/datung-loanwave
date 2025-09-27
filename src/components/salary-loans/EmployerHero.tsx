@@ -23,7 +23,7 @@ export const EmployerHero = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-8 mb-12 text-white/70">
-            <span className="font-light">0% Interest for Employees</span>
+            <span className="font-light">Low Interest for Employees</span>
             <span className="font-light">•</span>
             <span className="font-light">Boost Employee Satisfaction</span>
             <span className="font-light">•</span>
