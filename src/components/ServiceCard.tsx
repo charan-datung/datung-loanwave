@@ -30,7 +30,7 @@ export const ServiceCard = ({ title, description, icon: Icon, backgroundImage }:
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transform translate-x-full group-hover:translate-x-[-100%] transition-all duration-1200 ease-out"></div>
 
         {/* Text content at bottom */}
-        <div className="relative z-10 p-4 md:p-6 bg-gradient-to-t from-black/60 via-black/40 to-transparent rounded-b-xl md:rounded-b-2xl mt-auto transform transition-all duration-700 ease-out group-hover:translate-y-[-1px]">
+        <div className="relative z-10 p-4 md:p-6 bg-gradient-to-t from-primary/80 via-primary/50 to-transparent rounded-b-xl md:rounded-b-2xl mt-auto transform transition-all duration-700 ease-out group-hover:translate-y-[-1px]">
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 md:mb-3 text-white leading-tight transform transition-all duration-700 ease-out group-hover:scale-[1.02]">{title}</h3>
           <p className="text-sm md:text-base text-white/90 leading-relaxed transform transition-all duration-700 ease-out group-hover:text-white/95">{description}</p>
         </div>
