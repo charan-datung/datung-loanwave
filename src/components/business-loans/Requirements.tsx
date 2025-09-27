@@ -20,7 +20,7 @@ export const Requirements = () => {
     {
       icon: Users,
       title: "Group Formation",
-      description: "Form a group of 3-5 business owners from your area",
+      description: "Groups of 3-10 business owners from your area",
       details: ["Same barangay preferred", "Mutual guarantee", "Group solidarity", "Shared responsibility"],
       color: "accent"
     }

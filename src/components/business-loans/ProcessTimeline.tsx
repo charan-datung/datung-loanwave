@@ -5,7 +5,7 @@ export const ProcessTimeline = () => {
     { 
       title: "Group Formation", 
       icon: Users, 
-      description: "Form a group of 3-5 business owners",
+      description: "Groups of 3-10 business owners",
       time: "Day 1"
     },
     { 
