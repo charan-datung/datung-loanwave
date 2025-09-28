@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ContactForm } from "@/components/ContactForm";
 import { Users, DollarSign, HandHeart } from "lucide-react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const joinOptions = [
   {
@@ -26,6 +27,8 @@ const joinOptions = [
 ];
 
 export const MissionTestimonials = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="py-20 bg-primary text-white">
       <div className="container mx-auto px-4">
@@ -142,6 +145,14 @@ export const MissionTestimonials = () => {
                 </Button>
               }
             />
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="px-8 py-3 border-white text-white hover:bg-white hover:text-primary"
+              onClick={() => navigate('/careers')}
+            >
+              Open Jobs
+            </Button>
           </motion.div>
         </motion.div>
       </div>
