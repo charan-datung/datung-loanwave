@@ -133,7 +133,7 @@ export const MissionTestimonials = () => {
               size="lg" 
               variant="secondary" 
               className="px-8 py-3"
-              onClick={() => navigate('/careers')}
+              onClick={() => navigate('/careers#job-openings')}
             >
               View Open Roles
             </Button>
