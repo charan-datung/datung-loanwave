@@ -129,29 +129,21 @@ export const MissionTestimonials = () => {
             transition={{ duration: 0.6, delay: 1.0 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <ContactForm 
-              defaultType="loan"
-              triggerComponent={
-                <Button size="lg" variant="secondary" className="px-8 py-3">
-                  Apply for a Loan
-                </Button>
-              }
-            />
-            <ContactForm 
-              defaultType="partnership"
-              triggerComponent={
-                <Button size="lg" variant="outline" className="px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
-                  Partner with Datung
-                </Button>
-              }
-            />
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="px-8 py-3"
+              onClick={() => navigate('/careers')}
+            >
+              View Open Roles
+            </Button>
             <Button 
               size="lg" 
               variant="outline" 
               className="px-8 py-3 border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => navigate('/careers')}
+              onClick={() => navigate('/careers#ambassador')}
             >
-              Open Jobs
+              Become Ambassador
             </Button>
           </motion.div>
         </motion.div>
