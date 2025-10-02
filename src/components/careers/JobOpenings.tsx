@@ -276,13 +276,13 @@ export const JobOpenings = () => {
 
                 <div className="bg-primary/20 border border-primary/30 p-4 rounded-lg text-center">
                   <h4 className="text-lg font-semibold mb-2 text-foreground">Apply now</h4>
-                  <p className="mb-4 text-foreground">Apply directly on LinkedIn or send your application to ceo.office@datung.io</p>
+                  <p className="mb-4 text-foreground">Apply directly on JobStreet or send your application to ceo.office@datung.io</p>
                   <div className="flex gap-4 justify-center">
                     <Button 
-                      onClick={() => window.open('https://www.linkedin.com/jobs/view/4303399768', '_blank')}
+                      onClick={() => window.open('https://ph.jobstreet.com/job/87605531', '_blank')}
                       className="bg-primary hover:bg-primary/90"
                     >
-                      Apply on LinkedIn
+                      Apply on JobStreet
                     </Button>
                     <Button 
                       onClick={() => window.open('mailto:ceo.office@datung.io', '_blank')}
