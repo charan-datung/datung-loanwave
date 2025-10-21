@@ -41,6 +41,13 @@ const openings = [
     type: "Full-time",
     applicationUrl: "https://careers.datung.com/head-of-risk-compliance",
   },
+  {
+    title: "Payment Associate",
+    department: "Operations",
+    location: "Hybrid",
+    type: "Full-time",
+    applicationUrl: "https://ph.jobstreet.com/job/88008249?ref=hirer-success-posting",
+  },
 ];
 
 export const JobOpenings = () => {
