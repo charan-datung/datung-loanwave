@@ -31,6 +31,12 @@ export default {
           DEFAULT: "#00D68F", // Lighter green accent
           foreground: "#000000",
         },
+        // Bayad landing page colors
+        bayad: {
+          blue: "#0056D2", // Trust, Corporate
+          green: "#00C853", // Action, Cash, Success
+          red: "#D50000", // Alert, Pain point
+        },
       },
       fontFamily: {
         sans: ["Manrope", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],

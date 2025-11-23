@@ -9,6 +9,7 @@ import CompanySalaryLoans from "./pages/CompanySalaryLoans";
 import EmployeeSalaryLoans from "./pages/EmployeeSalaryLoans";
 import Mission from "./pages/Mission";
 import Careers from "./pages/Careers";
+import Bayad from "./pages/Bayad";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/salary-loans/employee" element={<EmployeeSalaryLoans />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/bayad" element={<Bayad />} />
       </Routes>
       <Toaster />
     </Router>
