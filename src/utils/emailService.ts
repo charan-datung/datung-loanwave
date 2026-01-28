@@ -12,6 +12,7 @@ interface EmailData {
   email: string;
   phone: string;
   company: string;
+  companyContactDetails?: string;
   type: "loan" | "partnership" | "demo" | "ambassador" | "job";
   message: string;
 }
@@ -38,6 +39,7 @@ export const sendAdminEmail = async (formData: EmailData) => {
       from_email: formData.email,
       phone: formData.phone,
       company: formData.company,
+      company_contact: formData.companyContactDetails || '',
       type: formData.type,
       message: formData.message,
     },
