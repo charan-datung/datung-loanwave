@@ -12,6 +12,7 @@ import { ContactFormPersonalFields } from "./contact/ContactFormPersonalFields";
 import { ContactFormCompanyFields } from "./contact/ContactFormCompanyFields";
 import { ContactFormInquiryFields } from "./contact/ContactFormInquiryFields";
 import { ContactFormSubmit } from "./contact/ContactFormSubmit";
+import { ContactFormSuccess } from "./contact/ContactFormSuccess";
 
 interface ContactFormProps {
   defaultType?: "loan" | "partnership" | "demo" | "ambassador" | "job";
@@ -21,6 +22,7 @@ interface ContactFormProps {
 export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,10 +34,29 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
   });
   const { toast } = useToast();
 
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      companyContactDetails: "",
+      type: defaultType || "loan",
+      message: "",
+    });
+    setIsSubmitted(false);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+    setTimeout(() => {
+      resetForm();
+    }, 300);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validate all required fields
     if (!formData.name || !formData.email || !formData.phone || !formData.company || 
         !formData.companyContactDetails || !formData.message) {
       toast({
@@ -47,7 +68,6 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
       return;
     }
 
-    // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast({
@@ -67,22 +87,7 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
         sendUserEmail(formData)
       ]);
       
-      toast({
-        title: "Success!",
-        description: "Thank you for reaching out. We'll get back to you within 24-48 hours.",
-        duration: 6000,
-      });
-      
-      setIsOpen(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        companyContactDetails: "",
-        type: defaultType || "loan",
-        message: "",
-      });
+      setIsSubmitted(true);
     } catch (error) {
       console.error('Email Service Error:', error);
       toast({
@@ -97,30 +102,43 @@ export const ContactForm = ({ defaultType, triggerComponent }: ContactFormProps)
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog open={isOpen} onOpenChange={(open) => {
+      setIsOpen(open);
+      if (!open) {
+        setTimeout(() => {
+          resetForm();
+        }, 300);
+      }
+    }}>
       <DialogTrigger asChild>
         {triggerComponent || <Button variant="default">Contact Us</Button>}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto bg-primary">
-        <ContactFormHeader />
-        <form onSubmit={handleSubmit} className="space-y-6 mt-8">
-          <ContactFormPersonalFields 
-            formData={formData}
-            setFormData={setFormData}
-            disabled={isLoading}
-          />
-          <ContactFormCompanyFields 
-            formData={formData}
-            setFormData={setFormData}
-            disabled={isLoading}
-          />
-          <ContactFormInquiryFields 
-            formData={formData}
-            setFormData={setFormData}
-            disabled={isLoading}
-          />
-          <ContactFormSubmit isLoading={isLoading} />
-        </form>
+        {isSubmitted ? (
+          <ContactFormSuccess onClose={handleClose} />
+        ) : (
+          <>
+            <ContactFormHeader />
+            <form onSubmit={handleSubmit} className="space-y-6 mt-8">
+              <ContactFormPersonalFields 
+                formData={formData}
+                setFormData={setFormData}
+                disabled={isLoading}
+              />
+              <ContactFormCompanyFields 
+                formData={formData}
+                setFormData={setFormData}
+                disabled={isLoading}
+              />
+              <ContactFormInquiryFields 
+                formData={formData}
+                setFormData={setFormData}
+                disabled={isLoading}
+              />
+              <ContactFormSubmit isLoading={isLoading} />
+            </form>
+          </>
+        )}
       </DialogContent>
     </Dialog>
   );
