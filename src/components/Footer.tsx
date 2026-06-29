@@ -135,11 +135,26 @@ export const Footer = () => {
         </div>
         
         {/* Bottom Section */}
-        <div className="mt-12 pt-8 border-t border-gray-600/30 text-center">
-          <p className="text-gray-400 text-sm font-medium">
-            © {new Date().getFullYear()} Datung Pte Ltd. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-gray-600/30 space-y-4">
+          <div className="text-gray-300 text-xs leading-relaxed max-w-4xl mx-auto text-center space-y-1">
+            <p className="font-semibold text-white/90">
+              Datung is the operating brand of Dark Knight Lending, Inc.
+              <span className="text-gray-400"> (formerly Dark Knight Analytics, Inc.)</span>
+            </p>
+            <p>
+              SEC Registration No. <span className="text-white/90">2024070157507-01</span>
+              {" · "}
+              Certificate of Authority to Operate as a Lending Company No. <span className="text-white/90">3506</span>
+            </p>
+            <p className="text-gray-400">
+              Registered office: Level 10-1, One Global Place, 5th Avenue &amp; 25th Street, Fort Bonifacio, BGC, Taguig City 1630, Philippines
+            </p>
+          </div>
+          <p className="text-gray-400 text-sm font-medium text-center">
+            © {new Date().getFullYear()} Dark Knight Lending, Inc. (Datung). All rights reserved.
           </p>
         </div>
+
       </div>
     </footer>
   );
