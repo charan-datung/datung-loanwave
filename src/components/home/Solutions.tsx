@@ -1,9 +1,9 @@
 import { Building2, Users, Computer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceCard } from "@/components/ServiceCard";
-import businessLoansBg from "@/assets/business-loans-bg-new.jpg";
-import salaryLoansBg from "@/assets/salary-loans-bg.jpg";
-import technologyBg from "@/assets/technology-solutions-bg.jpg";
+import businessLoansBg from "@/assets/msme-business-loans.jpg";
+import salaryLoansBg from "@/assets/msme-salary-loans.jpg";
+import technologyBg from "@/assets/msme-technology.jpg";
 import { motion } from "framer-motion";
 
 export const Solutions = () => {
