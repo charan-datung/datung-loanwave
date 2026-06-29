@@ -3,8 +3,11 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/home/Hero";
 import { ImpactStats } from "@/components/home/ImpactStats";
 import { Solutions } from "@/components/home/Solutions";
+import { HowItWorks } from "@/components/home/HowItWorks";
 import { Products } from "@/components/home/Products";
 import { Partners } from "@/components/home/Partners";
+import { FAQ } from "@/components/home/FAQ";
+import { VisitUs } from "@/components/home/VisitUs";
 import { CallToAction } from "@/components/home/CallToAction";
 import { motion } from "framer-motion";
 
@@ -102,8 +105,11 @@ const Index = () => {
       <Hero />
       <ImpactStats />
       <Solutions />
+      <HowItWorks />
       <Products />
       <Partners />
+      <FAQ />
+      <VisitUs />
       <CallToAction />
       <Footer />
     </div>
