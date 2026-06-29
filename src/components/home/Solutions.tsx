@@ -19,7 +19,7 @@ export const Solutions = () => {
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 md:mb-4 text-primary px-4">Our Solutions</h2>
           <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto px-4">
-            We have <span className="font-bold text-primary">empowered</span> <span className="font-bold text-primary">thousands</span> of Filipino entrepreneurs and professionals with innovative financial solutions.
+            We have <span className="font-bold text-primary">financed over 4,000</span> Filipino entrepreneurs and professionals with innovative financial solutions.
           </p>
         </motion.div>
         

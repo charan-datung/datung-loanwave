@@ -85,8 +85,13 @@ export const Footer = () => {
                 <ul className="text-gray-300 text-sm leading-relaxed space-y-1">
                   <li>• Manila</li>
                   <li>• Las Piñas</li>
-                  <li>• Parañaque</li>
+                  <li>• Parañaque (HQ)</li>
                 </ul>
+                <p className="text-gray-400 text-xs leading-relaxed mt-3">
+                  Datung Building (Wimpex),<br />
+                  W Service Road, Sucat,<br />
+                  Parañaque City
+                </p>
               </div>
               <div>
                 <div className="text-accent font-bold text-sm mb-2">International</div>
