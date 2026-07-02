@@ -3,7 +3,7 @@ import { Users, Banknote, Calendar, Building2, MapPin } from "lucide-react";
 
 const stats = [
   { icon: Users, value: "4,000+", label: "Businesses Financed" },
-  { icon: Banknote, value: "₱60M+", label: "Loans Disbursed" },
+  { icon: Banknote, value: "₱100M+", label: "Loans Disbursed" },
   { icon: Calendar, value: "2 Years", label: "Operating in PH" },
   { icon: Building2, value: "5", label: "Partner Employers" },
   { icon: MapPin, value: "Metro Manila", label: "Served Today" },
