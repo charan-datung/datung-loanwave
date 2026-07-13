@@ -1,0 +1,19 @@
+# Datung — robots.txt
+User-agent: *
+Allow: /
+Disallow: /lovable/
+
+# AI crawlers welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://datung.io/sitemap.xml

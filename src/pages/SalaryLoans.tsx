@@ -3,6 +3,7 @@ import { Building2, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Seo } from "@/components/Seo";
 import { motion } from "framer-motion";
 
 // Floating background particles component
@@ -49,6 +50,12 @@ const FloatingParticles = () => {
 const SalaryLoans = () => {
   return (
     <div className="min-h-screen relative">
+      <Seo
+        title="Salary Loans Philippines — For Employees & Employers | Datung"
+        description="Salary loans in the Philippines with 48-hour approval. Solutions for employees needing quick cash, and for companies offering financial wellness benefits."
+        path="/salary-loans"
+        keywords="salary loan Philippines, payroll loan Philippines, employee loan, financial wellness benefit, Datung salary loans"
+      />
       <FloatingParticles />
       <Navbar />
       <section className="pt-32 pb-20 px-4 min-h-screen flex items-center bg-primary">

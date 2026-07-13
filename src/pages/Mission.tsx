@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { MissionHero } from "@/components/mission/MissionHero";
 import { MissionManifesto } from "@/components/mission/MissionManifesto";
@@ -53,6 +54,12 @@ const FloatingParticles = () => {
 const Mission = () => {
   return (
     <div className="min-h-screen relative">
+      <Seo
+        title="Our Mission — Financial Inclusion for 42M Unbanked Filipinos | Datung"
+        description="Datung's mission: bring financial inclusion to 42 million unbanked and underserved Filipino entrepreneurs through AI-powered microfinance and community lending."
+        path="/mission"
+        keywords="financial inclusion Philippines, unbanked Filipinos, Datung mission, microfinance mission"
+      />
       <FloatingParticles />
       <Navbar />
       <MissionHero />
