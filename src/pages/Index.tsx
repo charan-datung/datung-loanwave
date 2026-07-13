@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Seo } from "@/components/Seo";
 import { Hero } from "@/components/home/Hero";
 import { ImpactStats } from "@/components/home/ImpactStats";
 import { Solutions } from "@/components/home/Solutions";
@@ -99,6 +100,33 @@ const GeometricShapes = () => {
 const Index = () => {
   return (
     <div className="min-h-screen relative">
+      <Seo
+        title="Datung — MSME & Salary Loans in the Philippines | AI-Powered Microfinance"
+        description="Datung offers fast MSME loans, SME working capital (₱100K–₱500K) and salary loans in the Philippines. AI credit scoring, 48-hour approval, community-powered lending. Over ₱100M disbursed. SEC-licensed."
+        path="/"
+        keywords="MSME loans Philippines, microfinance Philippines, salary loan Philippines, SME working capital, sari-sari store loan, business loan Philippines, Datung, AI lending, unbanked Filipinos"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "FinancialService",
+            name: "Datung",
+            url: "https://datung.io",
+            logo: "https://datung.io/datung-logo.png",
+            description: "AI-powered microfinance and salary lending platform in the Philippines.",
+            areaServed: { "@type": "Country", name: "Philippines" },
+            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1200" }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              { "@type": "Question", name: "Who can apply for a Datung loan?", acceptedAnswer: { "@type": "Answer", text: "Filipino micro-entrepreneurs, SMEs, and salaried employees can apply. Micro loans start at ₱5,000 and SME working capital goes up to ₱500,000." } },
+              { "@type": "Question", name: "How fast is loan approval at Datung?", acceptedAnswer: { "@type": "Answer", text: "Datung offers 48-hour approval powered by AI credit scoring and community-based verification." } },
+              { "@type": "Question", name: "Is Datung SEC-licensed?", acceptedAnswer: { "@type": "Answer", text: "Yes, Datung is licensed by the Securities and Exchange Commission of the Philippines." } }
+            ]
+          }
+        ]}
+      />
       <FloatingParticles />
       <GeometricShapes />
       <Navbar />
