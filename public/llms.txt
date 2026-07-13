@@ -1,0 +1,17 @@
+# Datung
+
+> AI-powered microfinance for unbanked and underserved Filipinos, offering MSME loans, SME working capital, and salary loans with 48-hour approval and community-driven lending.
+
+Datung is a Philippine financial services platform focused on expanding access to credit for MSMEs, employees, and community members who are traditionally underserved by banks. The site explains Datung's loan products, proprietary AI credit scoring technology, social mission, and career opportunities.
+
+## Pages
+
+- [Home](/): Overview of Datung's mission, loan products, and how the platform works.
+- [Business Loans](/business-loans): MSME and SME working capital loans for Philippine businesses.
+- [Salary Loans](/salary-loans): Salary loan options for employees and companies.
+- [Employee Salary Loans](/salary-loans/employee): Salary loan product designed for individual employees.
+- [Company Salary Loans](/salary-loans/company): Salary loan solutions for employers and their staff.
+- [Technology](/technology): Datung's AI-driven credit scoring and lending infrastructure.
+- [Mission](/mission): Datung's social mission and commitment to financial inclusion.
+- [Careers](/careers): Open roles and opportunities to join the Datung team.
+- [Bayad](/bayad): Datung Bayad cash withdrawal service at partner stores.
