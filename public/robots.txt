@@ -16,4 +16,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://datung.io/sitemap.xml
+Sitemap: https://datung-loanwave.lovable.app/sitemap.xml
