@@ -1,4 +1,4 @@
-import { Store, Building2, Users, Truck, Scissors, Coffee, ShoppingBag, Wrench } from "lucide-react";
+import { Store, Building2, Users, Truck, Scissors, Coffee, ShoppingBag, Wrench, Stethoscope, Printer, Dog, Shirt } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const WhoCanApply = () => {
@@ -11,7 +11,11 @@ export const WhoCanApply = () => {
     { title: "Food Cart Vendors", icon: Coffee, description: "Mobile food businesses" },
     { title: "Beauty Salons", icon: Scissors, description: "Hair and beauty services" },
     { title: "Repair Shops", icon: Wrench, description: "Electronics and appliance repair" },
-    { title: "Delivery Services", icon: Truck, description: "Local logistics and delivery" }
+    { title: "Delivery Services", icon: Truck, description: "Local logistics and delivery" },
+    { title: "Dental Clinics", icon: Stethoscope, description: "Fixed-location healthcare practices" },
+    { title: "Veterinary Clinics", icon: Dog, description: "Pet care and veterinary services" },
+    { title: "Print Shops", icon: Printer, description: "Custom printing and signage businesses" },
+    { title: "Laundromats", icon: Shirt, description: "Self-service laundry businesses" }
   ];
 
   return (
@@ -28,7 +32,7 @@ export const WhoCanApply = () => {
             Who Can Apply?
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto font-light">
-            We support all types of Filipino micro and small businesses
+            We support micro-merchants through established fixed-location SMEs
           </p>
         </motion.div>
         
