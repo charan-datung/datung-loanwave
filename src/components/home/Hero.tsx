@@ -67,7 +67,10 @@ export const Hero = () => {
           <img 
             src="/sec-logo.png" 
             alt="Securities and Exchange Commission Philippines" 
+            width="1200"
+            height="769"
             className="h-10 md:h-16 w-auto"
+            fetchpriority="high"
           />
         </motion.div>
       </div>
