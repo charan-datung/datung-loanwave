@@ -121,6 +121,7 @@ const Index = () => {
             "@type": "FAQPage",
             mainEntity: [
               { "@type": "Question", name: "Who can apply for a Datung loan?", acceptedAnswer: { "@type": "Answer", text: "Filipino micro-entrepreneurs, SMEs, and salaried employees can apply. Micro loans start at ₱5,000 and SME working capital goes up to ₱500,000." } },
+              { "@type": "Question", name: "What is Datung SME Working Capital?", acceptedAnswer: { "@type": "Answer", text: "SME Working Capital is a larger-ticket financing option for fixed-location businesses such as dental and veterinary clinics, print shops, laundromats, and independent retail stores. It provides ₱100,000–₱500,000 for inventory, purchase orders, or receivable advancement, with 6 or 12-month monthly amortization." } },
               { "@type": "Question", name: "How fast is loan approval at Datung?", acceptedAnswer: { "@type": "Answer", text: "Datung offers 48-hour approval powered by AI credit scoring and community-based verification." } },
               { "@type": "Question", name: "Is Datung SEC-licensed?", acceptedAnswer: { "@type": "Answer", text: "Yes, Datung is licensed by the Securities and Exchange Commission of the Philippines." } }
             ]
