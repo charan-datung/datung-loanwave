@@ -70,7 +70,7 @@ export const Hero = () => {
             width="1200"
             height="769"
             className="h-10 md:h-16 w-auto"
-            fetchpriority="high"
+            fetchPriority="high"
           />
         </motion.div>
       </div>
