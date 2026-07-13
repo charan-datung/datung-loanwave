@@ -24,13 +24,13 @@ export const ProcessTimeline = () => {
       title: "Approval", 
       icon: CheckCircle2, 
       description: "Get loan approval notification",
-      time: "Day 3"
+      time: "48 Hours"
     },
     { 
       title: "Cash Release", 
       icon: CreditCard, 
       description: "Receive your funds",
-      time: "Day 3"
+      time: "48 Hours"
     },
   ];
 
@@ -39,10 +39,10 @@ export const ProcessTimeline = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-primary">
-            Simple 3-Day Process
+            Simple, Fast Process
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto font-light">
-            From application to cash in hand - streamlined and efficient
+            From application to approval in as fast as 48 hours — streamlined and efficient
           </p>
         </div>
         
