@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -9,11 +10,15 @@ import {
 const faqs = [
   {
     q: "How much can I borrow from Datung?",
-    a: "Business loans range from ₱5,000 to ₱50,000 for first-time borrowers, with higher amounts available for repeat clients in good standing. Salary loan amounts depend on your employer partnership and net monthly pay.",
+    a: "Micro business loans range from ₱5,000 to ₱50,000 for first-time borrowers, with higher amounts available for repeat clients in good standing. For established SMEs needing larger working capital, we now offer SME Working Capital loans from ₱100,000 to ₱500,000. Salary loan amounts depend on your employer partnership and net monthly pay.",
+  },
+  {
+    q: "What is Datung SME Working Capital?",
+    a: "SME Working Capital is a larger-ticket financing option for fixed-location businesses such as dental and veterinary clinics, print shops, laundromats, and independent retail stores. It provides ₱100,000–₱500,000 for inventory, purchase orders, or receivable advancement, with 6 or 12-month monthly amortization.",
   },
   {
     q: "What are the requirements to apply?",
-    a: "For business loans: one valid government-issued ID, photos of your business or workplace, and a short interview with our team. No bank account, business permit, or credit history required.",
+    a: "For micro business loans: one valid government-issued ID, photos of your business or workplace, and a short interview with our team. No bank account, business permit, or credit history required. For SME Working Capital: business permit, recent bank statements, BIR registration, valid ID, and a co-maker. An in-person credit investigation and supplier verification will also be conducted.",
   },
   {
     q: "How long does approval take?",
@@ -25,7 +30,7 @@ const faqs = [
   },
   {
     q: "How do I repay my loan?",
-    a: "You can repay through weekly or monthly installments at our Sucat office, through partner payment centers, or via bank transfer. We'll work with you to choose a schedule that fits your cash flow.",
+    a: "Micro loans can be repaid through weekly or monthly installments at our Sucat office, through partner payment centers, or via bank transfer. SME Working Capital is repaid through monthly amortization. We'll work with you to choose a schedule that fits your cash flow.",
   },
   {
     q: "What is the JAG group lending model?",
