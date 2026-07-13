@@ -33,7 +33,14 @@ export default function Bayad() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Seo
+        title="Datung Bayad — Cash Withdrawal at Partner Stores Philippines"
+        description="Skip the ATM line. Withdraw cash from trusted gas stations and stores near you with Datung Bayad. No cards, no queues — 100% sure cash."
+        path="/bayad"
+        keywords="cash withdrawal Philippines, ATM alternative, Datung Bayad, cardless withdrawal Philippines"
+      />
       <Navbar />
+      
       
       {/* Hero Section */}
       <section 

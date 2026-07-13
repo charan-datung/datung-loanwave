@@ -9,6 +9,12 @@ import { Footer } from "@/components/Footer";
 const CompanySalaryLoans = () => {
   return (
     <div className="min-h-screen relative">
+      <Seo
+        title="Employee Salary Loan Benefits for Companies Philippines | Datung"
+        description="Offer employees zero-cost salary loans as a financial wellness benefit. Boost retention and productivity in the Philippines. Fully managed by Datung."
+        path="/salary-loans/company"
+        keywords="employee benefit Philippines, salary loan for companies, financial wellness Philippines, HR benefits"
+      />
       <div 
         className="fixed inset-0 opacity-5 bg-cover bg-center -z-10"
         style={{
