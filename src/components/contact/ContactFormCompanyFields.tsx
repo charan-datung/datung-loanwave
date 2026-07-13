@@ -28,7 +28,7 @@ export const ContactFormCompanyFields = ({
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
           placeholder="Your contact number"
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/80 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
         />
       </div>
       
@@ -43,7 +43,7 @@ export const ContactFormCompanyFields = ({
           value={formData.company}
           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
           placeholder="Your company name"
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/80 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
         />
       </div>
 
@@ -58,7 +58,7 @@ export const ContactFormCompanyFields = ({
           value={formData.companyContactDetails}
           onChange={(e) => setFormData({ ...formData, companyContactDetails: e.target.value })}
           placeholder="Company email or phone number"
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/80 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
         />
       </div>
     </div>

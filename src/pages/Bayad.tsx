@@ -70,7 +70,7 @@ export default function Bayad() {
             CHECK AVAILABILITY IN MY AREA
           </Button>
           
-          <p className="text-white/60 text-sm mt-4">
+          <p className="text-white/80 text-sm mt-4">
             Powered by Datung Lending
           </p>
         </div>

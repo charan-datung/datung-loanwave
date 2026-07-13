@@ -24,7 +24,7 @@ export const ContactFormPersonalFields = ({
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           placeholder="Your full name"
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/80 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
         />
       </div>
       
@@ -37,7 +37,7 @@ export const ContactFormPersonalFields = ({
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           placeholder="you@example.com"
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/80 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
         />
       </div>
     </div>

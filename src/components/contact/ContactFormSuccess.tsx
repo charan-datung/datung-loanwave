@@ -20,7 +20,7 @@ export const ContactFormSuccess = ({ onClose }: ContactFormSuccessProps) => {
         Your inquiry has been submitted successfully.
       </p>
       
-      <p className="text-white/60 mb-8 text-sm max-w-sm">
+      <p className="text-white/80 mb-8 text-sm max-w-sm">
         Our team will review your message and get back to you within 24-48 hours.
       </p>
       
