@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/business-loans/HeroSection";
 import { LoanFeatures } from "@/components/business-loans/LoanFeatures";
+import { SMEWorkingCapital } from "@/components/business-loans/SMEWorkingCapital";
 import { ProcessTimeline } from "@/components/business-loans/ProcessTimeline";
 import { Requirements } from "@/components/business-loans/Requirements";
 import { WhoCanApply } from "@/components/business-loans/WhoCanApply";
@@ -62,6 +63,7 @@ const BusinessLoans = () => {
       <Navbar />
       <HeroSection />
       <LoanFeatures />
+      <SMEWorkingCapital />
       <ProcessTimeline />
       <Requirements />
       <WhoCanApply />

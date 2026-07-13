@@ -24,13 +24,13 @@ export const ProcessTimeline = () => {
       title: "Approval", 
       icon: CheckCircle2, 
       description: "Get loan approval notification",
-      time: "Day 3"
+      time: "48 Hours"
     },
     { 
       title: "Cash Release", 
       icon: CreditCard, 
       description: "Receive your funds",
-      time: "Day 3"
+      time: "48 Hours"
     },
   ];
 
