@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import { Seo } from "@/components/Seo";
 import { HeroSection } from "@/components/business-loans/HeroSection";
 import { LoanFeatures } from "@/components/business-loans/LoanFeatures";
 import { SMEWorkingCapital } from "@/components/business-loans/SMEWorkingCapital";
@@ -53,6 +54,36 @@ const FloatingParticles = () => {
 const BusinessLoans = () => {
   return (
     <div className="min-h-screen relative">
+      <Seo
+        title="Business Loans Philippines — MSME & SME Working Capital ₱5K–₱500K | Datung"
+        description="Fast business loans in the Philippines. Micro loans ₱5K–₱50K for sari-sari stores and micro-entrepreneurs; SME working capital ₱100K–₱500K for clinics, print shops, laundromats and independent retail. 48-hour approval. SEC-licensed."
+        path="/business-loans"
+        keywords="business loan Philippines, MSME loan, SME working capital Philippines, sari-sari store loan, SME loan Philippines, working capital loan, PO financing Philippines, receivable financing, Datung business loans"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Datung Business Loans",
+            description: "MSME micro loans and SME working capital for Filipino entrepreneurs.",
+            brand: { "@type": "Brand", name: "Datung" },
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "PHP",
+              lowPrice: "5000",
+              highPrice: "500000",
+              offerCount: "2"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://datung.io/" },
+              { "@type": "ListItem", position: 2, name: "Business Loans", item: "https://datung.io/business-loans" }
+            ]
+          }
+        ]}
+      />
       <FloatingParticles />
       <div 
         className="fixed inset-0 opacity-10 bg-cover bg-center -z-10"
