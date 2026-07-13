@@ -58,6 +58,7 @@ const SalaryLoans = () => {
       />
       <FloatingParticles />
       <Navbar />
+      <main>
       <section className="pt-32 pb-20 px-4 min-h-screen flex items-center bg-primary">
         <div className="container mx-auto text-center">
           <motion.h1 
@@ -145,6 +146,7 @@ const SalaryLoans = () => {
           </div>
         </div>
       </section>
+      </main>
       <Footer />
     </div>
   );

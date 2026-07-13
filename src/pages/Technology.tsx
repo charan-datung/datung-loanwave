@@ -21,9 +21,11 @@ const Technology = () => {
         }}
       />
       <Navbar />
-      <TechnologyHero />
-      <AIFeatures />
-      <Integration />
+      <main>
+        <TechnologyHero />
+        <AIFeatures />
+        <Integration />
+      </main>
       <Footer />
     </div>
   );

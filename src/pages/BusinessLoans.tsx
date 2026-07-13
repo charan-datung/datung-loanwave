@@ -92,13 +92,15 @@ const BusinessLoans = () => {
         }}
       />
       <Navbar />
-      <HeroSection />
-      <LoanFeatures />
-      <SMEWorkingCapital />
-      <ProcessTimeline />
-      <Requirements />
-      <WhoCanApply />
-      <CTASection />
+      <main>
+        <HeroSection />
+        <LoanFeatures />
+        <SMEWorkingCapital />
+        <ProcessTimeline />
+        <Requirements />
+        <WhoCanApply />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

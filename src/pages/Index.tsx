@@ -131,15 +131,17 @@ const Index = () => {
       <FloatingParticles />
       <GeometricShapes />
       <Navbar />
-      <Hero />
-      <ImpactStats />
-      <Solutions />
-      <HowItWorks />
-      <Products />
-      <Partners />
-      <FAQ />
-      <VisitUs />
-      <CallToAction />
+      <main>
+        <Hero />
+        <ImpactStats />
+        <Solutions />
+        <HowItWorks />
+        <Products />
+        <Partners />
+        <FAQ />
+        <VisitUs />
+        <CallToAction />
+      </main>
       <Footer />
     </div>
   );
