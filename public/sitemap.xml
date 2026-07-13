@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://datung.io/</loc>
+    <loc>https://datung-loanwave.lovable.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://datung.io/business-loans</loc>
+    <loc>https://datung-loanwave.lovable.app/business-loans</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://datung.io/salary-loans</loc>
+    <loc>https://datung-loanwave.lovable.app/salary-loans</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://datung.io/salary-loans/employee</loc>
+    <loc>https://datung-loanwave.lovable.app/salary-loans/employee</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://datung.io/salary-loans/company</loc>
+    <loc>https://datung-loanwave.lovable.app/salary-loans/company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://datung.io/technology</loc>
+    <loc>https://datung-loanwave.lovable.app/technology</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://datung.io/mission</loc>
+    <loc>https://datung-loanwave.lovable.app/mission</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://datung.io/careers</loc>
+    <loc>https://datung-loanwave.lovable.app/careers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://datung.io/bayad</loc>
+    <loc>https://datung-loanwave.lovable.app/bayad</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
