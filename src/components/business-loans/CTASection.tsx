@@ -23,7 +23,7 @@ export const CTASection = () => {
             }
           />
           
-          <p className="text-white/60 text-sm mt-8 font-light">
+          <p className="text-white/80 text-sm mt-8 font-light">
             Free consultation • No hidden fees • Quick approval
           </p>
         </div>

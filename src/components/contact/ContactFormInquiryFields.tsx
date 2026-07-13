@@ -53,7 +53,7 @@ export const ContactFormInquiryFields = ({
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           placeholder="Tell us more about your inquiry..."
-          className="min-h-[120px] bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
+          className="min-h-[120px] bg-white/10 border-white/20 text-white placeholder:text-white/80 focus:border-white/50 focus:ring-white/50 disabled:opacity-50"
         />
       </div>
     </>

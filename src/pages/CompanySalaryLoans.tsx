@@ -23,11 +23,13 @@ const CompanySalaryLoans = () => {
         }}
       />
       <Navbar />
-      <EmployerHero />
-      <EmployerBenefits />
-      <EmployerDashboard />
-      <FinancialWellness />
-      <ROICalculator />
+      <main>
+        <EmployerHero />
+        <EmployerBenefits />
+        <EmployerDashboard />
+        <FinancialWellness />
+        <ROICalculator />
+      </main>
       <Footer />
     </div>
   );

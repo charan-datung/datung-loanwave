@@ -62,12 +62,14 @@ const Careers = () => {
       />
       <FloatingParticles />
       <Navbar />
-      <CareersHero />
-      <WhyJoinUs />
-      <WhyNotJoinUs />
-      <TeamCulture />
-      <JobOpenings />
-      <AmbassadorProgram />
+      <main>
+        <CareersHero />
+        <WhyJoinUs />
+        <WhyNotJoinUs />
+        <TeamCulture />
+        <JobOpenings />
+        <AmbassadorProgram />
+      </main>
       <Footer />
     </div>
   );

@@ -62,12 +62,14 @@ const Mission = () => {
       />
       <FloatingParticles />
       <Navbar />
-      <MissionHero />
-      <MissionManifesto />
-      <MissionFacts />
-      <UnbankedBusinesses />
-      <MissionValues />
-      <MissionTestimonials />
+      <main>
+        <MissionHero />
+        <MissionManifesto />
+        <MissionFacts />
+        <UnbankedBusinesses />
+        <MissionValues />
+        <MissionTestimonials />
+      </main>
       <Footer />
     </div>
   );

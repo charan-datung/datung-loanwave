@@ -21,9 +21,11 @@ const EmployeeSalaryLoans = () => {
         }}
       />
       <Navbar />
-      <EmployeeHero />
-      <LoanFeatures />
-      <Requirements />
+      <main>
+        <EmployeeHero />
+        <LoanFeatures />
+        <Requirements />
+      </main>
       <Footer />
     </div>
   );
