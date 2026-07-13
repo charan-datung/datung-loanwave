@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import { Seo } from "@/components/Seo";
 import { TechnologyHero } from "@/components/technology/TechnologyHero";
 import { AIFeatures } from "@/components/technology/AIFeatures";
 import { Integration } from "@/components/technology/Integration";

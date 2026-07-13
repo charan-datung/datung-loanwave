@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { MissionHero } from "@/components/mission/MissionHero";
 import { MissionManifesto } from "@/components/mission/MissionManifesto";

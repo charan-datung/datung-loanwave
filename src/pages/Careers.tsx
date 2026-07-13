@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { CareersHero } from "@/components/careers/CareersHero";
 import { AmbassadorProgram } from "@/components/careers/AmbassadorProgram";

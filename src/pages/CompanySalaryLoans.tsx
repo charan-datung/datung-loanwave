@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import { Seo } from "@/components/Seo";
 import { EmployerHero } from "@/components/salary-loans/EmployerHero";
 import { EmployerBenefits } from "@/components/salary-loans/EmployerBenefits";
 import { EmployerDashboard } from "@/components/salary-loans/EmployerDashboard";
