@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 const SITE_URL = "https://datung.io";
-const DEFAULT_OG = `${SITE_URL}/og-image.png`;
+const DEFAULT_OG = `${SITE_URL}/og-image.png?v=2`;
 
 export interface SeoProps {
   title: string;
