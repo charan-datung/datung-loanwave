@@ -2,7 +2,6 @@ import { Building2, Users, Computer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceCard } from "@/components/ServiceCard";
 import businessLoansBg from "@/assets/msme-business-loans.jpg";
-import salaryLoansBg from "@/assets/msme-salary-loans.jpg";
 import technologyBg from "@/assets/msme-technology.jpg";
 import { motion } from "framer-motion";
 
@@ -36,7 +35,7 @@ export const Solutions = () => {
               to: "/salary-loans",
               title: "Salary Loans", 
               description: "Employee loan management and HR technology solutions for Filipino workplaces and professionals.",
-              backgroundImage: salaryLoansBg,
+              backgroundImage: "/lovable-uploads/04d42990-f313-4eef-b3d9-019e0e419f4f.png",
               delay: 0.2
             },
             {

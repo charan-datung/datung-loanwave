@@ -73,6 +73,11 @@ export const Footer = () => {
                   Careers
                 </Link>
               </li>
+              <li>
+                <Link to="/privacy-policy" className="text-gray-300 hover:text-accent transition-all duration-300 text-sm font-medium hover:translate-x-1">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 

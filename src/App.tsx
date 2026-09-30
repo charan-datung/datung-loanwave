@@ -10,6 +10,7 @@ import EmployeeSalaryLoans from "./pages/EmployeeSalaryLoans";
 import Mission from "./pages/Mission";
 import Careers from "./pages/Careers";
 import Bayad from "./pages/Bayad";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/mission" element={<Mission />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/bayad" element={<Bayad />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Toaster />
     </Router>
