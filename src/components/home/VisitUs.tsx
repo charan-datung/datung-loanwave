@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { MapPin, Clock, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const VisitUs = () => {
-  const address = "Datung Building (Wimpex), W Service Road, Sucat, Parañaque City, Philippines";
+  const address = "Datung Building, Wimpex Compound, West Service Road, Sucat, Parañaque City, Philippines";
   const mapsQuery = encodeURIComponent(address);
-  const mapsEmbed = `https://www.google.com/maps?q=${mapsQuery}&output=embed`;
+  const mapsEmbed = `https://maps.google.com/maps?hl=en&q=${mapsQuery}&z=17&output=embed`;
   const mapsLink = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 
   return (
@@ -76,14 +77,11 @@ export const VisitUs = () => {
               </div>
             </div>
 
-            <a
-              href={mapsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full px-5 py-3 bg-primary text-white text-sm font-semibold rounded-full hover:bg-primary/90 transition-colors"
-            >
-              Get Directions
-            </a>
+            <Button asChild className="w-full rounded-full">
+              <a href={mapsLink} target="_blank" rel="noopener noreferrer">
+                Get Directions
+              </a>
+            </Button>
           </motion.div>
 
           <motion.div
@@ -91,14 +89,15 @@ export const VisitUs = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="lg:col-span-3 rounded-2xl overflow-hidden border border-gray-100 shadow-sm min-h-[320px] lg:min-h-full"
+            className="lg:col-span-3 overflow-hidden rounded-2xl border border-gray-100 bg-gray-100 shadow-sm min-h-[320px] lg:min-h-full"
           >
             <iframe
               title="Datung Office Location"
               src={mapsEmbed}
               width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: 380 }}
+              height="380"
+              className="block min-h-[380px] w-full lg:h-full"
+              style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
