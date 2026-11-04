@@ -120,17 +120,14 @@ export const Navbar = () => {
                 Careers
               </Link>
               <div className="px-3 py-2">
-                <ContactForm 
-                  defaultType="loan"
-                  triggerComponent={
-                    <Button 
-                      className="w-full bg-primary hover:bg-primary/90 text-white shadow-sm"
-                      size="sm"
-                    >
-                      Get Started
-                    </Button>
-                  }
-                />
+                <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    className="w-full bg-primary hover:bg-primary/90 text-white shadow-sm"
+                    size="sm"
+                  >
+                    Get Started
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

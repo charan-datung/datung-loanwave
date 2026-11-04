@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ContactForm";
 import { PageWrapper } from "@/components/PageWrapper";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+
+const APPLY_URL = "https://datungapply.com/apply";
 
 export const Hero = () => {
   const navigate = useNavigate();
