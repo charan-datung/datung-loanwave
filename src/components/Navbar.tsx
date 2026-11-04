@@ -2,13 +2,22 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ContactForm } from "@/components/ContactForm";
+
+const APPLY_URL = "https://datungapply.com/apply";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-white/95 backdrop-blur-sm border-b z-[100]">
+      <a
+        href={APPLY_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block w-full bg-primary text-white text-center text-xs sm:text-sm font-medium py-1.5 px-4 hover:bg-primary/90 transition-colors"
+      >
+        Need a business loan? Apply at datungapply.com
+      </a>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
@@ -40,18 +49,19 @@ export const Navbar = () => {
             <Link to="/careers" className="text-gray-600 hover:text-primary transition-colors duration-200 text-sm font-medium">
               Careers
             </Link>
-            <ContactForm 
-              defaultType="loan"
-              triggerComponent={
-                <Button 
-                  variant="default"
-                  size="sm"
-                  className="bg-primary hover:bg-primary/90 text-white shadow-sm"
-                >
-                  Get Started
-                </Button>
-              }
-            />
+            <a
+              href={APPLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="default"
+                size="sm"
+                className="bg-primary hover:bg-primary/90 text-white shadow-sm"
+              >
+                Get Started
+              </Button>
+            </a>
           </div>
 
           <div className="md:hidden">
