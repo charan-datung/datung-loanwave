@@ -20,7 +20,7 @@ const steps = [
   {
     icon: CheckCircle2,
     title: "Approval",
-    description: "Get your decision and receive funds within 48 hours. Simple, transparent, fast.",
+    description: "Get your decision. If it's a yes, the interest rate and all charges are disclosed in full before you sign.",
   },
 ];
 
@@ -39,7 +39,7 @@ export const HowItWorks = () => {
             How It Works
           </p>
           <h2 className="text-2xl md:text-4xl font-bold text-primary mb-3">
-            From Application to Approval in 48 Hours
+            From application to final answer
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             A simple, transparent process built for Filipino entrepreneurs and professionals.
