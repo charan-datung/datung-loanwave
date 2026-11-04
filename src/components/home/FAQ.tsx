@@ -9,7 +9,13 @@ import {
 const faqs = [
   {
     q: "How much can I borrow from Datung?",
-    a: "Amounts depend on your application and our review. See datungapply.com/financing.",
+    a: (
+      <>Amounts depend on your application and our review. See{" "}
+        <a href="https://datungapply.com/financing" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+          datungapply.com/financing
+        </a>.
+      </>
+    ),
   },
   {
     q: "What is Datung SME Working Capital?",
@@ -21,7 +27,13 @@ const faqs = [
   },
   {
     q: "How long does approval take?",
-    a: "We aim to decide fast during business hours, as an aim, not a guarantee. See datungapply.com/how-it-works.",
+    a: (
+      <>We aim to decide fast during business hours, as an aim, not a guarantee. See{" "}
+        <a href="https://datungapply.com/how-it-works" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+          datungapply.com/how-it-works
+        </a>.
+      </>
+    ),
   },
   {
     q: "What are your interest rates and fees?",
