@@ -9,7 +9,13 @@ import {
 const faqs = [
   {
     q: "How much can I borrow from Datung?",
-    a: "Micro business loans range from ₱5,000 to ₱50,000 for first-time borrowers, with higher amounts available for repeat clients in good standing. For established SMEs needing larger working capital, we now offer SME Working Capital loans from ₱100,000 to ₱500,000. Salary loan amounts depend on your employer partnership and net monthly pay.",
+    a: (
+      <>Amounts depend on your application and our review. See{" "}
+        <a href="https://datungapply.com/financing" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+          datungapply.com/financing
+        </a>.
+      </>
+    ),
   },
   {
     q: "What is Datung SME Working Capital?",
@@ -21,11 +27,17 @@ const faqs = [
   },
   {
     q: "How long does approval take?",
-    a: "Most applications are approved within 48 hours after the credit investigation visit. You'll be notified by SMS and our team will arrange disbursement.",
+    a: (
+      <>We aim to decide fast during business hours, as an aim, not a guarantee. See{" "}
+        <a href="https://datungapply.com/how-it-works" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+          datungapply.com/how-it-works
+        </a>.
+      </>
+    ),
   },
   {
     q: "What are your interest rates and fees?",
-    a: "Datung offers low, transparent interest rates that are competitive with the Philippine microfinance market. There are no hidden fees — all charges are disclosed upfront before you sign.",
+    a: "The interest rate and all charges are disclosed in full before you sign. Datung never asks for any fee or payment before your loan is released.",
   },
   {
     q: "How do I repay my loan?",
