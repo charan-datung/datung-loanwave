@@ -9,7 +9,6 @@ export interface SeoProps {
   path: string;
   image?: string;
   type?: "website" | "article";
-  keywords?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
 }
