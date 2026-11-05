@@ -19,17 +19,14 @@ export const AmbassadorProgram = () => {
             Join our network of ambassadors and earn competitive commissions while helping
             businesses access the financial solutions they need
           </p>
-          <ContactForm 
-            defaultType="ambassador"
-            triggerComponent={
-                <Button
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90"
-                >
-                Apply Now
-              </Button>
-            }
-          />
+          <a href="https://datungapply.com/apply" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-white text-primary hover:bg-white/90"
+            >
+              Apply Now
+            </Button>
+          </a>
         </div>
       </div>
     </PageWrapper>

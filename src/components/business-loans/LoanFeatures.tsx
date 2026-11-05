@@ -1,4 +1,4 @@
-import { CreditCard, Clock, ShieldCheck, TrendingUp, Star, Users } from "lucide-react";
+import { TrendingUp, Star, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
