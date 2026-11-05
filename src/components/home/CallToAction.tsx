@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ContactForm";
 import { PageWrapper } from "@/components/PageWrapper";
 import { motion } from "framer-motion";
+
+const APPLY_URL = "https://datungapply.com/apply";
 
 export const CallToAction = () => {
   return (
@@ -35,14 +36,11 @@ export const CallToAction = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <ContactForm 
-            defaultType="loan"
-            triggerComponent={
-              <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90 text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
-                Get Started Today
-              </Button>
-            }
-          />
+          <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="default" className="bg-accent text-black hover:bg-accent/90 text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
+              Get Started Today
+            </Button>
+          </a>
         </motion.div>
       </div>
     </PageWrapper>
