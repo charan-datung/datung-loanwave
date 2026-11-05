@@ -101,8 +101,8 @@ const Index = () => {
   return (
     <div className="min-h-screen relative">
       <Seo
-        title="Datung — MSME & Salary Loans in the Philippines | AI-Powered Microfinance"
-        description="Datung offers fast MSME loans, SME working capital (₱100K–₱500K) and salary loans in the Philippines. AI credit scoring, 48-hour approval, community-powered lending. Over ₱100M disbursed. SEC-licensed."
+        title="Datung | Business Loans for Philippine SMEs"
+        description="Business loans and working capital for established Philippine suppliers and distributors, from an SEC-registered lender. Apply at datungapply.com."
         path="/"
         keywords="MSME loans Philippines, microfinance Philippines, salary loan Philippines, SME working capital, sari-sari store loan, business loan Philippines, Datung, AI lending, unbanked Filipinos"
         jsonLd={[
@@ -120,9 +120,8 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "FAQPage",
             mainEntity: [
-              { "@type": "Question", name: "Who can apply for a Datung loan?", acceptedAnswer: { "@type": "Answer", text: "Filipino micro-entrepreneurs, SMEs, and salaried employees can apply. Micro loans start at ₱5,000 and SME working capital goes up to ₱500,000." } },
-              { "@type": "Question", name: "What is Datung SME Working Capital?", acceptedAnswer: { "@type": "Answer", text: "SME Working Capital is a larger-ticket financing option for fixed-location businesses such as dental and veterinary clinics, print shops, laundromats, and independent retail stores. It provides ₱100,000–₱500,000 for inventory, purchase orders, or receivable advancement, with 6 or 12-month monthly amortization." } },
-              { "@type": "Question", name: "How fast is loan approval at Datung?", acceptedAnswer: { "@type": "Answer", text: "Datung offers 48-hour approval powered by AI credit scoring and community-based verification." } },
+              { "@type": "Question", name: "Who can apply for a Datung loan?", acceptedAnswer: { "@type": "Answer", text: "Established Philippine suppliers and distributors who sell to small businesses on terms. See datungapply.com for current requirements." } },
+              { "@type": "Question", name: "How fast is loan approval at Datung?", acceptedAnswer: { "@type": "Answer", text: "We aim to decide fast during business hours, as an aim, not a guarantee. See datungapply.com/how-it-works." } },
               { "@type": "Question", name: "Is Datung SEC-licensed?", acceptedAnswer: { "@type": "Answer", text: "Yes, Datung is licensed by the Securities and Exchange Commission of the Philippines." } }
             ]
           }

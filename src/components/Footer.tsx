@@ -157,7 +157,13 @@ export const Footer = () => {
               Certificate of Authority to Operate as a Lending Company No. <span className="text-white/90">3506</span>
             </p>
             <p className="text-gray-400">
-              Registered office: Level 10-1, One Global Place, 5th Avenue &amp; 25th Street, Fort Bonifacio, BGC, Taguig City 1630, Philippines
+              Registered office: Unit 10-01, One Global Place, 25th St. cor. 5th Ave., Bonifacio Global City, Taguig City 1634
+            </p>
+            <p className="pt-1">
+              Our application website:{" "}
+              <a href="https://datungapply.com" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-accent underline underline-offset-2">
+                datungapply.com
+              </a>
             </p>
           </div>
           <p className="text-gray-400 text-sm font-medium text-center">

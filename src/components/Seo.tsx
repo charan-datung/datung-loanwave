@@ -20,7 +20,6 @@ export const Seo = ({
   path,
   image = DEFAULT_OG,
   type = "website",
-  keywords,
   jsonLd,
   noindex = false,
 }: SeoProps) => {

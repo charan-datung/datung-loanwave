@@ -212,7 +212,7 @@ const PrivacyPolicy = () => {
               <ul className="mt-4">
                 <li><strong>Data Protection Officer:</strong> Lakshay</li>
                 <li><strong>Email:</strong> <a href="mailto:lakshay@datung.io">lakshay@datung.io</a></li>
-                <li><strong>Philippines:</strong> Dark Knight Lending Inc., Level 10-1, One Global Place, 5th Avenue &amp; 25th Street, Fort Bonifacio, BGC, Taguig City 1630, Philippines</li>
+                <li><strong>Philippines:</strong> Dark Knight Lending Inc., Unit 10-01, One Global Place, 25th St. cor. 5th Ave., Bonifacio Global City, Taguig City 1634</li>
                 <li><strong>Singapore:</strong> Datung Pte. Ltd., 32 Pekin St, #05-01, Singapore 048762</li>
               </ul>
               <p className="mt-4">
