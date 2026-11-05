@@ -104,7 +104,6 @@ const Index = () => {
         title="Datung | Business Loans for Philippine SMEs"
         description="Business loans and working capital for established Philippine suppliers and distributors, from an SEC-registered lender. Apply at datungapply.com."
         path="/"
-        keywords="MSME loans Philippines, microfinance Philippines, salary loan Philippines, SME working capital, sari-sari store loan, business loan Philippines, Datung, AI lending, unbanked Filipinos"
         jsonLd={[
           {
             "@context": "https://schema.org",

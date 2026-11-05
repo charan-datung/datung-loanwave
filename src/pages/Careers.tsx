@@ -58,7 +58,6 @@ const Careers = () => {
         title="Careers & Ambassador Program — Join Datung Philippines"
         description="Join Datung's mission to empower Filipino entrepreneurs. Full-time roles and Ambassador Program to earn income by connecting your community to fair lending."
         path="/careers"
-        keywords="fintech jobs Philippines, Datung careers, loan ambassador Philippines, microfinance careers"
       />
       <FloatingParticles />
       <Navbar />

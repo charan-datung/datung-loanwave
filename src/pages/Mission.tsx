@@ -58,7 +58,6 @@ const Mission = () => {
         title="Our Mission — Financial Inclusion for 42M Unbanked Filipinos | Datung"
         description="Datung's mission: bring financial inclusion to 42 million unbanked and underserved Filipino entrepreneurs through AI-powered microfinance and community lending."
         path="/mission"
-        keywords="financial inclusion Philippines, unbanked Filipinos, Datung mission, microfinance mission"
       />
       <FloatingParticles />
       <Navbar />

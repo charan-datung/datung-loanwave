@@ -9,7 +9,6 @@ const PrivacyPolicy = () => {
         title="Privacy Policy | Datung"
         description="Learn how Datung collects, uses, protects, and shares personal information when you use our website, lending services, and Messenger chatbot."
         path="/privacy-policy"
-        keywords="Datung privacy policy, Philippines Data Privacy Act, personal data, lending privacy"
       />
       <Navbar />
 
