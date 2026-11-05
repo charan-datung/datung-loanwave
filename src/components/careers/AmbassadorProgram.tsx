@@ -1,6 +1,5 @@
 import { PageWrapper } from "@/components/PageWrapper";
 import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ContactForm";
 
 export const AmbassadorProgram = () => {
   return (

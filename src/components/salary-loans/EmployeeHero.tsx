@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ContactForm";
 
 export const EmployeeHero = () => {
   return (
