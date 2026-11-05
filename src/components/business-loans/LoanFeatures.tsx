@@ -1,30 +1,9 @@
-import { CreditCard, Clock, ShieldCheck, TrendingUp, Star, Users } from "lucide-react";
+import { TrendingUp, Star, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
 export const LoanFeatures = () => {
   const features = [
-    {
-      icon: CreditCard,
-      title: "Flexible Amount",
-      description: "Borrow ₱5,000 to ₱50,000 based on your business needs",
-      highlight: "₱5K - ₱50K",
-      color: "primary"
-    },
-    {
-      icon: Clock,
-      title: "Quick Release",
-      description: "Get your loan within 3 days after approval",
-      highlight: "3 Days",
-      color: "secondary"
-    },
-    {
-      icon: ShieldCheck,
-      title: "No Collateral",
-      description: "No need for property or vehicle collateral",
-      highlight: "100% Unsecured",
-      color: "accent"
-    },
     {
       icon: TrendingUp,
       title: "Grow Your Business",

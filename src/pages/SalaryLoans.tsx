@@ -54,7 +54,6 @@ const SalaryLoans = () => {
         title="Salary Loans Philippines — For Employees & Employers | Datung"
         description="Salary loans in the Philippines with 48-hour approval. Solutions for employees needing quick cash, and for companies offering financial wellness benefits."
         path="/salary-loans"
-        keywords="salary loan Philippines, payroll loan Philippines, employee loan, financial wellness benefit, Datung salary loans"
       />
       <FloatingParticles />
       <Navbar />

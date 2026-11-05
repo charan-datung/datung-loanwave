@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ContactForm";
 
 export const EmployeeHero = () => {
   return (
@@ -30,17 +29,14 @@ export const EmployeeHero = () => {
             <span className="font-light">Flexible Terms</span>
           </div>
           
-          <ContactForm 
-            defaultType="loan"
-            triggerComponent={
-              <Button 
-                size="lg" 
-                className="bg-white text-secondary hover:bg-white/90 font-medium px-12 py-4 text-lg transition-all rounded-full"
-              >
-                Apply Now
-              </Button>
-            }
-          />
+          <a href="https://datungapply.com/apply" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-white text-secondary hover:bg-white/90 font-medium px-12 py-4 text-lg transition-all rounded-full"
+            >
+              Apply Now
+            </Button>
+          </a>
         </div>
       </div>
     </section>

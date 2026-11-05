@@ -91,14 +91,21 @@ export const MissionTestimonials = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.2 + 1.0 }}
                   >
-                    <ContactForm 
-                      defaultType="loan"
-                      triggerComponent={
+                    {option.action === "Apply for a Loan" ? (
+                      <a href="https://datungapply.com/apply" target="_blank" rel="noopener noreferrer" className="block">
                         <Button variant="secondary" className="w-full group-hover:shadow-lg transition-shadow duration-300">
                           {option.action}
                         </Button>
-                      }
-                    />
+                      </a>
+                    ) : (
+                      <ContactForm
+                        triggerComponent={
+                          <Button variant="secondary" className="w-full group-hover:shadow-lg transition-shadow duration-300">
+                            {option.action}
+                          </Button>
+                        }
+                      />
+                    )}
                   </motion.div>
                 </CardContent>
               </Card>

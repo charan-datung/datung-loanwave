@@ -9,7 +9,6 @@ export interface SeoProps {
   path: string;
   image?: string;
   type?: "website" | "article";
-  keywords?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
 }
@@ -20,7 +19,6 @@ export const Seo = ({
   path,
   image = DEFAULT_OG,
   type = "website",
-  keywords,
   jsonLd,
   noindex = false,
 }: SeoProps) => {
@@ -31,7 +29,6 @@ export const Seo = ({
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={url} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
 

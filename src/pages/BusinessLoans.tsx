@@ -58,7 +58,6 @@ const BusinessLoans = () => {
         title="Business Loans Philippines — MSME & SME Working Capital ₱5K–₱500K | Datung"
         description="Fast business loans in the Philippines. Micro loans ₱5K–₱50K for sari-sari stores and micro-entrepreneurs; SME working capital ₱100K–₱500K for clinics, print shops, laundromats and independent retail. 48-hour approval. SEC-licensed."
         path="/business-loans"
-        keywords="business loan Philippines, MSME loan, SME working capital Philippines, sari-sari store loan, SME loan Philippines, working capital loan, PO financing Philippines, receivable financing, Datung business loans"
         jsonLd={[
           {
             "@context": "https://schema.org",
