@@ -1,4 +1,4 @@
 # Current work
 
-- [ ] Verify the new static institutional funders page and its footer, noscript, sitemap, and llms.txt links.
-- [ ] Report remaining changes from the earlier two-prompt SEO brief; broader edits are deferred to honor the latest “change nothing else” instruction.
+- [x] Add and verify the static institutional funders page and its footer, noscript, sitemap, and llms.txt links.
+- [x] Keep the earlier broad SEO and business-page changes out of scope, honoring the latest “change nothing else” instruction.
