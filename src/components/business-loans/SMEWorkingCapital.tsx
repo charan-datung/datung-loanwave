@@ -15,21 +15,25 @@ export const SMEWorkingCapital = () => {
       icon: Calendar,
       title: "Flexible Tenor",
       description: "Choose between 6 or 12 months, with monthly amortization that matches your cash flow.",
+      disclaimer: undefined,
     },
     {
       icon: Receipt,
       title: "Receivable Financing",
       description: "Optional receivable advancement for businesses with verified invoices from Tier 1 counterparties.",
+      disclaimer: undefined,
     },
     {
       icon: FileCheck,
       title: "Document-Based Approval",
       description: "Streamlined underwriting using business permits, bank statements, and a co-maker.",
+      disclaimer: undefined,
     },
     {
       icon: Briefcase,
       title: "Premises Verification",
       description: "In-person credit investigation and supplier verification to confirm business viability.",
+      disclaimer: undefined,
     },
   ];
 
