@@ -1,19 +1,53 @@
-# Datung — robots.txt
-User-agent: *
+User-agent: Googlebot
 Allow: /
 Disallow: /lovable/
 
-# AI crawlers welcome
+User-agent: Google-Extended
+Allow: /
+Disallow: /lovable/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /lovable/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /lovable/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /lovable/
+
 User-agent: GPTBot
 Allow: /
+Disallow: /lovable/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /lovable/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /lovable/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /lovable/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /lovable/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /lovable/
 
-User-agent: Google-Extended
+User-agent: Applebot
 Allow: /
+Disallow: /lovable/
+
+User-agent: *
+Allow: /
+Disallow: /lovable/
 
 Sitemap: https://datung.io/sitemap.xml

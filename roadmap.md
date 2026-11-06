@@ -1,4 +1,5 @@
 # Current work
 
-- [ ] Verify the new static institutional funders page and its footer, noscript, sitemap, and llms.txt links.
-- [ ] Report remaining changes from the earlier two-prompt SEO brief; broader edits are deferred to honor the latest “change nothing else” instruction.
+- [x] Add and verify the static institutional funders page and its footer, noscript, sitemap, and llms.txt links.
+- [x] Apply newly approved loan claims, loan-amount disclaimers, and exact crawler rules while preserving salary/group copy and headline figures.
+- [x] Verify and report each requested text/count check and any remaining items.

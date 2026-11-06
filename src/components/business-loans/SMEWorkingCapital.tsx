@@ -9,26 +9,31 @@ export const SMEWorkingCapital = () => {
       icon: Building2,
       title: "Larger Ticket Sizes",
       description: "₱100,000 – ₱500,000 working capital for established businesses with predictable operations.",
+      disclaimer: "Subject to credit approval.",
     },
     {
       icon: Calendar,
       title: "Flexible Tenor",
       description: "Choose between 6 or 12 months, with monthly amortization that matches your cash flow.",
+      disclaimer: undefined,
     },
     {
       icon: Receipt,
       title: "Receivable Financing",
       description: "Optional receivable advancement for businesses with verified invoices from Tier 1 counterparties.",
+      disclaimer: undefined,
     },
     {
       icon: FileCheck,
       title: "Document-Based Approval",
       description: "Streamlined underwriting using business permits, bank statements, and a co-maker.",
+      disclaimer: undefined,
     },
     {
       icon: Briefcase,
       title: "Premises Verification",
       description: "In-person credit investigation and supplier verification to confirm business viability.",
+      disclaimer: undefined,
     },
   ];
 
@@ -63,23 +68,25 @@ export const SMEWorkingCapital = () => {
         </motion.div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid min-w-0 lg:grid-cols-2 gap-12 items-start">
             {/* Left: Product overview */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-white rounded-2xl p-8 md:p-10 shadow-lg border border-gray-100"
+              className="min-w-0 bg-white rounded-2xl p-6 md:p-10 shadow-lg border border-gray-100"
             >
               <div className="mb-8">
                 <div className="text-sm text-gray-500 font-medium mb-2">Loan Amount</div>
-                <div className="text-4xl md:text-5xl font-semibold text-primary mb-2">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-primary mb-2">
                   ₱100K – ₱500K
                 </div>
+                <p className="text-xs text-muted-foreground">Subject to credit approval.</p>
                 <div className="text-gray-600 font-light">
                   Primary pilot range: ₱150K – ₱250K
                 </div>
+                <p className="text-xs text-muted-foreground">Subject to credit approval.</p>
               </div>
 
               <div className="space-y-4 mb-8">
@@ -97,7 +104,7 @@ export const SMEWorkingCapital = () => {
                 </div>
                 <div className="flex justify-between py-3 border-b border-gray-100">
                   <span className="text-gray-600 font-light">Approval</span>
-                  <span className="font-medium text-gray-900">48-Hour Approval</span>
+                  <span className="font-medium text-gray-900">Credit review required</span>
                 </div>
                 <div className="flex justify-between py-3">
                   <span className="text-gray-600 font-light">Interest</span>
@@ -120,7 +127,7 @@ export const SMEWorkingCapital = () => {
             </motion.div>
 
             {/* Right: Features & target segments */}
-            <div className="space-y-8">
+            <div className="min-w-0 space-y-8">
               <div className="grid gap-6">
                 {features.map((feature, index) => (
                   <motion.div
@@ -129,18 +136,23 @@ export const SMEWorkingCapital = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="flex gap-4"
+                    className="flex min-w-0 gap-4"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <feature.icon className="w-6 h-6 text-primary" />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <h3 className="text-lg font-medium text-gray-900 mb-1">
                         {feature.title}
                       </h3>
                       <p className="text-gray-600 font-light leading-relaxed">
                         {feature.description}
                       </p>
+                      {feature.disclaimer && (
+                        <p className="mt-1 text-xs text-muted-foreground">
+                          {feature.disclaimer}
+                        </p>
+                      )}
                     </div>
                   </motion.div>
                 ))}
