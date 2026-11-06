@@ -56,7 +56,7 @@ const BusinessLoans = () => {
     <div className="min-h-screen relative">
       <Seo
         title="Business Loans Philippines — MSME & SME Working Capital ₱5K–₱500K | Datung"
-        description="Fast business loans in the Philippines. Micro loans ₱5K–₱50K for sari-sari stores and micro-entrepreneurs; SME working capital ₱100K–₱500K for clinics, print shops, laundromats and independent retail. 48-hour approval. SEC-licensed."
+        description="Business loans in the Philippines for established SMEs, including working capital for clinics, print shops, laundromats and independent retail. SEC-licensed."
         path="/business-loans"
         jsonLd={[
           {

@@ -9,6 +9,7 @@ export const SMEWorkingCapital = () => {
       icon: Building2,
       title: "Larger Ticket Sizes",
       description: "₱100,000 – ₱500,000 working capital for established businesses with predictable operations.",
+      disclaimer: "Subject to credit approval.",
     },
     {
       icon: Calendar,
@@ -77,9 +78,11 @@ export const SMEWorkingCapital = () => {
                 <div className="text-4xl md:text-5xl font-semibold text-primary mb-2">
                   ₱100K – ₱500K
                 </div>
+                <p className="text-xs text-muted-foreground">Subject to credit approval.</p>
                 <div className="text-gray-600 font-light">
                   Primary pilot range: ₱150K – ₱250K
                 </div>
+                <p className="text-xs text-muted-foreground">Subject to credit approval.</p>
               </div>
 
               <div className="space-y-4 mb-8">
@@ -97,7 +100,7 @@ export const SMEWorkingCapital = () => {
                 </div>
                 <div className="flex justify-between py-3 border-b border-gray-100">
                   <span className="text-gray-600 font-light">Approval</span>
-                  <span className="font-medium text-gray-900">48-Hour Approval</span>
+                  <span className="font-medium text-gray-900">Credit review required</span>
                 </div>
                 <div className="flex justify-between py-3">
                   <span className="text-gray-600 font-light">Interest</span>
@@ -141,6 +144,11 @@ export const SMEWorkingCapital = () => {
                       <p className="text-gray-600 font-light leading-relaxed">
                         {feature.description}
                       </p>
+                      {feature.disclaimer && (
+                        <p className="mt-1 text-xs text-muted-foreground">
+                          {feature.disclaimer}
+                        </p>
+                      )}
                     </div>
                   </motion.div>
                 ))}

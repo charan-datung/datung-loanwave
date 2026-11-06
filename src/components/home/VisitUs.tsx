@@ -72,7 +72,7 @@ export const VisitUs = () => {
               <div>
                 <h3 className="font-bold text-primary mb-1">Get in Touch</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  hello@datung.io
+                  sales@datung.io
                 </p>
               </div>
             </div>

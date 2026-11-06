@@ -19,16 +19,23 @@ const faqs = [
   },
   {
     q: "What is Datung SME Working Capital?",
-    a: "SME Working Capital is a larger-ticket financing option for fixed-location businesses such as dental and veterinary clinics, print shops, laundromats, and independent retail stores. It provides ₱100,000–₱500,000 for inventory, purchase orders, or receivable advancement, with 6 or 12-month monthly amortization.",
+    a: (
+      <>
+        SME Working Capital is a larger-ticket financing option for fixed-location businesses such as dental and veterinary clinics, print shops, laundromats, and independent retail stores. It provides:
+        <span className="mt-2 block">₱100,000–₱500,000</span>
+        <span className="block text-xs text-muted-foreground">Subject to credit approval.</span>
+        <span className="mt-2 block">for inventory, purchase orders, or receivable advancement, with 6 or 12-month monthly amortization.</span>
+      </>
+    ),
   },
   {
     q: "What are the requirements to apply?",
-    a: "For micro business loans: one valid government-issued ID, photos of your business or workplace, and a short interview with our team. No bank account, business permit, or credit history required. For SME Working Capital: business permit, recent bank statements, BIR registration, valid ID, and a co-maker. An in-person credit investigation and supplier verification will also be conducted.",
+    a: "To apply for a business loan, you need 1 valid ID and your last 3 months of bank or GCash statements.",
   },
   {
     q: "How long does approval take?",
     a: (
-      <>We aim to decide fast during business hours, as an aim, not a guarantee. See{" "}
+      <>Business loan pre-approval is usually within about 1 hour of complete documents, during business hours. This is an aim, not a guarantee. See{" "}
         <a href="https://datungapply.com/how-it-works" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
           datungapply.com/how-it-works
         </a>.

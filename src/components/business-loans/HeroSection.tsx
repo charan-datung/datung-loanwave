@@ -28,6 +28,10 @@ export const HeroSection = () => {
         <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light">
           From micro-merchant group loans to larger-ticket SME working capital, we have a funding option that fits your business stage.
         </p>
+
+        <p className="text-sm md:text-base text-white/90 mb-8 font-medium">
+          Business loans go up to ₱10M. Subject to credit approval.
+        </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-12 text-white/70">
           <span className="font-light">Thousands of Happy Clients</span>

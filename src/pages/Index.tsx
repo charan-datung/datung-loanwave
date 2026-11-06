@@ -120,7 +120,8 @@ const Index = () => {
             "@type": "FAQPage",
             mainEntity: [
               { "@type": "Question", name: "Who can apply for a Datung loan?", acceptedAnswer: { "@type": "Answer", text: "Established Philippine suppliers and distributors who sell to small businesses on terms. See datungapply.com for current requirements." } },
-              { "@type": "Question", name: "How fast is loan approval at Datung?", acceptedAnswer: { "@type": "Answer", text: "We aim to decide fast during business hours, as an aim, not a guarantee. See datungapply.com/how-it-works." } },
+              { "@type": "Question", name: "What are the requirements to apply?", acceptedAnswer: { "@type": "Answer", text: "To apply for a business loan, you need 1 valid ID and your last 3 months of bank or GCash statements." } },
+              { "@type": "Question", name: "How fast is loan approval at Datung?", acceptedAnswer: { "@type": "Answer", text: "Business loan pre-approval is usually within about 1 hour of complete documents, during business hours. This is an aim, not a guarantee. See datungapply.com/how-it-works." } },
               { "@type": "Question", name: "Is Datung SEC-licensed?", acceptedAnswer: { "@type": "Answer", text: "Yes, Datung is licensed by the Securities and Exchange Commission of the Philippines." } }
             ]
           }

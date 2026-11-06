@@ -6,31 +6,31 @@ export const ProcessTimeline = () => {
       title: "Group Formation", 
       icon: Users, 
       description: "Groups of 3-10 business owners",
-      time: "Day 1"
+      time: "Begin"
     },
     { 
       title: "Documentation", 
       icon: FileCheck, 
       description: "Submit basic requirements",
-      time: "Day 1"
+      time: "Review"
     },
     { 
       title: "Site Visit", 
       icon: Store, 
       description: "Our team visits your business",
-      time: "Day 2"
+      time: "Verify"
     },
     { 
       title: "Approval", 
       icon: CheckCircle2, 
       description: "Get loan approval notification",
-      time: "48 Hours"
+      time: "Decision"
     },
     { 
       title: "Cash Release", 
       icon: CreditCard, 
       description: "Receive your funds",
-      time: "48 Hours"
+      time: "If approved"
     },
   ];
 
@@ -42,7 +42,7 @@ export const ProcessTimeline = () => {
             Simple, Fast Process
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto font-light">
-            From application to approval in as fast as 48 hours — streamlined and efficient
+            From application to final answer, with clear steps and personal support.
           </p>
         </div>
         
