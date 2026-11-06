@@ -78,6 +78,11 @@ export const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <a href="/funders.html" className="text-gray-300 hover:text-accent transition-all duration-300 text-sm font-medium hover:translate-x-1">
+                  For funders
+                </a>
+              </li>
             </ul>
           </div>
 
