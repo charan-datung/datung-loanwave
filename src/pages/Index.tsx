@@ -111,7 +111,7 @@ const Index = () => {
             name: "Datung",
             url: "https://datung.io",
             logo: "https://datung.io/datung-logo.png",
-            description: "AI-powered microfinance and salary lending platform in the Philippines.",
+            description: "AI-powered lending and salary lending platform in the Philippines.",
             areaServed: { "@type": "Country", name: "Philippines" },
             aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1200" }
           },

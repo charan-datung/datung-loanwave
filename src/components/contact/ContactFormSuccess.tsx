@@ -21,7 +21,7 @@ export const ContactFormSuccess = ({ onClose }: ContactFormSuccessProps) => {
       </p>
       
       <p className="text-white/80 mb-8 text-sm max-w-sm">
-        Our team will review your message and get back to you within 24-48 hours.
+        Our team will review your message and get back to you during business hours.
       </p>
       
       <Button 

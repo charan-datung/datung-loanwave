@@ -20,7 +20,7 @@ export const WhyNotJoinUs = () => {
           <Card className="glass-card mb-12 card-3d">
             <CardContent className="p-8 md:p-12">
               <p className="text-lg leading-relaxed mb-8 text-center text-muted-foreground">
-                We're an early-stage, AI-first fintech startup rewriting the rules of microfinance. 
+                We're an early-stage, AI-first fintech startup rewriting the rules of lending. 
                 That means things move fast, break occasionally, and rarely follow a playbook.
               </p>
 

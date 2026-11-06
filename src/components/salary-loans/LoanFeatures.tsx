@@ -6,9 +6,9 @@ export const LoanFeatures = () => {
   const features = [
     {
       icon: Zap,
-      title: "Fast Approval",
-      description: "Get approved within 48 hours",
-      highlight: "48 Hours"
+      title: "Fast decisions",
+      description: "We aim to decide fast during business hours, as an aim, not a guarantee.",
+      highlight: "Fast decisions"
     },
     {
       icon: Calendar,
@@ -30,9 +30,9 @@ export const LoanFeatures = () => {
     },
     {
       icon: Clock,
-      title: "Quick Disbursement",
-      description: "Receive funds within 24-48 hours",
-      highlight: "1-2 Days"
+      title: "Fast decisions",
+      description: "We aim to decide fast during business hours, as an aim, not a guarantee.",
+      highlight: "Fast decisions"
     },
     {
       icon: CheckCircle2,
