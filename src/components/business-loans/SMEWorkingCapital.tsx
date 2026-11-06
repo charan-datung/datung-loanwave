@@ -68,18 +68,18 @@ export const SMEWorkingCapital = () => {
         </motion.div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid min-w-0 lg:grid-cols-2 gap-12 items-start">
             {/* Left: Product overview */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-white rounded-2xl p-8 md:p-10 shadow-lg border border-gray-100"
+              className="min-w-0 bg-white rounded-2xl p-6 md:p-10 shadow-lg border border-gray-100"
             >
               <div className="mb-8">
                 <div className="text-sm text-gray-500 font-medium mb-2">Loan Amount</div>
-                <div className="text-4xl md:text-5xl font-semibold text-primary mb-2">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-primary mb-2">
                   ₱100K – ₱500K
                 </div>
                 <p className="text-xs text-muted-foreground">Subject to credit approval.</p>
@@ -127,7 +127,7 @@ export const SMEWorkingCapital = () => {
             </motion.div>
 
             {/* Right: Features & target segments */}
-            <div className="space-y-8">
+            <div className="min-w-0 space-y-8">
               <div className="grid gap-6">
                 {features.map((feature, index) => (
                   <motion.div
@@ -136,12 +136,12 @@ export const SMEWorkingCapital = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="flex gap-4"
+                    className="flex min-w-0 gap-4"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <feature.icon className="w-6 h-6 text-primary" />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <h3 className="text-lg font-medium text-gray-900 mb-1">
                         {feature.title}
                       </h3>
