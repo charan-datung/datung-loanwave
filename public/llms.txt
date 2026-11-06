@@ -7,3 +7,6 @@ Datung provides business loans and working capital financing to established Phil
 The application website, with current products, requirements and timing, is https://datungapply.com. A fuller summary is at https://datungapply.com/llms.txt.
 
 Contact: sales@datung.io
+
+## For institutional funders
+Datung is an SEC-licensed Philippine SME lender (Certificate of Authority No. 3506). Information for banks, private credit funds, family offices and development finance institutions: https://datung.io/funders.html
