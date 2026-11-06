@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
             <p>
               This Privacy Policy is issued by Datung (&quot;Datung,&quot; &quot;we,&quot; &quot;us,&quot; or
               &quot;our&quot;), headquartered at 32 Pekin St, #05-01, Singapore 048762 (UEN No.
-              202420720G), which provides microfinance products to micro, small, and medium enterprises
+              202420720G), which provides lending products to micro, small, and medium enterprises
               (MSMEs) and individual borrowers in the Philippines.
             </p>
             <p className="mt-4">

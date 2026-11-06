@@ -19,7 +19,7 @@ export const CareersHero = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4">
               Join us in Building the World's Largest & Most{' '}
               <span className="font-bold italic text-secondary drop-shadow-lg" style={{ textShadow: '0 0 20px rgba(0, 179, 122, 0.8)' }}>Innovative</span>{' '}
-              Microfinance Company
+              Lending Company
             </h1>
           </div>
           

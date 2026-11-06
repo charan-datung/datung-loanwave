@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 
-const COMPANY_DESC = "Datung is at the forefront of microfinance innovation, utilizing AI, psychometrics, and community dynamics to unlock credit for 42 million underserved small businesses in Southeast Asia. Our work transforms unbanked entrepreneurs into creditworthy borrowers. With backing from Antler, Kaya Founders, Google, and NVIDIA, we operate out of our offices in Singapore and Manila, empowering excluded entrepreneurs to become economic drivers.";
+const COMPANY_DESC = "Datung is at the forefront of lending innovation, utilizing AI, psychometrics, and community dynamics to unlock credit for underserved Philippine SMEs. Our work transforms unbanked entrepreneurs into creditworthy borrowers. With backing from Antler, Kaya Founders, Google, and NVIDIA, we operate out of our offices in Singapore and Manila, empowering excluded entrepreneurs to become economic drivers.";
 
 interface JobOpening {
   title: string;
@@ -43,7 +43,7 @@ const openings: JobOpening[] = [
       "Knowledge of Finance principles",
       "Excellent interpersonal skills",
       "Ability to work independently and as part of a team",
-      "Experience in the microfinance or banking sector is a plus",
+      "Experience in the lending or banking sector is a plus",
       "Bachelor's degree in Finance, Accounting, Business, or related field",
     ],
     jobstreetUrl: "https://ph.jobstreet.com/job/87605531",
@@ -75,13 +75,13 @@ const openings: JobOpening[] = [
     dialogKey: "seniorloan",
     roleDescription: "This is a full-time role for a Senior Loan Officer based in Manila. The Senior Loan Officer will lead loan origination, assessment, and disbursement activities. The role involves evaluating borrower creditworthiness, managing client relationships, mentoring junior loan officers, and ensuring compliance with lending policies and procedures.",
     qualifications: [
-      "3+ years of experience in loan processing or microfinance lending",
+      "3+ years of experience in loan processing or lending",
       "Strong credit assessment and risk evaluation skills",
       "Excellent client relationship management abilities",
       "Leadership and mentoring experience",
       "Knowledge of lending regulations and compliance requirements",
       "Strong analytical and decision-making skills",
-      "Experience in microfinance or community lending is a plus",
+      "Experience in lending or community lending is a plus",
       "Bachelor's degree in Finance, Business, or related field",
     ],
     jobstreetUrl: "https://ph.jobstreet.com/job/90921130?ref=hirer-success-posting",
@@ -143,8 +143,8 @@ const RiskDialog = ({ open, onOpenChange }: { open: boolean; onOpenChange: (v: b
         </div>
         <div className="space-y-4 text-foreground">
           <div>
-            <p className="text-lg font-medium mb-2">🚀 Are you ready to lead risk and compliance for the future of microfinance?</p>
-            <p className="mb-4">At Datung, we're building Southeast Asia's most innovative microfinance platform - AI-powered, community-driven, and trusted by thousands of underserved small businesses. Backed by Google, Nvidia, and top regional VCs, we're scaling fast, and risk has never been more critical.</p>
+            <p className="text-lg font-medium mb-2">🚀 Are you ready to lead risk and compliance for the future of lending?</p>
+            <p className="mb-4">At Datung, we're building Southeast Asia's most innovative lending platform - AI-powered, community-driven, and trusted by thousands of underserved small businesses. Backed by Google, Nvidia, and top regional VCs, we're scaling fast, and risk has never been more critical.</p>
             <p className="mb-4">We're looking for a Head of Risk & Compliance to lead credit risk, regulatory compliance, and portfolio integrity as we grow from startup to category-definer.</p>
             <p className="mb-4">This role is more than oversight; it's ownership. You'll shape the guardrails that allow us to move fast without breaking things that matter.</p>
           </div>
@@ -164,7 +164,7 @@ const RiskDialog = ({ open, onOpenChange }: { open: boolean; onOpenChange: (v: b
           <div>
             <h4 className="text-lg font-semibold mb-2">👀 You might be a fit if you…</h4>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li>Have 6–10+ years of experience in risk, credit, or compliance in banking, fintech, lending, or microfinance</li>
+              <li>Have 6–10+ years of experience in risk, credit, or compliance in banking, fintech, or lending</li>
               <li>Have worked closely with financial regulators in the Philippines (SEC, BSP, etc.)</li>
               <li>Can build systems from scratch and scale them as the company grows</li>
               <li>Have strong judgment - you know how to balance compliance with commercial velocity</li>

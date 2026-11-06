@@ -7,8 +7,8 @@ const facts = [
     description: "MSME finance gap in Southeast Asia"
   },
   {
-    stat: "42 Million+",
-    description: "MSMEs in Southeast Asia are excluded from the formal financial system"
+    stat: "Philippine SMEs",
+    description: "Philippine SMEs are excluded from the formal financial system"
   },
   {
     stat: "32%",

@@ -56,7 +56,7 @@ const Mission = () => {
     <div className="min-h-screen relative">
       <Seo
         title="Our Mission — Financial Inclusion for 42M Unbanked Filipinos | Datung"
-        description="Datung's mission: bring financial inclusion to 42 million unbanked and underserved Filipino entrepreneurs through AI-powered microfinance and community lending."
+        description="Datung's mission: bring financial inclusion to unbanked and underserved Philippine SMEs through AI-powered lending and community lending."
         path="/mission"
       />
       <FloatingParticles />
