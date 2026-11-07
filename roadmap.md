@@ -4,3 +4,5 @@
 - [x] Apply newly approved loan claims, loan-amount disclaimers, and exact crawler rules while preserving salary/group copy and headline figures.
 - [x] Verify and report each requested text/count check and any remaining items.
 - [x] Apply and verify wording-only timing, lending terminology, and Philippine SME edits; preserve layout and headline figures.
+- [ ] Improve AI-search source discovery, entity consistency, and truthful loan metadata without changing the page layouts or protected figures.
+- [ ] Verify crawler files, structured data, and public pages with and without JavaScript.
