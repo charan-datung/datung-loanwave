@@ -55,23 +55,20 @@ const BusinessLoans = () => {
   return (
     <div className="min-h-screen relative">
       <Seo
-        title="Business Loans Philippines — MSME & SME Working Capital ₱5K–₱500K | Datung"
+        title="Business Loans for Philippine SMEs | Datung"
         description="Business loans in the Philippines for established SMEs, including working capital for clinics, print shops, laundromats and independent retail. SEC-licensed."
         path="/business-loans"
         jsonLd={[
           {
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "Service",
+            "@id": "https://datung.io/business-loans#service",
             name: "Datung Business Loans",
-            description: "MSME micro loans and SME working capital for Filipino entrepreneurs.",
-            brand: { "@type": "Brand", name: "Datung" },
-            offers: {
-              "@type": "AggregateOffer",
-              priceCurrency: "PHP",
-              lowPrice: "5000",
-              highPrice: "500000",
-              offerCount: "2"
-            }
+            serviceType: "Business loans and SME working capital",
+            description: "Business loans go up to ₱10M. Subject to credit approval.",
+            url: "https://datung.io/business-loans",
+            provider: { "@id": "https://datung.io/#organization" },
+            areaServed: { "@type": "Country", name: "Philippines" }
           },
           {
             "@context": "https://schema.org",

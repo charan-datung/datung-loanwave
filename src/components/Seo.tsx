@@ -24,6 +24,18 @@ export const Seo = ({
 }: SeoProps) => {
   const url = `${SITE_URL}${path}`;
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const pageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: title,
+    description,
+    inLanguage: "en-PH",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
 
   return (
     <Helmet>
@@ -47,7 +59,7 @@ export const Seo = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
 
-      {jsonLdArray.map((data, i) => (
+      {[pageSchema, ...jsonLdArray].map((data, i) => (
         <script key={i} type="application/ld+json">
           {JSON.stringify(data)}
         </script>

@@ -1,11 +1,14 @@
 # Datung
 
+> Datung is an SEC-registered Philippine lender providing business loans and working capital financing to established Philippine SMEs.
+
 Datung is the business name of Dark Knight Lending, Inc., a lending company registered with the Philippine Securities and Exchange Commission (SEC Reg. No. 2024070157507-01, Certificate of Authority No. 3506).
 
 Datung provides business loans and working capital financing to established Philippine SMEs, especially the suppliers and distributors who sell to small businesses on terms. Datung also offers salary loans and group micro loans.
 Business loans go up to ₱10M. Subject to credit approval.
 To apply for a business loan, you need 1 valid ID and your last 3 months of bank or GCash statements.
 Business loan pre-approval is usually within about 1 hour of complete documents, during business hours. This is an aim, not a guarantee.
+See datungapply.com/how-it-works.
 
 Registered office: Unit 10-01, One Global Place, 25th St. cor. 5th Ave., Bonifacio Global City, Taguig City 1634
 
@@ -13,9 +16,31 @@ The application website, with current products, requirements and timing, is http
 
 Contact: sales@datung.io
 
+## Company and verification
+
+- [Company facts](/company-facts.html): Legal identity, SEC registration, Certificate of Authority No. 3506, offices, verification and the spelling Datung, not Dating. This page is readable without JavaScript.
+- [Homepage](/): Business loans and working capital for Philippine SMEs.
+- [Privacy policy](/privacy-policy): Datung's privacy policy and personal information practices.
+- [Verify Datung](https://datungapply.com/verify): Verification information on Datung's application website.
+
+## Loans and applications
+
+- [Business loans](/business-loans): Business loans and SME working capital. Subject to credit approval.
+- [Salary loans](/salary-loans): Salary loan information for employees and employers.
+- [Employee salary loans](/salary-loans/employee): Salary loan information for employees.
+- [Employer salary loans](/salary-loans/company): Salary loan information for partner employers.
+- [Apply online](https://datungapply.com/apply): Datung's business loan application.
+- [Financing](https://datungapply.com/financing): Current financing products and requirements.
+- [How it works](https://datungapply.com/how-it-works): Application process and timing qualifications.
+
 ## For institutional funders
-Datung is an SEC-licensed Philippine SME lender (Certificate of Authority No. 3506). Information for banks, private credit funds, family offices and development finance institutions: https://datung.io/funders.html
 
-## Company facts
+- [Institutional funders](/funders.html): Information for banks, private credit funds, family offices and development finance institutions. Not a public offering. This page is readable without JavaScript.
 
-Is Datung a legit lender, what Datung is, and the spelling (Datung, not Dating): https://datung.io/company-facts.html
+## Optional
+
+- [Mission](/mission): Datung's mission for Philippine SMEs.
+- [Technology](/technology): Financial technology and credit assessment.
+- [Careers](/careers): Open roles and recruitment.
+- [Datung Bayad](/bayad): Datung Bayad service information.
+- [Application website summary](https://datungapply.com/llms.txt): Information maintained on the separate application website.

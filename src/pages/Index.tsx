@@ -107,22 +107,11 @@ const Index = () => {
         jsonLd={[
           {
             "@context": "https://schema.org",
-            "@type": "FinancialService",
-            name: "Datung",
-            url: "https://datung.io",
-            logo: "https://datung.io/datung-logo.png",
-            description: "AI-powered lending and salary lending platform in the Philippines.",
-            areaServed: { "@type": "Country", name: "Philippines" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1200" }
-          },
-          {
-            "@context": "https://schema.org",
             "@type": "FAQPage",
             mainEntity: [
-              { "@type": "Question", name: "Who can apply for a Datung loan?", acceptedAnswer: { "@type": "Answer", text: "Established Philippine suppliers and distributors who sell to small businesses on terms. See datungapply.com for current requirements." } },
               { "@type": "Question", name: "What are the requirements to apply?", acceptedAnswer: { "@type": "Answer", text: "To apply for a business loan, you need 1 valid ID and your last 3 months of bank or GCash statements." } },
-              { "@type": "Question", name: "How fast is loan approval at Datung?", acceptedAnswer: { "@type": "Answer", text: "Business loan pre-approval is usually within about 1 hour of complete documents, during business hours. This is an aim, not a guarantee. See datungapply.com/how-it-works." } },
-              { "@type": "Question", name: "Is Datung SEC-licensed?", acceptedAnswer: { "@type": "Answer", text: "Yes, Datung is licensed by the Securities and Exchange Commission of the Philippines." } }
+              { "@type": "Question", name: "How long does approval take?", acceptedAnswer: { "@type": "Answer", text: "Business loan pre-approval is usually within about 1 hour of complete documents, during business hours. This is an aim, not a guarantee. See datungapply.com/how-it-works." } },
+              { "@type": "Question", name: "Is Datung legally registered?", acceptedAnswer: { "@type": "Answer", text: "Yes. Datung is the operating brand of Dark Knight Lending, Inc., registered with the SEC (Registration No. 2024070157507-01) and holding Certificate of Authority No. 3506 to operate as a lending company in the Philippines." } }
             ]
           }
         ]}

@@ -15,7 +15,6 @@
     <meta name="author" content="Datung" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
-    <link rel="canonical" href="https://datung.io/" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Datung | Business Loans for Philippine SMEs" />
@@ -52,9 +51,10 @@
     {
       "@context": "https://schema.org",
       "@type": "FinancialService",
+      "@id": "https://datung.io/#organization",
       "name": "Datung",
       "legalName": "Dark Knight Lending, Inc.",
-      "alternateName": ["Dark Knight Lending, Inc.", "Datung Lending"],
+      "alternateName": ["Dark Knight Lending, Inc.", "Dark Knight Analytics, Inc.", "Datung Lending"],
       "url": "https://datung.io",
       "logo": "https://datung.io/datung-logo.png",
       "image": "https://datung.io/og-image.png?v=2",
@@ -85,14 +85,11 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://datung.io/#website",
       "name": "Datung",
       "url": "https://datung.io",
       "inLanguage": "en-PH",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://datung.io/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "publisher": { "@id": "https://datung.io/#organization" }
     }
     </script>
   </head>
@@ -111,12 +108,26 @@
         <p>Business loans go up to ₱10M. Subject to credit approval.</p>
         <p>To apply for a business loan, you need 1 valid ID and your last 3 months of bank or GCash statements.</p>
         <p>Business loan pre-approval is usually within about 1 hour of complete documents, during business hours. This is an aim, not a guarantee.</p>
+        <p>See <a href="https://datungapply.com/how-it-works">datungapply.com/how-it-works</a>.</p>
         <p>
           Our application website is datungapply.com.
           <a href="https://datungapply.com/apply">Apply online</a>.
         </p>
         <p><a href="https://datung.io/funders.html">For institutional funders</a></p>
         <p><a href="https://datung.io/company-facts.html">Datung company facts</a></p>
+        <nav aria-label="Datung pages">
+          <ul>
+            <li><a href="/business-loans">Business loans</a></li>
+            <li><a href="/salary-loans">Salary loans</a></li>
+            <li><a href="/salary-loans/employee">Employee salary loans</a></li>
+            <li><a href="/salary-loans/company">Salary loans for employers</a></li>
+            <li><a href="/technology">Technology</a></li>
+            <li><a href="/mission">Mission</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/bayad">Datung Bayad</a></li>
+            <li><a href="/privacy-policy">Privacy policy</a></li>
+          </ul>
+        </nav>
       </div>
     </noscript>
   </body>
