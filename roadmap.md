@@ -9,4 +9,4 @@
 - [x] Test current published visibility and report measured evidence separately from unpublished improvements.
 - [x] Add batch-two static financing guides with exact supplied HTML and footer, noscript, sitemap, and llms.txt links; verify requested checks.
 
-- [ ] Add batch-three exact static guides and replace the guide list; add the four sitemap entries and verify requested checks.
+- [x] Add batch-three exact static guides and replace the guide list; add the four sitemap entries and verify requested checks.
