@@ -88,6 +88,11 @@ export const Footer = () => {
                   Company facts
                 </a>
               </li>
+              <li>
+                <a href="/financing-guides.html" className="text-gray-300 hover:text-accent transition-all duration-300 text-sm font-medium hover:translate-x-1">
+                  Business financing by purpose
+                </a>
+              </li>
             </ul>
           </div>
 
