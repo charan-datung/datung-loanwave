@@ -7,7 +7,7 @@ const APPLY_URL = "https://datungapply.com/apply";
 export const HeroSection = () => {
   return (
     <section 
-      className="pt-32 pb-20 px-4 relative min-h-screen flex items-center"
+      className="pt-32 pb-16 px-4 relative flex items-center"
       style={{
         background: `linear-gradient(135deg, rgba(0, 77, 77, 0.97) 0%, rgba(0, 179, 122, 0.95) 100%)`,
       }}
@@ -18,10 +18,10 @@ export const HeroSection = () => {
           <div className="text-white/90 text-sm font-medium">Business financing for established Philippine SMEs.</div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-light mb-8 text-white leading-tight">
+        <h1 className="text-3xl md:text-6xl font-light mb-8 text-primary-foreground leading-tight max-w-4xl mx-auto">
           Business Loans Without Collateral
           <br />
-          <span className="font-normal text-accent">
+          <span className="font-normal text-primary-foreground">
             For Philippine Business Owners
           </span>
         </h1>

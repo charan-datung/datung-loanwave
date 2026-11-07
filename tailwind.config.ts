@@ -19,6 +19,10 @@ export default {
     },
     extend: {
       colors: {
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        "muted-foreground": "hsl(var(--muted-foreground))",
+        border: "hsl(var(--border))",
         primary: {
           DEFAULT: "#004D4D", // Deep teal from logo
           foreground: "#FFFFFF",
