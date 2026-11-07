@@ -7,4 +7,4 @@
 - [x] Improve AI-search source discovery, entity consistency, and truthful loan metadata without changing the page layouts or protected figures.
 - [x] Verify crawler files, structured data, and public pages with and without JavaScript.
 - [x] Test current published visibility and report measured evidence separately from unpublished improvements.
-- [ ] Add batch-two static financing guides with exact supplied HTML and footer, noscript, sitemap, and llms.txt links; verify requested checks.
+- [x] Add batch-two static financing guides with exact supplied HTML and footer, noscript, sitemap, and llms.txt links; verify requested checks.
