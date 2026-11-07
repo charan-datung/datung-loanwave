@@ -7,6 +7,8 @@ import { ProcessTimeline } from "@/components/business-loans/ProcessTimeline";
 import { Requirements } from "@/components/business-loans/Requirements";
 import { WhoCanApply } from "@/components/business-loans/WhoCanApply";
 import { CTASection } from "@/components/business-loans/CTASection";
+import { BusinessLoanDiscovery } from "@/components/business-loans/BusinessLoanDiscovery";
+import discovery from "@/data/business-loan-discovery.json";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 
@@ -55,8 +57,8 @@ const BusinessLoans = () => {
   return (
     <div className="min-h-screen relative">
       <Seo
-        title="Business Loans for Philippine SMEs | Datung"
-        description="Business loans in the Philippines for established SMEs, including working capital for clinics, print shops, laundromats and independent retail. SEC-licensed."
+        title={discovery.title}
+        description={discovery.description}
         path="/business-loans"
         jsonLd={[
           {
@@ -64,8 +66,8 @@ const BusinessLoans = () => {
             "@type": "Service",
             "@id": "https://datung.io/business-loans#service",
             name: "Datung Business Loans",
-            serviceType: "Business loans and SME working capital",
-            description: "Business loans go up to ₱10M. Subject to credit approval.",
+            serviceType: "Business loans without collateral and SME working capital",
+            description: `${discovery.eligibility} Business loans go up to ₱10M. Subject to credit approval.`,
             url: "https://datung.io/business-loans",
             provider: { "@id": "https://datung.io/#organization" },
             areaServed: { "@type": "Country", name: "Philippines" }
@@ -95,6 +97,7 @@ const BusinessLoans = () => {
         <ProcessTimeline />
         <Requirements />
         <WhoCanApply />
+        <BusinessLoanDiscovery />
         <CTASection />
       </main>
       <Footer />

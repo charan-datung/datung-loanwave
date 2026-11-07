@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import discovery from "@/data/business-loan-discovery.json";
 
 const APPLY_URL = "https://datungapply.com/apply";
 
@@ -18,15 +19,15 @@ export const HeroSection = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-light mb-8 text-white leading-tight">
-          Business Loans
+          Business Loans Without Collateral
           <br />
           <span className="font-normal text-accent">
-            For Every Filipino Entrepreneur
+            For Philippine Business Owners
           </span>
         </h1>
         
         <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light">
-          From micro-merchant group loans to larger-ticket SME working capital, we have a funding option that fits your business stage.
+          {discovery.eligibility}
         </p>
 
         <p className="text-sm md:text-base text-white/90 mb-8 font-medium">
