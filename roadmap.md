@@ -12,3 +12,4 @@
 - [x] Add batch-three exact static guides and replace the guide list; add the four sitemap entries and verify requested checks.
 - [ ] Define a measurable strategy for the target of originating 90% of loans through AI visibility — awaiting the user's definition of AI sourcing, reporting period, and count versus disbursed value.
 - [x] Strengthen existing business-loan discovery and guide links for Philippine business-owner searches; use confirmed no-collateral application eligibility and verify tests, metadata, and mobile/desktop navigation.
+- [ ] Research Philippine business workflows and borrowing triggers across a broad profile taxonomy; distinguish researched segments from synthetic combinations rather than claiming 10,000 real profiles were analyzed.
