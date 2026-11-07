@@ -10,3 +10,4 @@
 - [x] Add batch-two static financing guides with exact supplied HTML and footer, noscript, sitemap, and llms.txt links; verify requested checks.
 
 - [x] Add batch-three exact static guides and replace the guide list; add the four sitemap entries and verify requested checks.
+- [ ] Define a measurable strategy for the target of originating 90% of loans through AI visibility — awaiting the user's definition of AI sourcing, reporting period, and count versus disbursed value.
