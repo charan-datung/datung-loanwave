@@ -6,3 +6,4 @@
 - [x] Apply and verify wording-only timing, lending terminology, and Philippine SME edits; preserve layout and headline figures.
 - [ ] Improve AI-search source discovery, entity consistency, and truthful loan metadata without changing the page layouts or protected figures.
 - [ ] Verify crawler files, structured data, and public pages with and without JavaScript.
+- [ ] Test current published visibility and report measured evidence separately from unpublished improvements.
