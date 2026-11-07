@@ -34,7 +34,7 @@ class GeoTests(unittest.TestCase):
     def test_requested_canonical_host_in_crawler_files(self):
         xml = ET.parse(ROOT / 'public/sitemap.xml')
         urls = [x.text for x in xml.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-        self.assertEqual(len(urls), 18)
+        self.assertEqual(len(urls), 22)
         self.assertTrue(all(url and url.startswith('https://datung.io/') for url in urls))
         self.assertIn('Sitemap: https://datung.io/sitemap.xml', (ROOT / 'public/robots.txt').read_text())
 
