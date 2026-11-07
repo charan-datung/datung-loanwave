@@ -1,0 +1,20 @@
+{
+  "title": "Business Loans Without Collateral in the Philippines | Datung",
+  "description": "Philippine business owners can apply for a loan without collateral with 3 months of bank statements, the owner's valid ID and a completed application. Subject to credit approval.",
+  "heading": "Business loans without collateral in the Philippines",
+  "eligibility": "Any type of business can apply with the owner's valid ID, the last 3 months of bank statements, and a completed loan application form. Subject to credit approval.",
+  "bankStatementMonths": 3,
+  "requiredDocuments": ["ownerValidId", "bankStatements", "completedApplication"],
+  "businessTypes": "any",
+  "collateralRequired": false,
+  "creditApprovalRequired": true,
+  "applicationUrl": "https://datungapply.com/apply",
+  "guides": [
+    { "path": "/financing-guides/po-financing.html", "title": "Purchase order financing" },
+    { "path": "/financing-guides/invoice-financing.html", "title": "Invoice financing" },
+    { "path": "/financing-guides/working-capital-distributors.html", "title": "Working capital for distributors" },
+    { "path": "/financing-guides/construction-subcontractors.html", "title": "Construction suppliers and subcontractors" },
+    { "path": "/financing-guides/seasonal-stock.html", "title": "Seasonal stock financing" },
+    { "path": "/financing-guides/pautang-negosyo.html", "title": "Pautang para sa negosyo" }
+  ]
+}

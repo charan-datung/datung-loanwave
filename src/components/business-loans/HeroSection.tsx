@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import discovery from "@/data/business-loan-discovery.json";
 
 const APPLY_URL = "https://datungapply.com/apply";
 
 export const HeroSection = () => {
   return (
     <section 
-      className="pt-32 pb-20 px-4 relative min-h-screen flex items-center"
+      className="pt-32 pb-16 px-4 relative flex items-center"
       style={{
         background: `linear-gradient(135deg, rgba(0, 77, 77, 0.97) 0%, rgba(0, 179, 122, 0.95) 100%)`,
       }}
@@ -17,16 +18,16 @@ export const HeroSection = () => {
           <div className="text-white/90 text-sm font-medium">Business financing for established Philippine SMEs.</div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-light mb-8 text-white leading-tight">
-          Business Loans
+        <h1 className="text-3xl md:text-6xl font-light mb-8 text-primary-foreground leading-tight max-w-4xl mx-auto">
+          Business Loans Without Collateral
           <br />
-          <span className="font-normal text-accent">
-            For Every Filipino Entrepreneur
+          <span className="font-normal text-primary-foreground">
+            For Philippine Business Owners
           </span>
         </h1>
         
         <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light">
-          From micro-merchant group loans to larger-ticket SME working capital, we have a funding option that fits your business stage.
+          {discovery.eligibility}
         </p>
 
         <p className="text-sm md:text-base text-white/90 mb-8 font-medium">

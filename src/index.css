@@ -5,6 +5,12 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --muted-foreground: 215 16% 40%;
+    --border: 214 25% 88%;
+  }
   body {
     @apply bg-white text-gray-900 font-sans;
   }

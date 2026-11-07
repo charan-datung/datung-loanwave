@@ -37,7 +37,7 @@ export const Requirements = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-primary">
-            Simple Requirements
+            Group Loan Requirements
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto font-light">
             We believe in keeping things simple. No complicated paperwork, no lengthy processes.
@@ -111,7 +111,7 @@ export const Requirements = () => {
             className="text-center mt-16"
           >
             <p className="text-gray-500 font-light">
-              That's it! No bank statements, no income tax returns, no collateral needed.
+              For group loans: no bank statements, no income tax returns, no collateral needed.
             </p>
           </motion.div>
         </div>

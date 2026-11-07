@@ -17,6 +17,18 @@ def schemas(file):
 
 
 class GeoTests(unittest.TestCase):
+    def test_confirmed_no_collateral_eligibility(self):
+        data = json.loads((ROOT / 'src/data/business-loan-discovery.json').read_text())
+        self.assertFalse(data['collateralRequired'])
+        self.assertTrue(data['creditApprovalRequired'])
+        self.assertEqual(data['businessTypes'], 'any')
+        self.assertEqual(data['bankStatementMonths'], 3)
+        self.assertEqual(data['requiredDocuments'], ['ownerValidId', 'bankStatements', 'completedApplication'])
+
+    def test_borrower_application_destination(self):
+        data = json.loads((ROOT / 'src/data/business-loan-discovery.json').read_text())
+        self.assertEqual(data['applicationUrl'], 'https://datungapply.com/apply')
+
     def test_requested_crawlers_can_read_public_pages_not_platform(self):
         text = (ROOT / 'public/robots.txt').read_text()
         names = re.findall(r'^User-agent: (.+)$', text, re.M)
