@@ -1,4 +1,4 @@
-import { Users, BarChart3, GraduationCap, Eye } from "lucide-react";
+import { Users, GraduationCap, Eye } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
@@ -9,14 +9,9 @@ const approaches = [
     description: "We've pioneered the Joint Accountability Group (JAG) model, fostering a supportive community of entrepreneurs who uplift each other.",
   },
   {
-    icon: BarChart3,
-    title: "Data-Driven Innovation",
-    description: "Our proprietary algorithm analyzes over 100 data points to assess creditworthiness, going beyond traditional metrics to unlock opportunities.",
-  },
-  {
     icon: GraduationCap,
     title: "Education First",
-    description: "We believe in empowering entrepreneurs with knowledge. Our platform offers financial literacy courses to all users.",
+    description: "We believe in empowering entrepreneurs with knowledge.",
   },
   {
     icon: Eye,
