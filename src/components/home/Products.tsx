@@ -17,7 +17,7 @@ export const Products = () => {
     {
       icon: Users,
       title: "Salary Loans", 
-      description: "Convenient financing solutions for employed Filipinos with competitive rates and flexible terms.",
+      description: "Convenient financing solutions for employed Filipinos with flexible terms.",
       link: "/salary-loans",
       gradient: "from-secondary to-accent",
       buttonColor: "bg-secondary hover:bg-secondary/90"
