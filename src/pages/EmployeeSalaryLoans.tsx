@@ -9,7 +9,7 @@ const EmployeeSalaryLoans = () => {
   return (
     <div className="min-h-screen relative">
       <Seo
-        title="Employee Salary Loan Philippines — Fast Cash for Workers | Datung"
+        title="Quick, Accessible Loans for Employees | Datung"
         description="Quick and affordable salary loans for Filipino employees. We aim to decide fast during business hours, as an aim, not a guarantee. Competitive interest, flexible terms via your employer partnership with Datung."
         path="/salary-loans/employee"
       />
