@@ -45,8 +45,8 @@ export const Hero = () => {
             </a>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="text-white border-white hover:bg-white/10 w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4"
+              variant="default" 
+              className="bg-background text-primary hover:bg-background/90 w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4"
               onClick={() => navigate("/mission")}
             >
               Join our Mission
