@@ -57,8 +57,8 @@ const BusinessLoans = () => {
   return (
     <div className="min-h-screen relative">
       <Seo
-        title={discovery.title}
-        description={discovery.description}
+        title="Business Loans | Datung"
+        description={discovery.eligibility}
         path="/business-loans"
         jsonLd={[
           {

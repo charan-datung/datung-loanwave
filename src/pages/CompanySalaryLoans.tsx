@@ -11,7 +11,7 @@ const CompanySalaryLoans = () => {
   return (
     <div className="min-h-screen relative">
       <Seo
-        title="Employee Salary Loan Benefits for Companies Philippines | Datung"
+        title="Empower Your Workforce | Datung"
         description="Offer employees zero-cost salary loans as a financial wellness benefit. Boost retention and productivity in the Philippines. Fully managed by Datung."
         path="/salary-loans/company"
       />
