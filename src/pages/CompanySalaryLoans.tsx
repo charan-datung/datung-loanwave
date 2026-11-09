@@ -12,7 +12,7 @@ const CompanySalaryLoans = () => {
     <div className="min-h-screen relative">
       <Seo
         title="Empower Your Workforce | Datung"
-        description="Offer employees zero-cost salary loans as a financial wellness benefit. Boost retention and productivity in the Philippines. Fully managed by Datung."
+        description="Business loans and working capital for established Philippine suppliers and distributors, from an SEC-registered lender. Apply at datungapply.com."
         path="/salary-loans/company"
       />
       <div 

@@ -10,7 +10,7 @@ const Technology = () => {
     <div className="min-h-screen relative">
       <Seo
         title="Technology | Datung"
-        description="Datung's proprietary AI credit scoring evaluates alternative data to serve unbanked Filipinos. Community verification, mobile-first onboarding, real-time risk analytics."
+        description="Business loans and working capital for established Philippine suppliers and distributors, from an SEC-registered lender. Apply at datungapply.com."
         path="/technology"
       />
       <div 
