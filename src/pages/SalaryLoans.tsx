@@ -90,7 +90,7 @@ const SalaryLoans = () => {
                 to: "/salary-loans/employee", 
                 icon: User,
                 title: "For Employees",
-                description: "Access quick and flexible loan options with competitive rates",
+                description: "Access flexible loan options",
                 delay: 1.0
               }
             ].map((option, index) => (
