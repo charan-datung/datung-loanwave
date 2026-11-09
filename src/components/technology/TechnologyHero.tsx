@@ -144,7 +144,7 @@ export const TechnologyHero = () => {
           className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
         >
           {[
-            { icon: Brain, title: "AI Credit Scoring", description: "Advanced algorithms for accurate credit assessment and risk prediction.", color: "from-secondary to-accent" },
+            { icon: Brain, title: "Credit Scoring", description: "Advanced algorithms for accurate credit assessment and risk prediction.", color: "from-secondary to-accent" },
             { icon: Shield, title: "Risk Management", description: "Comprehensive risk analysis and monitoring systems.", color: "from-primary to-secondary" },
             { icon: Database, title: "Loan Platform", description: "End-to-end loan management and processing solution.", color: "from-accent to-primary" }
           ].map((feature, index) => (
