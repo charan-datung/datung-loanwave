@@ -22,9 +22,9 @@ const faqs = [
     a: (
       <>
         SME Working Capital is a larger-ticket financing option for fixed-location businesses such as dental and veterinary clinics, print shops, laundromats, and independent retail stores. It provides:
-        <span className="mt-2 block">₱100,000–₱500,000</span>
+        <span className="mt-2 block">₱30,000–₱10,000,000</span>
         <span className="block text-xs text-muted-foreground">Subject to credit approval.</span>
-        <span className="mt-2 block">for inventory, purchase orders, or receivable advancement, with 6 or 12-month monthly amortization.</span>
+        <span className="mt-2 block">for inventory, purchase orders, or receivable advancement, with monthly amortization over 3 to 12 months.</span>
       </>
     ),
   },
@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "What is the JAG group lending model?",
-    a: "JAG (Joint and Group) lending lets 3-10 business owners from the same community apply together. Members co-guarantee each other, which unlocks larger loans and lower rates without requiring traditional collateral.",
+    a: "JAG (Joint and Group) lending lets 3-10 business owners from the same community apply together. Members co-guarantee each other.",
   },
   {
     q: "Where is Datung located?",

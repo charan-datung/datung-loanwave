@@ -43,7 +43,6 @@ Contact: sales@datung.io
 - [Mission](/mission): Datung's mission for Philippine SMEs.
 - [Technology](/technology): Financial technology and credit assessment.
 - [Careers](/careers): Open roles and recruitment.
-- [Datung Bayad](/bayad): Datung Bayad service information.
 - [Application website summary](https://datungapply.com/llms.txt): Information maintained on the separate application website.
 
 ## Christmas and seasonal stock

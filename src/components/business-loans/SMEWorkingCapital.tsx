@@ -8,13 +8,13 @@ export const SMEWorkingCapital = () => {
     {
       icon: Building2,
       title: "Larger Ticket Sizes",
-      description: "₱100,000 – ₱500,000 working capital for established businesses with predictable operations.",
+      description: "₱30,000 to ₱10,000,000 working capital for established businesses with predictable operations.",
       disclaimer: "Subject to credit approval.",
     },
     {
       icon: Calendar,
       title: "Flexible Tenor",
-      description: "Choose between 6 or 12 months, with monthly amortization that matches your cash flow.",
+      description: "Choose a term of 3 to 12 months, with monthly amortization that matches your cash flow.",
       disclaimer: undefined,
     },
     {
@@ -26,7 +26,7 @@ export const SMEWorkingCapital = () => {
     {
       icon: FileCheck,
       title: "Document-Based Approval",
-      description: "Streamlined underwriting using business permits, bank statements, and a co-maker.",
+      description: "The online form, 1 valid ID and your last 3 months of bank or GCash statements.",
       disclaimer: undefined,
     },
     {
@@ -80,11 +80,7 @@ export const SMEWorkingCapital = () => {
               <div className="mb-8">
                 <div className="text-sm text-gray-500 font-medium mb-2">Loan Amount</div>
                 <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-primary mb-2">
-                  ₱100K – ₱500K
-                </div>
-                <p className="text-xs text-muted-foreground">Subject to credit approval.</p>
-                <div className="text-gray-600 font-light">
-                  Primary pilot range: ₱150K – ₱250K
+                  ₱30,000 to ₱10,000,000
                 </div>
                 <p className="text-xs text-muted-foreground">Subject to credit approval.</p>
               </div>

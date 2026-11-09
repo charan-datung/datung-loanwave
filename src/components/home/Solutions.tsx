@@ -27,7 +27,7 @@ export const Solutions = () => {
             {
               to: "/business-loans",
               title: "Business Loans",
-              description: "Tech-enabled MSME financing with our innovative JAG model and AI-powered assessment for Filipino entrepreneurs.",
+              description: "Tech-enabled MSME financing with our innovative JAG model for Filipino entrepreneurs.",
               backgroundImage: businessLoansBg,
               delay: 0
             },
@@ -41,7 +41,7 @@ export const Solutions = () => {
             {
               to: "/technology",
               title: "Technology Solutions",
-              description: "Advanced loan underwriting and credit assessment powered by AI, tailored for the Philippine market.",
+              description: "Advanced loan underwriting and credit assessment, tailored for the Philippine market.",
               backgroundImage: technologyBg,
               delay: 0.4
             }

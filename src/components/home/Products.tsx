@@ -28,12 +28,12 @@ export const Products = () => {
     {
       icon: ChartBar,
       title: "Credit Scoring",
-      description: "AI-powered credit assessment system tailored for the Filipino market and local business patterns."
+      description: "Credit assessment system tailored for the Filipino market and local business patterns."
     },
     {
       icon: Shield,
       title: "Risk Management", 
-      description: "Advanced risk analysis and fraud detection tailored for Filipino businesses and market conditions."
+      description: "Advanced risk analysis tailored for Filipino businesses and market conditions."
     },
     {
       icon: Database,

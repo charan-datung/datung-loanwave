@@ -11,12 +11,6 @@ export const LoanFeatures = () => {
       highlight: "Fast decisions"
     },
     {
-      icon: Calendar,
-      title: "Low Monthly Interest",
-      description: "Competitive rates for individual loans",
-      highlight: "Low Rate"
-    },
-    {
       icon: Shield,
       title: "No Collateral",
       description: "Unsecured loans for your peace of mind",

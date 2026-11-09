@@ -5,11 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 export const EmployerBenefits = () => {
   const benefits = [
     {
-      icon: Percent,
-      title: "Low Interest Loans",
-      description: "Provide affordable loans with competitive rates to your employees"
-    },
-    {
       icon: Clock,
       title: "No Cost to Employer",
       description: "Zero implementation or maintenance costs"
