@@ -149,36 +149,6 @@ export const AIFeatures = () => {
           ))}
         </div>
 
-        {/* Animated performance stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-xl rounded-2xl p-8 border border-white/20"
-        >
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-4">
-              Performance Metrics
-            </h3>
-            <p className="text-gray-600">Real-time performance indicators</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { value: 99, label: "Accuracy Rate", suffix: "%" },
-              { value: 500, label: "Response Time", suffix: "ms", prefix: "<" },
-              { value: 99, label: "Uptime SLA", suffix: ".9%" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">
-                  <AnimatedCounter end={stat.value} suffix={stat.suffix} prefix={stat.prefix} />
-                </div>
-                <div className="text-gray-600">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );

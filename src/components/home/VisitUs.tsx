@@ -59,7 +59,7 @@ export const VisitUs = () => {
                 <h3 className="font-bold text-primary mb-1">Office Hours</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   Monday – Friday: 9:00 AM – 6:00 PM<br />
-                  Saturday: 9:00 AM – 1:00 PM<br />
+                  Saturday: Closed<br />
                   Sunday: Closed
                 </p>
               </div>

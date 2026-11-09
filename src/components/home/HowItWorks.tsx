@@ -10,7 +10,7 @@ const steps = [
   {
     icon: Sparkles,
     title: "Get Assessed",
-    description: "Our AI evaluates your application using alternative data — no credit history needed.",
+    description: "A credit officer reviews your application.",
   },
   {
     icon: ShieldCheck,

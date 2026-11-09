@@ -152,43 +152,6 @@ export const Integration = () => {
         </div>
 
         {/* Real-time performance indicators */}
-        <motion.div
-          ref={progressRef}
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-xl rounded-2xl p-8 border border-white/20"
-        >
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-4">
-              Live System Performance
-            </h3>
-            <p className="text-gray-600">Real-time integration health metrics</p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { label: "API Response Rate", progress: apiProgress, color: "from-secondary to-accent" },
-              { label: "Workflow Efficiency", progress: workflowProgress, color: "from-primary to-secondary" },
-              { label: "Processing Speed", progress: processingProgress, color: "from-accent to-primary" }
-            ].map((metric, index) => (
-              <div key={index} className="text-center">
-                <div className="text-2xl font-bold text-gray-700 mb-2">{metric.label}</div>
-                <div className="relative mb-4">
-                  <Progress value={metric.progress} className="h-3 bg-gray-200" />
-                  <div 
-                    className={`absolute top-0 left-0 h-3 rounded-full bg-gradient-to-r ${metric.color} transition-all duration-1000 ease-out`}
-                    style={{ width: `${metric.progress}%` }}
-                  />
-                </div>
-                <div className={`text-3xl font-bold bg-gradient-to-r ${metric.color} bg-clip-text text-transparent`}>
-                  {metric.progress}%
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );

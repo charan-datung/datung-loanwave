@@ -107,27 +107,6 @@ export const TechnologyHero = () => {
             Advanced credit assessment and risk management systems powered by artificial intelligence and computer vision technology.
           </motion.p>
           
-          {/* Real-time processing visualization */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="bg-black/20 backdrop-blur-xl rounded-2xl p-6 mb-8 border border-white/20"
-          >
-            <div className="text-secondary font-mono text-lg mb-4">Live AI Processing:</div>
-            <div className="flex items-center justify-center gap-4">
-              {processingSteps.map((step, index) => (
-                <div key={index} className={`px-4 py-2 rounded-lg transition-all duration-500 ${
-                  index === processingStep 
-                    ? 'bg-gradient-to-r from-secondary/30 to-accent/30 text-secondary animate-pulse' 
-                    : 'text-gray-500'
-                }`}>
-                  {index === processingStep ? step : '•'}
-                </div>
-              ))}
-            </div>
-          </motion.div>
-          
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

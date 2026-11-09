@@ -176,6 +176,8 @@ export const Footer = () => {
               {" · "}
               Certificate of Authority to Operate as a Lending Company No. <span className="text-white/90">3506</span>
             </p>
+            <p>Dark Knight Lending, Inc. (DBA Datung), SEC Reg. No. 2024070157507-01, CA No. 3506.</p>
+            <p>Study the terms and conditions in the Truth in Lending Disclosure Statement before proceeding with the loan transaction.</p>
             <p className="text-gray-400">
               Registered office: Unit 10-01, One Global Place, 25th St. cor. 5th Ave., Bonifacio Global City, Taguig City 1634
             </p>
