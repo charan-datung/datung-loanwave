@@ -1,4 +1,4 @@
-import { LayoutDashboard, CheckCircle2, Wallet, BarChart3, Users, Zap } from "lucide-react";
+import { LayoutDashboard, Wallet, BarChart3, Users, Zap } from "lucide-react";
 
 export const EmployerDashboard = () => {
   const features = [
@@ -6,11 +6,6 @@ export const EmployerDashboard = () => {
       icon: LayoutDashboard,
       title: "Real-time Loan Monitoring",
       description: "Track all loan activities in real-time"
-    },
-    {
-      icon: CheckCircle2,
-      title: "Easy Approval Process",
-      description: "Streamlined approval workflows"
     },
     {
       icon: Wallet,

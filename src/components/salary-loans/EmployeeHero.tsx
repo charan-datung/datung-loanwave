@@ -5,12 +5,6 @@ export const EmployeeHero = () => {
     <section className="pt-32 pb-20 px-4 min-h-screen flex items-center bg-secondary">
       <div className="container mx-auto text-center">
         <div className="max-w-3xl mx-auto">
-          <div className="flex justify-center gap-6 mb-12">
-            <div className="text-white/90 text-sm font-medium">Fast Approval</div>
-            <div className="w-px h-4 bg-white/30"></div>
-            <div className="text-white/90 text-sm font-medium">Competitive Rates</div>
-          </div>
-          
           <h1 className="text-5xl md:text-7xl font-light mb-8 text-white leading-tight">
             Quick, Accessible Loans
             <br />
