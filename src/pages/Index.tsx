@@ -129,6 +129,15 @@ const Index = () => {
         <FAQ />
         <VisitUs />
         <CallToAction />
+        <section className="py-12 md:py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2 text-primary">In the news</h2>
+            <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-foreground">
+              <li>THEPHILBIZNEWS: <a href="https://thephilbiznews.com/2026/11/09/alternative-credit-opens-doors-for-ph-msmes/" target="_blank" rel="noopener noreferrer" className="text-primary underline">“Alternative Credit Opens Doors for PH MSMEs”</a> (9 Nov 2026)</li>
+              <li>Lifestyle Asia: <a href="https://lifestyleasia-onemega.com/people/charan-uttamchandani-is-using-fintech-to-make-the-invisible-visible/" target="_blank" rel="noopener noreferrer" className="text-primary underline">“Charan Uttamchandani Is Using Fintech To Make The Invisible Visible”</a> (8 Aug 2025)</li>
+            </ul>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
