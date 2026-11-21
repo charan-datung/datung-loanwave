@@ -1,4 +1,3 @@
-import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, TrendingUp, Users } from "lucide-react";
 
@@ -14,14 +13,11 @@ export const CTASection = () => {
             Join thousands of Filipino entrepreneurs who have transformed their businesses
           </p>
           
-          <ContactForm 
-            defaultType="loan"
-            triggerComponent={
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-medium px-12 py-4 text-lg transition-all rounded-full">
+          <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-medium px-12 py-4 text-lg transition-all rounded-full">
+<a href="https://datungapply.com/apply">
                 Start Your Application
-              </Button>
-            }
-          />
+              </a>
+</Button>
           
           <p className="text-white/80 text-sm mt-8 font-light">
             Free consultation • No hidden fees

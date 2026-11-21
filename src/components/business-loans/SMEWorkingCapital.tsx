@@ -1,6 +1,5 @@
 import { Building2, FileCheck, Briefcase, Calendar, ArrowRight, Receipt } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ContactForm";
 import { motion } from "framer-motion";
 
 export const SMEWorkingCapital = () => {
@@ -108,18 +107,15 @@ export const SMEWorkingCapital = () => {
                 </div>
               </div>
 
-              <ContactForm
-                defaultType="loan"
-                triggerComponent={
-                  <Button
+              <Button asChild
                     size="lg"
                     className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-4 text-lg transition-all rounded-full group"
                   >
+<a href="https://datungapply.com/apply">
                     Apply for SME Working Capital
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                }
-              />
+                  </a>
+</Button>
             </motion.div>
 
             {/* Right: Features & target segments */}
